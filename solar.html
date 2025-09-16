@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coast Infrastructure</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="logo" class="light-logo" />
+      <img src="./images/darklogo.png" alt="darklogo" class="dark-logo" />
+      <ul id="nav-links" class="nav-links" role="list">
+        <li role="listitem"><a href="./index.html">Home</a></li>
+        <li role="listitem"><a href="./aboutus.html">About Us</a></li>
+        <li role="listitem" class="dropdown" onclick="toggleDropdown(event)">
+          <a class="active" href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-content" role="list">
+            <li class="dropdown-menu" role="listitem">
+              <a href="./solar.html">Solar Energy Solutions</a>
+            </li>
+            <li class="dropdown-menu" role="listitem">
+              <a href="./cctv.html">CCTV & Security Installations</a>
+            </li>
+            <li class="dropdown-menu" role="listitem">
+              <a href="#">Networking Configuration & Setup</a>
+            </li>
+            <li class="dropdown-menu" role="listitem">
+              <a href="#">Domain Name Services</a>
+            </li>
+            <li class="dropdown-menu" role="listitem">
+              <a href="./procurement.html">Procurement & Sourcing</a>
+            </li>
+          </ul>
+        </li>
+        <li role="listitem"><a href="#">Contact us</a></li>
+        <li role="listitem"><a href="#">Projects</a></li>
+        <li role="listitem"><a href="#FAQs">FAQs</a></li>
+      </ul>
+      <div class="side-icons">
+        <a href="#" class="cta-btn">Request a quote</a>
+        <div class="mode-toggle" onclick="modeToggle()">
+          <i class="fa-solid fa-moon moon"></i>
+          <i class="fa-solid fa-sun sun"></i>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      </div>
+    </header>
+
+    <section class="hero solar">
+      <div>
+        <h1>Networking & Configuration</h1>
+        <p>Seamless Connectivity, Smarter Spaces</p>
+      </div>
+    </section>
+
+    <section class="keep-eye">
+      <div class="keep-img">
+        <img src="./images/cctvkeep1.jpg" alt="CCTV">
+        <img class="second-img" src="./images/cctvkeep2.jpg" alt="CCTV">
+      </div>
+      <div class="keep-container">
+        <h2>Build a Stronger Network, From
+the Ground Up</h2>
+        <p>From small homes to large offices, your network is the backbone of your
+productivity and communication. At Coast Infrastructure Systems Limited, we
+design and install fast, secure, and scalable networking systems that keep
+your devices connected and your data flowing.</p>
+        <br>
+        <p>Whether you re setting up a new office, improving home Wi-Fi, or need a full
+enterprise-grade LAN, we ll deliver a setup that works with zero guesswork and
+maximum efficiency.</p>
+      </div>
+    </section>
+
+    <section class="security-services">
+      <h2>Our Security Services Include</h2>
+      <div class="ss-container">
+        <div class="ss-card">
+          <div class="icon-container">
+            <i class="fa-solid fa-network-wired"></i>
+          </div>
+          <div class="ss-content">
+            <h3>Wired & Wireless Network Setup</h3>
+            <p>Structured cabling and Wi-Fi router deployment for reliable, high-speed access</p>
+          </div>
+        </div>
+        <div class="ss-card">
+          <div class="icon-container">
+            <i class="fa-solid fa-house-signal"></i>
+          </div>
+          <div class="ss-content">
+            <h3>Router & Switch Configuration</h3>
+            <p>From basic setups to advanced
+enterprise routing we configure your
+hardware for peak performance.</p>
+          </div>
+        </div>
+        <div class="ss-card">
+          <div class="icon-container">
+            <i class="fa-solid fa-diagram-project"></i>
+          </div>
+          <div class="ss-content">
+            <h3>Office & Facility Network Design</h3>
+            <p>Smart layout planning for multiple floors,
+departments, and user types.</p>
+          </div>
+        </div>
+        <div class="ss-card">
+          <div class="icon-container">
+            <i class="fa-solid fa-ethernet"></i>
+          </div>
+          <div class="ss-content">
+            <h3>Access Point Installation & Optimization</h3>
+            <p>Eliminate dead zones and boost signal
+strength with properly installed Wi-Fi
+access point.</p>
+          </div>
+        </div>
+        <div class="ss-card">
+          <div class="icon-container">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <div class="ss-content">
+            <h3>Network Security Setup</h3>
+            <p>Firewalls, password protection, MAC
+filtering, and more to safeguard your
+data</p>
+          </div>
+        </div>
+        <div class="ss-card">
+          <div class="icon-container">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <div class="ss-content">
+            <h3>Troubleshooting & Maintenance</h3>
+            <p>Diagnosis, repair, and upgrade of poor or
+failing network systems.
+</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="camera-types">
+      <h2>Devices & Brands We Work With</h2>
+      <div class="camera-container">
+        <div class="camera-card">
+          <div class="camera-img bulletcam"><img src="./images/bulletcam.jpg" alt="bullet camera"></div>
+          <div class="camera-content">
+            <h3>Routers</h3>
+            <p>TP-Link, D-Link, Cisco,
+Mikrotik</p>
+          </div>
+        </div>
+        <div class="camera-card">
+          <div class="camera-img"><img src="./images/domecam.jpg" alt="dome camera"></div>
+          <div class="camera-content">
+            <h3>Switches</h3>
+            <p>Netgear, Cisco</p>
+          </div>
+        </div>
+        <div class="camera-card">
+          <div class="camera-img"><img src="./images/cctvkeep1.jpg" alt="Infrared cameras"></div>
+          <div class="camera-content">
+            <h3>Access Points</h3>
+            <p>Ubiquiti, EnGenius, Tenda</p>
+          </div>
+        </div>
+        <div class="camera-card">
+          <div class="camera-img"><img src="./images/domecam.jpg" alt="PTX cameras"></div>
+          <div class="camera-content">
+            <h3>Ethernet Cabling</h3>
+            <p>CAT5e, CAT6, fiber options</p>
+          </div>
+        </div>
+        <div class="camera-card">
+          <div class="camera-img"><img src="./images/wificam.jpg" alt="Wi-Fi IP cameras"></div>
+          <div class="camera-content">
+            <h3>Other</h3>
+            <p>Patch panels, RJ45
+terminations, UPS power
+backup</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="install">
+      <h2>Who Needs This?</h2>
+      <div class="install-container">
+        <div class="install-cards">
+          <span><i class="fa-solid fa-house"></i></span>
+          <p>Residential Buildings & Estates</p>
+        </div>
+        <div class="install-cards">
+          <span><i class="fa-solid fa-store"></i></span>
+          <p>Retail Stores & Warehouses</p>
+        </div>
+        <div class="install-cards">
+          <span><i class="fa-solid fa-building"></i></span>
+          <p>Office Complexes</p>
+        </div>
+        <div class="install-cards">
+          <span><i class="fa-solid fa-place-of-worship"></i></span>
+          <p>Hospitals & Schools</p>
+        </div>
+        <div class="install-cards">
+          <span><i class="fa-solid fa-map-location-dot"></i></span>
+          <p>Government Agencies & NGOs</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="what-we-do why-coast">
+      <div class="what-header">
+        <h2>Why Choose Coast Infrastructure for Security?</h2>
+      </div>
+      <div class="what-cards">
+        <div class="what-card">
+          <span><i class="fa-solid fa-diagram-project"></i></span>
+          <h3>Proper planning for signal
+distribution and future
+expansion</h3>
+        </div>
+        <div class="what-card">
+          <span><i class="fa-solid fa-network-wired"></i></span
+          ><h3>Neat, concealed wiring and
+professional setup</h3>
+        </div>
+        <div class="what-card">
+          <span><i class="fa-solid fa-gear"></i></span
+          ><h3>Brands and devices that
+match your use case</h3>
+        </div>
+        <div class="what-card">
+          <span><i class="fa-solid fa-arrows-up-down"></i></span
+          ><h3>Scalable configurations for
+growing teams</h3>
+        </div>
+        <div class="what-card">
+          <span><i class="fa-solid fa-headset"></i></span
+          ><h3>Fast response and technical
+support</h3>
+        </div>
+        <div class="what-card">
+          <span><i class="fa-solid fa-right-to-bracket"></i></span
+          ><h3>Cross integration with your
+CCTV or solar system if
+needed</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="sample-packages">
+      <h2>Sample Installation Packages</h2>
+      <div class="sample-container">
+        <div class="sample-card">
+          <span><i class="fa-solid fa-lightbulb"></i></span>
+          <div class="package-label"><a href="#"><h3>Starter Pack</h3></a></div>
+          <p>1 router + cable + setup<br> <br> Home users, students</p>
+        </div>
+        <div class="sample-card">
+          <span><i class="fa-solid fa-briefcase"></i></span>
+          <div class="package-label"><a href="#"><h3>Standard</h3></a></div>
+          <p>Router + Switch + Wi-Fi
+access pt <br> <br> Small office (3-10 users)</p>
+        </div>
+        <div class="sample-card">
+          <span><i class="fa-solid fa-store"></i></span>
+          <div class="package-label"><a href="#"><h3>Business Pro</h3></a></div>
+          <p>Full LAN + AP + Firewall
+config<br> <br> Medium-sized business
+setups</p>
+        </div>
+        <div class="sample-card">
+          <span><i class="fa-solid fa-building"></i></span>
+          <div class="package-label"><a href="#"><h3>Custom Enterprise</h3></a></div>
+          <p>Scalable multi-floor config<br> <br> Banks, schools, large
+offices</p>
+        </div>
+      </div>
+    </section> 
+
+    <section class="get-started">
+      <div class="get-started-text">
+        <h3>Ready to Get Connected?</h3>
+        <p>
+          Let us help you build a network that works as hard as you do
+        </p>
+      </div>
+      <div class="bottom-cta">
+        <div class="cta"><a href="#">Request a Networking Quote</a></div>
+        <div class="cta"><a href="#">Call Us for a Site Visit</a></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-header">
+        <img src="./images/darklogo.png" alt="logo" />
+        <div class="subscribe">
+          <form>
+            <h4>Subscribe now</h4>
+            <input name="email" type="email" placeholder="Email" />
+            <button type="submit"><a href="#">Subscribe</a></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-content">
+        <div class="about">
+          <h4>About</h4>
+          <p>Reliable infrastructure, power, and security solutions</p>
+          <p>Member of the Coast Systems Group.</p>
+          <p>Serving homes, SME's, and enterprises across Nigeria.</p>
+        </div>
+
+        <div class="links">
+          <h4>Links</h4>
+          <ul class="link-list" role="list">
+            <li role="listitem"><a href="#">About Us</a></li>
+            <li role="listitem"><a href="#">Service</a></li>
+            <li role="listitem"><a href="#">Contact us</a></li>
+            <li role="listitem"><a href="#">Project</a></li>
+            <li role="listitem"><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="working-hours">
+          <h4>Working Hours</h4>
+          <ul class="hours" role="list">
+            <li role="listitem"><span>Mon-Fri:</span> 9:00 AM - 6:00 PM</li>
+            <li role="listitem"><span>Sat-Sun:</span> 8:00 AM - 4:00PM</li>
+            <li role="listitem"><span>Response Time:</span> Within 24hrs</li>
+          </ul>
+        </div>
+
+        <div class="get-in-touch">
+          <h4>Get in Touch</h4>
+          <ul class="contact" role="list">
+            <li role="listitem">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Address: </span> Ibadan, Oyo state, Nigeria
+            </li>
+            <li role="listitem">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Email: </span> info@coastinfra.com
+            </li>
+            <li role="listitem">
+              <i class="fa-solid fa-phone"></i>
+              <span>Phone: </span> +234 807 299 1328
+            </li>
+            <li role="listitem">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WhatsApp: </span> +234 807 299 1328
+            </li>
+          </ul>
+          <span>Domain Services & Procurement Available Nationwide</span>
+        </div>
+      </div>
+
+      <div class="media-links">
+        <span
+          ><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span
+        ><span
+          ><a href="#"><i class="fa-brands fa-x-twitter"></i></a></span
+        ><span
+          ><a href="#"><i class="fa-brands fa-instagram"></i></a></span
+        ><span
+          ><a href="#"><i class="fa-brands fa-linkedin-in"></i></a
+        ></span>
+      </div>
+
+      <div class="footer-copyright">
+        <h6>Copyright 2025 Powered by CRT</h6>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/script.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</html>

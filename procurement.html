@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coast Infrastructure</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="logo" class="light-logo" />
+      <img src="./images/darklogo.png" alt="darklogo" class="dark-logo" />
+      <ul id="nav-links" class="nav-links" role="list">
+        <li role="listitem"><a href="./index.html">Home</a></li>
+        <li role="listitem"><a href="./aboutus.html">About Us</a></li>
+        <li role="listitem" class="dropdown" onclick="toggleDropdown(event)">
+          <a class="active" href="#"
+            >Services <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <ul class="dropdown-content" role="list">
+            <li class="dropdown-menu" role="listitem">
+              <a href="./solar.html">Solar Energy Solutions</a>
+            </li>
+            <li class="dropdown-menu" role="listitem">
+              <a href="./cctv.html">CCTV & Security Installations</a>
+            </li>
+            <li class="dropdown-menu" role="listitem">
+              <a href="#">Networking Configuration & Setup</a>
+            </li>
+            <li class="dropdown-menu" role="listitem">
+              <a href="#">Domain Name Services</a>
+            </li>
+            <li class="dropdown-menu" role="listitem">
+              <a href="./procurement.html">Procurement & Sourcing</a>
+            </li>
+          </ul>
+        </li>
+        <li role="listitem"><a href="#">Contact us</a></li>
+        <li role="listitem"><a href="#">Projects</a></li>
+        <li role="listitem"><a href="#FAQs">FAQs</a></li>
+      </ul>
+      <div class="side-icons">
+        <a href="#" class="cta-btn">Request a quote</a>
+        <div class="mode-toggle" onclick="modeToggle()">
+          <i class="fa-solid fa-moon moon"></i>
+          <i class="fa-solid fa-sun sun"></i>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      </div>
+    </header>
+
+    <section class="hero procure">
+      <div>
+        <h1>Procurement & Sourcing</h1>
+        <p>The Right Tech. Delivered Right</p>
+      </div>
+    </section>
+
+    <section class="keep-eye">
+      <div class="keep-img">
+        <img src="./images/cctvkeep1.jpg" alt="CCTV" />
+        <img class="second-img" src="./images/cctvkeep2.jpg" alt="CCTV" />
+      </div>
+      <div class="keep-container">
+        <h2>Smart Sourcing for Smarter Projects</h2>
+        <p>
+          At Coast Infrastructure Systems Limited, we understand that great
+          infrastructure depends on quality components. That s why we offer
+          reliable procurement and sourcing services for a wide range of
+          technology and infrastructure related products
+        </p>
+        <br />
+        <p>
+          Whether you re launching a new setup, scaling an office, or managing a
+          multi site deployment we source, negotiate, and deliver the tools you
+          need to build efficiently and operate confidently
+        </p>
+      </div>
+    </section>
+
+    <section class="what-we-procure">
+      <h2>What We Procure</h2>
+      <p>
+        We handle the procurement of a wide range of certified, high performance
+        equipment, including:
+      </p>
+      <div class="procure-container">
+        <div class="procure-card">
+          <div class="procure-content">
+            <span></span>
+            <h3>Power & Energy</h3>
+            <ul role="list">
+              <li role="listitem">
+                olar panels (monocrystalline, polycrystalline)
+              </li>
+              <li role="listitem">Inverters (1kVA-20kVA, hybrid, smart)</li>
+              <li role="listitem">Deep cycle and lithium batteries</li>
+              <li role="listitem">
+                Charge controllers, breakers, and accessories
+              </li>
+            </ul>
+          </div>
+          <div class="procure-img"></div>
+        </div>
+
+        <div class="procure-card">
+          <div class="procure-content">
+            <span></span>
+            <h3>Security & Surveillance</h3>
+            <ul role="list">
+              <li role="listitem">CC TV cameras (IP, dome, bullet, PTZ)</li>
+              <li role="listitem">DVRs/NVRs and hard drives</li>
+              <li role="listitem">
+                Surveillance accessories (cables, connectors, adapters)
+              </li>
+            </ul>
+          </div>
+          <div class="procure-img"></div>
+        </div>
+
+        <div class="procure-card">
+          <div class="procure-content">
+            <span></span>
+            <h3>Networking & Connectivity</h3>
+            <ul role="list">
+              <li role="listitem">Routers , switches, and access points</li>
+              <li role="listitem">Ethernet and fiber optic cables</li>
+              <li role="listitem">Patch panels, faceplates, and racks</li>
+            </ul>
+          </div>
+          <div class="procure-img"></div>
+        </div>
+
+        <div class="procure-card">
+          <div class="procure-content">
+            <span></span>
+            <h3>General Tech Infrastructure</h3>
+            <ul role="list">
+              <li role="listitem">Smart devices and IoT hardware</li>
+              <li role="listitem">Installation tools and accessories</li>
+              <li role="listitem">Office tech (printers, UPS, modems)</li>
+            </ul>
+          </div>
+          <div class="procure-img"></div>
+        </div>
+
+        <div class="procure-card">
+          <div class="procure-content">
+            <span></span>
+            <h3>Digital Assets</h3>
+            <ul role="list">
+              <li role="listitem">Domain names (standard and premium)</li>
+              <li role="listitem">SSL certificates</li>
+              <li role="listitem">Software licensing (by request)</li>
+            </ul>
+          </div>
+          <div class="procure-img"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="install">
+      <h2>Who Needs This?</h2>
+      <div class="install-container">
+        <div class="install-cards">
+          <span><i class="fa-solid fa-house"></i></span>
+          <p>Residential Buildings & Estates</p>
+        </div>
+        <div class="install-cards">
+          <span><i class="fa-solid fa-store"></i></span>
+          <p>Retail Stores & Warehouses</p>
+        </div>
+        <div class="install-cards">
+          <span><i class="fa-solid fa-building"></i></span>
+          <p>Office Complexes</p>
+        </div>
+        <div class="install-cards">
+          <span><i class="fa-solid fa-place-of-worship"></i></span>
+          <p>Hospitals & Schools</p>
+        </div>
+        <div class="install-cards">
+          <span><i class="fa-solid fa-map-location-dot"></i></span>
+          <p>Government Agencies & NGOs</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="procurement-process">
+      <h2></h2>
+      <div class="process-container"></div>
+    </section>
+
+    <section class="what-we-do why-coast">
+      <div class="what-header">
+        <h2>Why Work With Us?</h2>
+      </div>
+      <div class="what-cards">
+        <div class="what-card">
+          <span><i class="fa-solid fa-diagram-project"></i></span>
+          <h3>Access to certified brands and global vendors</h3>
+        </div>
+        <div class="what-card">
+          <span><i class="fa-solid fa-network-wired"></i></span>
+          <h3>Vendor verification and fraud prevention</h3>
+        </div>
+        <div class="what-card">
+          <span><i class="fa-solid fa-gear"></i></span>
+          <h3>Cost effective pricing without compromise</h3>
+        </div>
+        <div class="what-card">
+          <span><i class="fa-solid fa-arrows-up-down"></i></span>
+          <h3>Transparent timelines and communication</h3>
+        </div>
+        <div class="what-card">
+          <span><i class="fa-solid fa-headset"></i></span>
+          <h3>Nationwide delivery support</h3>
+        </div>
+        <div class="what-card">
+          <span><i class="fa-solid fa-right-to-bracket"></i></span>
+          <h3>
+            Available as a standalone service or part of your infrastructure
+            project
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <div class="success-stories">
+      <div class="side-header">
+        <h2>Client Success Stories</h2>
+        <p>Hear from businesses that trust our solutions</p>
+      </div>
+      <div class="story-slider">
+        
+      </div>
+    </div>
+
+    <section class="get-started">
+      <div class="get-started-text">
+        <h3>Ready to Get Connected?</h3>
+        <p>
+          Let us help you build a network that works as hard as you do
+        </p>
+      </div>
+      <div class="bottom-cta">
+        <div class="cta"><a href="#">Request a Networking Quote</a></div>
+        <div class="cta"><a href="#">Call Us for a Site Visit</a></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-header">
+        <img src="./images/darklogo.png" alt="logo" />
+        <div class="subscribe">
+          <form>
+            <h4>Subscribe now</h4>
+            <input name="email" type="email" placeholder="Email" />
+            <button type="submit"><a href="#">Subscribe</a></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-content">
+        <div class="about">
+          <h4>About</h4>
+          <p>Reliable infrastructure, power, and security solutions</p>
+          <p>Member of the Coast Systems Group.</p>
+          <p>Serving homes, SME's, and enterprises across Nigeria.</p>
+        </div>
+
+        <div class="links">
+          <h4>Links</h4>
+          <ul class="link-list" role="list">
+            <li role="listitem"><a href="#">About Us</a></li>
+            <li role="listitem"><a href="#">Service</a></li>
+            <li role="listitem"><a href="#">Contact us</a></li>
+            <li role="listitem"><a href="#">Project</a></li>
+            <li role="listitem"><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="working-hours">
+          <h4>Working Hours</h4>
+          <ul class="hours" role="list">
+            <li role="listitem"><span>Mon-Fri:</span> 9:00 AM - 6:00 PM</li>
+            <li role="listitem"><span>Sat-Sun:</span> 8:00 AM - 4:00PM</li>
+            <li role="listitem"><span>Response Time:</span> Within 24hrs</li>
+          </ul>
+        </div>
+
+        <div class="get-in-touch">
+          <h4>Get in Touch</h4>
+          <ul class="contact" role="list">
+            <li role="listitem">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Address: </span> Ibadan, Oyo state, Nigeria
+            </li>
+            <li role="listitem">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Email: </span> info@coastinfra.com
+            </li>
+            <li role="listitem">
+              <i class="fa-solid fa-phone"></i>
+              <span>Phone: </span> +234 807 299 1328
+            </li>
+            <li role="listitem">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WhatsApp: </span> +234 807 299 1328
+            </li>
+          </ul>
+          <span>Domain Services & Procurement Available Nationwide</span>
+        </div>
+      </div>
+
+      <div class="media-links">
+        <span
+          ><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span
+        ><span
+          ><a href="#"><i class="fa-brands fa-x-twitter"></i></a></span
+        ><span
+          ><a href="#"><i class="fa-brands fa-instagram"></i></a></span
+        ><span
+          ><a href="#"><i class="fa-brands fa-linkedin-in"></i></a
+        ></span>
+      </div>
+
+      <div class="footer-copyright">
+        <h6>Copyright 2025 Powered by CRT</h6>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/script.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</html>

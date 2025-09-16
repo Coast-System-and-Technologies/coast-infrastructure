@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coast Infrastructure</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="logo" class="light-logo" />
+      <img src="./images/darklogo.png" alt="darklogo" class="dark-logo" />
+      <ul id="nav-links" class="nav-links" role="list">
+        <li role="listitem"><a href="./index.html">Home</a></li>
+        <li role="listitem">
+          <a class="active" href="./aboutus.html">About Us</a>
+        </li>
+        <li role="listitem" class="dropdown" onclick="toggleDropdown(event)">
+          <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-content" role="list">
+            <li class="dropdown-menu" role="listitem">
+              <a href="./solar.html">Solar Energy Solutions</a>
+            </li>
+            <li class="dropdown-menu" role="listitem">
+              <a href="./cctv.html">CCTV & Security Installations</a>
+            </li>
+            <li class="dropdown-menu" role="listitem">
+              <a href="#">Networking Configuration & Setup</a>
+            </li>
+            <li class="dropdown-menu" role="listitem">
+              <a href="#">Domain Name Services</a>
+            </li>
+            <li class="dropdown-menu" role="listitem">
+              <a href="./procurement.html">Procurement & Sourcing</a>
+            </li>
+          </ul>
+        </li>
+        <li role="listitem"><a href="#">Contact us</a></li>
+        <li role="listitem"><a href="#">Projects</a></li>
+        <li role="listitem"><a href="#FAQs">FAQs</a></li>
+      </ul>
+      <div class="side-icons">
+        <a href="#" class="cta-btn">Request a quote</a>
+        <div class="mode-toggle" onclick="modeToggle()">
+          <i class="fa-solid fa-moon moon"></i>
+          <i class="fa-solid fa-sun sun"></i>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      </div>
+    </header>
+
+    <section class="hero aboutus">
+      <div>
+        <h1>ABOUT US</h1>
+        <p>Home / About</p>
+      </div>
+    </section>
+
+    <section class="who-we-are">
+      <img src="./images/servicecards4.jpg" alt="Who we are" />
+      <div class="who-we-are-text">
+        <p class="intro-text">About Us</p>
+        <h2>Who We Are</h2>
+        <div>
+          <p>
+            Coast Insfrastucture Systems Limited (CISL) is a technology-driven
+            infrastructure company devlivering practical, reliabl, and
+            forward-looking solutions for power, security, connectivity, and
+            digital access.
+          </p>
+          <p>
+            we help individuals, SMEs, and enterprises stay powered, protected,
+            and prepared whether through solar installations, smart surveilance,
+            domain provisioning, networking, or Procurement of essential tech
+            components.
+          </p>
+        </div>
+        <p>
+          As a proud subsidiary of Coast System and Technologies Limited, we
+          combine deep industry knowledge with execution excellence to bring
+          infrastructuresolutions to life across Nigeria and beyond.
+        </p>
+      </div>
+    </section>
+
+    <section class="mission-vision">
+      <div class="our-mission">
+        <div>
+          <p class="our">Our</p>
+          <h2>Mission</h2>
+        </div>
+        <p class="our-text">
+          To simplify access to critical infrastructure-both physical and
+          digital-by devlivering dependable, affordable, and scalable solutions
+          that empower people and businesses to thrive.
+        </p>
+      </div>
+      <div class="our-vision">
+        <div>
+          <p class="our">Our</p>
+          <h2>Vision</h2>
+        </div>
+        <p class="our-text">
+          To become West Africa's leading provider of integrated infrastructure
+          systems -where solar energy, security, digital presence, and
+          connectivity meet in one trusted partner.
+        </p>
+      </div>
+    </section>
+
+    <section class="our-impact">
+      <div class="our-impact-text">
+        <h2>Our Impact So Far</h2>
+        <p>
+          From powering rural homes to securing urban businesses, our work
+          speaks through every panel installed and every system configured.
+          <br />
+          We're driven by results, not promises-and our numbers prove it
+        </p>
+      </div>
+      <div class="works-done">
+        <div class="work-cards">
+          <h2>30+</h2>
+          <p>Solar Projects Installed</p>
+        </div>
+        <div class="work-cards">
+          <h2>50+</h2>
+          <p>CCTV Systems Deployed</p>
+        </div>
+        <div class="work-cards">
+          <h2>100+</h2>
+          <p>Domains Registered</p>
+        </div>
+        <div class="work-cards">
+          <h2>100+</h2>
+          <p>Procured items Delivered</p>
+        </div>
+        <div class="work-cards">
+          <h2>5</h2>
+          <p>Industry Partnerships</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="what-we-do">
+      <div class="what-header">
+        <h2>What We Do</h2>
+        <p>
+          We offer tailored setup, sales, and support in the following areas:
+        </p>
+      </div>
+      <div class="what-cards">
+        <div class="what-card">
+          <span><i class="fa-solid fa-solar-panel"></i></span>
+          <a href="#">Solar Panel installation & Maintenance</a>
+        </div>
+        <div class="what-card">
+          <span><i class="fa-solid fa-video"></i></span
+          ><a href="#">CCTV & Security System Setup</a>
+        </div>
+        <div class="what-card">
+          <span><i class="fa-solid fa-network-wired"></i></span
+          ><a href="#">Networking Configuration for Homes & Offices</a>
+        </div>
+        <div class="what-card">
+          <span><i class="fa-solid fa-earth-africa"></i></span
+          ><a href="#">Domain Name Registration & Setup</a>
+        </div>
+        <div class="what-card">
+          <span><i class="fa-solid fa-cart-shopping"></i></span
+          ><a href="#">Procurement & Sourcing of Tech Hardware</a>
+        </div>
+        <div class="what-card">
+          <span><i class="fa-solid fa-mobile-screen-button"></i></span
+          ><a href="#">USSD Solution Deployment for Offline Access</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-approach">
+      <div class="approach-head">
+        <h2>Our Approach</h2>
+        <p>At CISL, we don't just install- we engineer systems to last.</p>
+      </div>
+      <div class="approach-cards">
+        <div class="icon-card">
+          <div>
+            <span class="icon"
+              ><i class="fa-solid fa-magnifying-glass-location"></i
+              ><span class="number one">1 </span>
+            </span>
+          </div>
+          <p>We assess your needs and location</p>
+        </div>
+        <div class="icon-card">
+          <div>
+            <span class="icon"
+              ><i class="fa-solid fa-lightbulb"></i
+              ><span class="number">2</span>
+            </span>
+          </div>
+          <p>We recommend the most efficient, cost-effective solutions</p>
+        </div>
+        <div class="icon-card">
+          <div>
+            <span class="icon"
+              ><i class="fa-solid fa-screwdriver-wrench"></i
+              ><span class="number">3</span>
+            </span>
+          </div>
+          <p>
+            We install and configure using texted tools and quality compounds
+          </p>
+        </div>
+        <div class="icon-card">
+          <div>
+            <span class="icon"
+              ><i class="fa-solid fa-headset"></i><span class="number">4</span>
+            </span>
+          </div>
+          <p>
+            We support you with after-sales care, upgredes, and warranty
+            services
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bigger-vision">
+      <h2>Part of a Bigger Vision</h2>
+      <div class="vision-content">
+        <img src="./images/logo.png" alt="logo" />
+        <p>
+          We are part of the Coast Group, a family of companies building
+          Africa's future across infrastructure, technology, education and
+          financial services. Through this synergy, we ensure integrity,
+          performance and strategic growth across all touchpoints.
+        </p>
+      </div>
+    </section>
+
+    <section class="work-with-us">
+      <h2>Work With Us</h2>
+
+      <div class="card-container">
+        <div class="work-with-cards">
+          <div class="work-with-card">
+            <i class="fa-solid fa-house"></i>
+            <p>Building a new home</p>
+          </div>
+          <div class="work-with-card">
+            <i class="fa-solid fa-building"></i>
+            <p>Expanding your business premises</p>
+          </div>
+          <div class="work-with-card">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>Seeking trusted tech procurement</p>
+          </div>
+          <div class="work-with-card">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p>Or launching a USSD service...</p>
+          </div>
+        </div>
+
+        <div class="cta"><a href="#">Get in Touch</a></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-header">
+        <img src="./images/darklogo.png" alt="logo" />
+        <div class="subscribe">
+          <form>
+            <h4>Subscribe now</h4>
+            <input name="email" type="email" placeholder="Email" />
+            <button type="submit"><a href="#">Subscribe</a></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-content">
+        <div class="about">
+          <h4>About</h4>
+          <p>Reliable infrastructure, power, and security solutions</p>
+          <p>Member of the Coast Systems Group.</p>
+          <p>Serving homes, SME's, and enterprises across Nigeria.</p>
+        </div>
+
+        <div class="links">
+          <h4>Links</h4>
+          <ul class="link-list" role="list">
+            <li role="listitem"><a href="#">About Us</a></li>
+            <li role="listitem"><a href="#">Service</a></li>
+            <li role="listitem"><a href="#">Contact us</a></li>
+            <li role="listitem"><a href="#">Project</a></li>
+            <li role="listitem"><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="working-hours">
+          <h4>Working Hours</h4>
+          <ul class="hours" role="list">
+            <li role="listitem"><span>Mon-Fri:</span> 9:00 AM - 6:00 PM</li>
+            <li role="listitem"><span>Sat-Sun:</span> 8:00 AM - 4:00PM</li>
+            <li role="listitem"><span>Response Time:</span> Within 24hrs</li>
+          </ul>
+        </div>
+
+        <div class="get-in-touch">
+          <h4>Get in Touch</h4>
+          <ul class="contact" role="list">
+            <li role="listitem">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Address: </span> Ibadan, Oyo state, Nigeria
+            </li>
+            <li role="listitem">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Email: </span> info@coastinfra.com
+            </li>
+            <li role="listitem">
+              <i class="fa-solid fa-phone"></i>
+              <span>Phone: </span> +234 807 299 1328
+            </li>
+            <li role="listitem">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WhatsApp: </span> +234 807 299 1328
+            </li>
+          </ul>
+          <span>Domain Services & Procurement Available Nationwide</span>
+        </div>
+      </div>
+
+      <div class="media-links">
+        <span
+          ><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span
+        ><span
+          ><a href="#"><i class="fa-brands fa-x-twitter"></i></a></span
+        ><span
+          ><a href="#"><i class="fa-brands fa-instagram"></i></a></span
+        ><span
+          ><a href="#"><i class="fa-brands fa-linkedin-in"></i></a
+        ></span>
+      </div>
+
+      <div class="footer-copyright">
+        <h6>Copyright 2025 Powered by CRT</h6>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/script.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</html>
