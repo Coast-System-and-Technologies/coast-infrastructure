@@ -915,7 +915,7 @@ input::placeholder {
   height: 80vh;
 }
 
-.hero.aboutus div, .hero.cctv div, .hero.solar div, .hero.procure div{
+.hero.aboutus div, .hero.cctv div, .hero.solar div, .hero.procure div, .hero.contactus div{
  position: relative;
   z-index: 10;
   height: 100%;
@@ -926,7 +926,7 @@ input::placeholder {
   text-align: center;
 }
 
-.hero.aboutus h1, .hero.cctv h1, .hero.solar h1, .hero.procure h1{
+.hero.aboutus h1, .hero.cctv h1, .hero.solar h1, .hero.procure h1, .hero.contactus h1{
   color: var(--accent-color2);
   font-size: var(--h1font-size);
   font-weight: var(--h1font-weight);
@@ -1594,7 +1594,7 @@ input::placeholder {
   color: var(--primary-color);
  }
 
- /* success stories */
+ /* success stories
   .success-stories{
     padding: 3rem;
     background-color: var(--primary-color);
@@ -1606,16 +1606,16 @@ input::placeholder {
     left: 0;
   }
 
- /* testimonial carousel */
+ /* testimonial carousel 
  .carousel {
-  /* background: #FAFAFA; */
+  /* background: #FAFAFA;
 width: 50%;
-/* position: relative; */
+/* position: relative; 
 margin: left;
 }
 
 .carousel-cell {
-  width: 66%;            /* full width of carousel */
+  width: 66%;       
   height: 200px;
   margin-right: 10px;
   background: #8C8;
@@ -1624,7 +1624,7 @@ margin: left;
   counter-increment: carousel-cell;
 }
 
-/* cell number */
+/* cell number
 .carousel-cell:before {
   display: block;
   text-align: center;
@@ -1632,10 +1632,169 @@ margin: left;
   line-height: 200px;
   font-size: 80px;
   color: white;
+} */
+
+/* procurement page ends here */
+
+/* contact us page starts here*/
+.hero.contactus{
+  background-image: url(/images/contactusbg.jpg);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 82%);
+}
+
+.hero.contactus::before {
+  background-image:linear-gradient(120deg, rgba(0, 11, 41, 0.9), rgba(0, 29, 41, 0.8), rgba(0, 26, 41, 0.7));
+}
+
+.contact-container{
+  padding: 3rem;
+  display: flex;
+  gap: 4rem;
+  background-color: white;
+}
+
+.direct-contact h2{
+  font-weight: var(--h2font-weight);
+  font-size: var(--h2font-size);
+  padding-block-end: 2rem;
+}
+
+.direct-contact h3{
+  font-size: var(--h3font-size);
+  font-weight: var(--h3font-weight);
+}
+
+.direct-contact p, .direct-contact a{
+  color: var(--primary-color);
+  padding-block: 1.5rem;
+}
+
+.direct-contact a:is(:hover, :focus-visible){
+  color: var(--accent-color2);
+}
+
+label{
+  display: block;
+  width: 100%;
+}
+
+.getintouch-form input,.getintouch-form textarea, .getintouch-contact select{
+  width: 100%;
+  padding: 10px;
+  border:1px solid #bdbdbd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.getintouch-contact{
+  width: 60%;
+  padding: 3rem;
+  border-radius: 30px;
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px 20px 4px rgba(0, 0, 0, 0.2);
+}
+
+.getintouch-form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.getintouch-form input, .getintouch-form textarea, .getintouch-form select{
+  border: 1px solid rgb(236, 236, 236);
+  
+}
+
+.getintouch-contact h2, .direct-contact span i{
+  font-size: var(--h1font-size);
+  font-weight: var(--h1font-weight);
+  padding-block-end: 1rem;
+}
+
+.getintouch-contact h2 span{
+  color: var(--accent-color2);
+}
+
+.getintouch-contact p{
+  padding-block-end: 1.5rem;
+}
+
+.getintouch-buttons{
+  padding-block-start: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+/* 
+.getintouch-buttons button{
+  width: 100%;
+} */
+
+.getintouch-buttons button a{
+  padding: 20px;
+  display: block;
+  width: 100%;
+}
+
+.submitbtn a{
+  background-color: var(--accent-color2);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.requestbtn a{
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  font-weight: 500;
+}
+
+.submitbtn a:is(:hover, :focus-visible){
+  background-color: var(--primary-color);
+  color: var(--accent-color2);
+}
+
+.requestbtn a:is(:hover, :focus-visible){
+  background-color: #bdbdbd;
+  color: var(--primary-color);
+}
+
+.options{
+  padding: 3rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.option-card{
+  text-align: center;
+  border: 2px solid var(--accent-color2);
+  padding: 0.7rem;
+  width: 30%;
+  transition: transform 0.5s ease;
+}
+
+.option-card a{
+  color: var(--accent-color2);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.option-card a span{
+  font-size: 3rem;
+  padding-inline-end: 1.5rem;
+}
+
+.option-card:is(:hover, :focus-visible){
+  transform: translateY(-5px);
+  cursor: pointer;
 }
 
 
-/* procurement page ends here */
+/* contact us page ends here*/
+
 /***** mobile view ****/
 @media (max-width: 950px){
 .nav-links{
@@ -1693,7 +1852,7 @@ margin: left;
     text-align: center;
   }
 
-  .camera-card .camera-img, .sample-card a h3, .procure-content{
+  .camera-card .camera-img, .sample-card a h3, .procure-content, .option-card{
     width: 70%;
   }
 
@@ -1707,7 +1866,7 @@ margin: left;
   gap: 3rem;
 }
 
-.who-we-are, .keep-eye, .camera-card, .procure-card{
+.who-we-are, .keep-eye, .camera-card, .procure-card, .contact-container, .options{
   flex-direction: column;
 }
 
@@ -1748,6 +1907,11 @@ flex-direction: column;
 
 .process-icon{
   padding: 0;
+}
+
+.getintouch-contact{
+  width: 80%;
+  margin: auto;
 }
 }
 
@@ -1836,7 +2000,7 @@ flex-direction: column;
   gap: 2rem;
 }
 
-.subscribe, .footer-header form input{
+.subscribe, .footer-header form input, .getintouch-contact{
   width: 100%;
 }
 
@@ -1877,5 +2041,9 @@ form, .who-we-are-text div, .install-container{
 
  .process-cards{
   text-align: center;
+ }
+
+ .option-card{
+  width: 90%;
  }
 }
