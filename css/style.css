@@ -1262,11 +1262,11 @@ input::placeholder {
 }
 
 .ss-container{
-  padding-block-start: 3rem;
+  padding-block-start: 7rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  row-gap: 6rem;
+  row-gap: 9rem;
   align-items: center;
 }
 
@@ -1288,7 +1288,7 @@ input::placeholder {
   text-align: center;
   border-radius: 20px;
   padding-block-start: 7rem;
-  min-height: 38vh;
+  min-height: 30vh;
 }
 
 .ss-content h3{
@@ -1327,7 +1327,7 @@ input::placeholder {
 }
 
 .camera-card{
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -1462,8 +1462,9 @@ input::placeholder {
   background-color: var(--bg-color);
   border-radius: 50%;
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
-  top: -30%;
-  right: 30%;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .icon-container i{
@@ -1802,9 +1803,10 @@ label{
     position: absolute;
     flex-direction: column;
     width: 100%;
-    top: 120px;
+    top: 90px;
     left: 0;
     padding: 1rem 2rem;
+    background-color: var(--plain-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
@@ -1897,7 +1899,7 @@ flex-direction: column;
   width: 10rem;
 }
 
-.ss-container, .process-container{
+.ss-container, .process-container, .service-cards{
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -2036,7 +2038,6 @@ form, .who-we-are-text div, .install-container{
 
  .ss-content{
   min-height: 100%;
-  padding-block-start: 11rem;
  }
 
  .process-cards{
