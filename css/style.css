@@ -259,7 +259,7 @@ header img{
 /********************/
 
 /* hero section starts here */
-.hero {
+.hero{
   position: relative;
   width: 100%;
   height: 100vh;
@@ -267,6 +267,11 @@ header img{
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  padding: 3rem;
+}
+
+.hero.home{
+  display: flex;
 }
 
 .hero::before {
@@ -279,67 +284,34 @@ header img{
   z-index: 1;
 }
 
-/* Slides wrapper */
-.hero-slides {
-  height: 100%;
-  /* position: relative; */
-  z-index: 2;
-}
-
-/* Each slide flexbox */
-.hero-slide {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  opacity: 0;
-  transition: all 0.7s ease-in-out;
-  padding: 4rem 5%;
-}
-
-.hero-slide .hero-content {
+.hero-content{
   position: relative;
-  left: 50%;
-  transition: all 0.7s ease-in-out;
+  z-index: 10;
+  margin-block-start: 10rem;
+  flex-basis: 50%;
 }
 
-.hero-slide.active {
-  opacity: 1;
-  z-index: 5;
-}
-
-.hero-slide.active .hero-content {
-  left: 0;
-}
-
-/* Text area */
-.hero-content {
-  flex: 1;
-  color: var(--plain-color);
-}
-
-.hero-content h1 {
+.hero h1 {
   font-size: var(--h1font-size);
   font-weight: var(--h1font-weight);
   line-height: 4rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color2);
 }
 
-.hero-content p {
+.hero p {
   font-size: var(--pfont-size);
   margin-bottom: 2rem;
+  color: white;
 }
 
 /* CTA buttons */
-.cta-div {
+.hero-cta, .cta {
   display: flex;
   gap: 1.5rem;
 }
 
-.cta a {
+.hero-cta a, .cta a{
   background-color: var(--accent-color2);
   color: var(--primary-color);
   padding: 12px 18px;
@@ -348,7 +320,7 @@ header img{
   transition: all 0.3s ease;
 }
 
-.cta a:is(:hover, :focus-visible) {
+.hero-cta a:is(:hover, :focus-visible), .cta a:is(:hover, :focus-visible){
   background-color: var(--primary-color);
   color: var(--accent-color2);
 }
@@ -924,9 +896,13 @@ input::placeholder {
   font-weight: var(--h1font-weight);
 }
 
-.hero.aboutus, .hero.cctv, .hero.solar, .hero.procure{
+.hero.aboutus, .hero.cctv, .hero.solar, .hero.procure, .hero.aboutus span a{
   color: var(--plain-color);
   font-size: 1.2rem;
+}
+
+.hero.aboutus span a:is(:visited){
+  color: rgba(255, 221, 135, 0);
 }
 
 /* hero section starts here */
