@@ -1,30 +1,11 @@
-function toggleMenu(){
+function toggleMenu() {
   const navLinks = document.getElementById('nav-links');
 
-navLinks.classList.toggle('active');
+  navLinks.classList.toggle('active');
 }
 
-function modeToggle(){
+function modeToggle() {
   document.documentElement.classList.toggle('darkmode');
-}
-
-function toggleDropdown(event){
-  const dropdowns = event.target.closest('.dropdown');
-
-  if (dropdowns){
-    const dropdownContent = document.querySelector('.dropdown-content');
-    const chevronDown = document.querySelector('.fa-chevron-down');
-
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none"
-      chevronDown.style.transform = "rotate(0deg)"
-    }
-
-    else{
-      dropdownContent.style.display = "block"
-      chevronDown.style.transform = "rotate(180deg)"
-    }
-  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -44,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     dot.classList.add("dot");
 
     console.log(dot);
-    
+
     if (i === 0) dot.classList.add("active");
     dot.addEventListener("click", () => {
       currentIndex = i;
