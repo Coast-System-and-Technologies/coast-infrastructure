@@ -42,43 +42,132 @@
     <title>Coast Infrastructure</title>
   </head>
   <body>
-    <header>
-      <img src="./images/logo.png" alt="logo" class="light-logo" />
-      <img src="./images/darklogo.png" alt="darklogo" class="dark-logo" />
-      <ul id="nav-links" class="nav-links" role="list">
-        <li role="listitem"><a href="./index.html">Home</a></li>
-        <li role="listitem">
-          <a class="active" href="./about.html">About Us</a>
-        </li>
-        <li role="listitem" class="dropdown" onclick="toggleDropdown(event)">
-          <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
-          <ul class="dropdown-content" role="list">
-            <li class="dropdown-menu" role="listitem">
-              <a href="./solar.html">Solar Energy Solutions</a>
-            </li>
-            <li class="dropdown-menu" role="listitem">
-              <a href="./cctv.html">CCTV & Security Installations</a>
-            </li>
-            <!-- <li class="dropdown-menu" role="listitem">
-              <a href="#">Networking Configuration & Setup</a>
-            </li>
-              -->
-            <li class="dropdown-menu" role="listitem">
-              <a href="./procurement.html">Procurement & Sourcing</a>
-            </li>
-          </ul>
-        </li>
-        <li role="listitem"><a href="/contact.html">Contact us</a></li>
-        <li role="listitem"><a href="#">Projects</a></li>
-        <li role="listitem"><a href="#FAQs">FAQs</a></li>
-      </ul>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header data-aos="fade-down" data-aos-duration="600">
+      <img
+        src="./images/logo.png"
+        alt="Coast Infrastructure Systems logo"
+        class="light-logo"
+        width="160"
+        height="44"
+        decoding="async"
+      />
+      <img
+        src="./images/darklogo.png"
+        alt="Coast Infrastructure Systems logo"
+        class="dark-logo"
+        width="160"
+        height="44"
+        decoding="async"
+      />
+
+      <nav aria-label="Primary navigation">
+        <ul id="nav-links" class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a class="active" href="./about.html">About Us</a></li>
+          <li class="dropdown">
+            <button
+              id="servicesToggle"
+              class="dropdown-toggle"
+              aria-expanded="false"
+              aria-controls="services-menu"
+            >
+              Services
+              <i
+                class="service-icon fa-solid fa-chevron-down"
+                aria-hidden="true"
+              ></i>
+            </button>
+            <ul
+              id="services-menu"
+              class="dropdown-content"
+              role="menu"
+              aria-label="Services"
+            >
+              <li
+                class="dropdown-menu"
+                role="none"
+                data-aos="fade-right"
+                data-aos-delay="0"
+              >
+                <a role="menuitem" href="./printer.html"
+                  >Printer Repair &amp; Maintenance</a
+                >
+              </li>
+              <li
+                class="dropdown-menu"
+                role="none"
+                data-aos="fade-right"
+                data-aos-delay="60"
+              >
+                <a role="menuitem" href="./mps.html"
+                  >Managed Print Services (MPS) &amp; Device Leasing</a
+                >
+              </li>
+              <li
+                class="dropdown-menu"
+                role="none"
+                data-aos="fade-right"
+                data-aos-delay="120"
+              >
+                <a role="menuitem" href="./solar.html"
+                  >Solar Energy Solutions</a
+                >
+              </li>
+              <li
+                class="dropdown-menu"
+                role="none"
+                data-aos="fade-right"
+                data-aos-delay="180"
+              >
+                <a role="menuitem" href="./cctv.html"
+                  >CCTV &amp; Security Installations</a
+                >
+              </li>
+              <li
+                class="dropdown-menu"
+                role="none"
+                data-aos="fade-right"
+                data-aos-delay="240"
+              >
+                <a role="menuitem" href="#"
+                  >Networking Configuration &amp; Setup</a
+                >
+              </li>
+              <li
+                class="dropdown-menu"
+                role="none"
+                data-aos="fade-right"
+                data-aos-delay="300"
+              >
+                <a role="menuitem" href="./procurement.html"
+                  >Procurement &amp; Sourcing</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="./contact.html">Contact us</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="#FAQs">FAQs</a></li>
+        </ul>
+      </nav>
+
       <div class="side-icons">
-        <a href="#" class="cta-btn">Request a quote</a>
-        <div class="mode-toggle" onclick="modeToggle()">
-          <i class="fa-solid fa-moon moon"></i>
-          <i class="fa-solid fa-sun sun"></i>
+        <a href="./quotation.html" class="cta-btn" data-aos="fade-up"
+          >Request a quote</a
+        >
+        <div
+          class="mode-toggle"
+          onclick="modeToggle()"
+          aria-label="Toggle color mode"
+        >
+          <i class="fa-solid fa-moon moon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun sun" aria-hidden="true"></i>
         </div>
-        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="hamburger" onclick="toggleMenu()" aria-label="Open Menu">
+          &#9776;
+        </div>
       </div>
     </header>
 
