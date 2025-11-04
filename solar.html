@@ -358,87 +358,197 @@
       </div>
     </section>
 
-    <footer>
+    <footer data-aos="fade" data-aos-duration="600">
       <div class="footer-header">
-        <img src="./images/darklogo.png" alt="logo" />
+        <h3>Newsletter</h3>
         <div class="subscribe">
-          <form>
+          <form action="/subscribe" method="post">
             <h4>Subscribe now</h4>
-            <input name="email" type="email" placeholder="Email" />
-            <button type="submit"><a href="#">Subscribe</a></button>
+            <label for="email" class="sr-only">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+            <button type="submit">Subscribe</button>
           </form>
         </div>
       </div>
 
       <div class="footer-content">
         <div class="about">
-          <h4>About</h4>
+          <h4>Company</h4>
+          <img
+            src="./images/darklogo.png"
+            alt="Coast Infrastructure Systems logo"
+            width="160"
+            height="44"
+            loading="lazy"
+            decoding="async"
+          />
           <p>Reliable infrastructure, power, and security solutions</p>
           <p>Member of the Coast Systems Group.</p>
-          <p>Serving homes, SME's, and enterprises across Nigeria.</p>
+          <p>Serving Enterprises, SME's, and Homes across Nigeria.</p>
         </div>
 
         <div class="links">
           <h4>Links</h4>
-          <ul class="link-list" role="list">
-            <li role="listitem"><a href="#">About Us</a></li>
-            <li role="listitem"><a href="#">Service</a></li>
-            <li role="listitem"><a href="#">Contact us</a></li>
-            <li role="listitem"><a href="#">Project</a></li>
-            <li role="listitem"><a href="#">FAQs</a></li>
+          <ul class="link-list">
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="#FAQs">FAQs</a></li>
+            <li><a href="./quotation.html">Request a Free Quote</a></li>
+            <li>
+              <a href="./quotation.html?type=mps">Request an MPS Quote</a>
+            </li>
           </ul>
         </div>
 
         <div class="working-hours">
-          <h4>Working Hours</h4>
-          <ul class="hours" role="list">
-            <li role="listitem"><span>Mon-Fri:</span> 9:00 AM - 6:00 PM</li>
-            <li role="listitem"><span>Sat-Sun:</span> 8:00 AM - 4:00PM</li>
-            <li role="listitem"><span>Response Time:</span> Within 24hrs</li>
+          <h4>Our Services</h4>
+          <ul class="link-list">
+            <li><a href="./solar.html">Solar Energy Solutions</a></li>
+            <li>
+              <a href="./printer.html">Printers Repair and Maintenance</a>
+            </li>
+            <li>
+              <a href="./mps.html"
+                >Managed Print Services &amp; Device Leasing</a
+              >
+            </li>
+            <li><a href="./cctv.html">CCTV &amp; Security Installations</a></li>
+            <li><a href="#">Networking Configuration &amp; Setup</a></li>
+            <li><a href="./procurement.html">Procurement &amp; Sourcing</a></li>
           </ul>
         </div>
 
         <div class="get-in-touch">
           <h4>Get in Touch</h4>
-          <ul class="contact" role="list">
-            <li role="listitem">
-              <i class="fa-solid fa-location-dot"></i>
+          <ul class="contact">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
               <span>Address: </span> Ibadan, Oyo state, Nigeria
             </li>
-            <li role="listitem">
-              <i class="fa-solid fa-envelope"></i>
-              <span>Email: </span> info@coastinfra.com
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <span>Email: </span>
+              <a href="mailto:hi@coastinfrastructure.com.ng"
+                >hello@coastinfrastructure.com.ng</a
+              >
             </li>
-            <li role="listitem">
-              <i class="fa-solid fa-phone"></i>
-              <span>Phone: </span> +234 807 299 1328
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <span>Phone: </span>
+              <a href="tel:+2349067633729">+234 906 763 3729</a>
             </li>
-            <li role="listitem">
-              <i class="fa-brands fa-whatsapp"></i>
-              <span>WhatsApp: </span> +234 807 299 1328
+            <li>
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              <span>WhatsApp: </span>
+              <a href="https://wa.me/2349067633729">+234 906 763 3729</a>
             </li>
+            <li><span>Mon-Fri:</span> 9:00 AM - 5:00 PM</li>
+            <li><span>Response Time:</span> Within 24hrs</li>
           </ul>
-          <span>Domain Services & Procurement Available Nationwide</span>
         </div>
       </div>
 
-      <div class="media-links">
-        <span
-          ><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span
-        ><span
-          ><a href="#"><i class="fa-brands fa-x-twitter"></i></a></span
-        ><span
-          ><a href="#"><i class="fa-brands fa-instagram"></i></a></span
-        ><span
-          ><a href="#"><i class="fa-brands fa-linkedin-in"></i></a
-        ></span>
-      </div>
+      <ul class="media-links">
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=61582789742908#"
+            ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
+            ><span class="sr-only">Facebook</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-brands fa-x-twitter" aria-hidden="true"></i
+            ><span class="sr-only">X (Twitter)</span></a
+          >
+        </li>
+        <li>
+          <a href="https://www.instagram.com/coast_infrastructure"
+            ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+            ><span class="sr-only">Instagram</span></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/company/coast-infrastructure-systems-limited"
+            ><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i
+            ><span class="sr-only">LinkedIn</span></a
+          >
+        </li>
+      </ul>
 
-      <div class="footer-copyright">
-        <h6>Copyright 2025 Powered by CRT</h6>
-      </div>
+      <p class="footer-copyright">
+        &COPY; 2025 by Coast System and Technologies all rights reserved
+      </p>
     </footer>
+
+    <!-- Scripts -->
+    <script src="./js/script.js" defer></script>
+    <script
+      src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
+      defer
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+
+    <script>
+      // Respect reduced-motion and smaller screens
+      const reduceMotion = () =>
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+        window.innerWidth < 768;
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // Accessible dropdown behavior
+        const toggle = document.getElementById("servicesToggle");
+        const menu = document.getElementById("services-menu");
+
+        function closeMenu() {
+          toggle.setAttribute("aria-expanded", "false");
+          menu.classList.remove("open");
+        }
+        function openMenu() {
+          toggle.setAttribute("aria-expanded", "true");
+          menu.classList.add("open");
+        }
+        function toggleMenuA11y() {
+          const isOpen = toggle.getAttribute("aria-expanded") === "true";
+          isOpen ? closeMenu() : openMenu();
+        }
+
+        toggle.addEventListener("click", (e) => {
+          e.stopPropagation();
+          toggleMenuA11y();
+        });
+
+        // Close on outside click / Escape
+        document.addEventListener("click", (e) => {
+          if (!menu.contains(e.target) && e.target !== toggle) {
+            closeMenu();
+          }
+        });
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closeMenu();
+        });
+
+        // AOS init
+        AOS.init({
+          duration: 500,
+          easing: "ease-out-cubic",
+          offset: 80,
+          once: true,
+          anchorPlacement: "top-bottom",
+          disable: reduceMotion,
+        });
+      });
+
+      window.addEventListener("load", () =>
+        setTimeout(() => AOS.refresh(), 300)
+      );
+    </script>
   </body>
-  <script src="./js/script.js"></script>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </html>
