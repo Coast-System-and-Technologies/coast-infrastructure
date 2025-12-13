@@ -1,78 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coast Infrastructure Systems</title>
 
-    <!-- Base styles -->
-    <link rel="stylesheet" href="./css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coast Infrastructure Systems</title>
 
-    <!-- Fonts & Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- Base styles -->
+  <link rel="stylesheet" href="./css/style.css" />
 
-    <!-- Flickity -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+  <!-- Flickity -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
 
-    <!-- AOS (Animate On Scroll) -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon/site.webmanifest" />
 
-    <!-- SEO Essentials -->
-    <meta
-      name="description"
-      content="Coast Infrastructure Systems provides solar energy, CCTV & security, networking, procurement, printer repair, and managed print services across Nigeria. Reliable power, protection, and connectivity."
-    />
-    <link rel="canonical" href="https://www.coastinfrastructure.com.ng/" />
-    <meta property="og:title" content="Coast Infrastructure Systems" />
-    <meta
-      property="og:description"
-      content="Power, protection, and connectivity for homes, SMEs, and enterprises."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.coastinfrastructure.com.ng/" />
-    <meta
-      property="og:image"
-      content="https://www.coastinfrastructure.com.ng/images/og-hero.jpg"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
+  <!-- AOS (Animate On Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
-    <!-- LocalBusiness Schema -->
-    <script type="application/ld+json">
+  <!-- SEO Essentials -->
+  <meta name="description"
+    content="Coast Infrastructure Systems provides solar energy, CCTV & security, networking, procurement, printer repair, and managed print services across Nigeria. Reliable power, protection, and connectivity." />
+  <link rel="canonical" href="https://www.coastinfrastructure.com.ng/" />
+  <meta property="og:title" content="Coast Infrastructure Systems" />
+  <meta property="og:description" content="Power, protection, and connectivity for homes, SMEs, and enterprises." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.coastinfrastructure.com.ng/" />
+  <meta property="og:image" content="https://www.coastinfrastructure.com.ng/images/og-hero.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
@@ -100,776 +69,560 @@
       }
     </script>
 
-    <style>
-      /* Optional: basic skip-link utility (feel free to move into your CSS) */
-      .skip-link {
-        position: absolute;
-        left: -9999px;
-        top: auto;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-      }
-      .skip-link:focus {
-        position: static;
-        width: auto;
-        height: auto;
-        padding: 0.5rem 0.75rem;
-        background: #111;
-        color: #fff;
-        z-index: 1000;
-      }
-    </style>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to main content</a>
+  <style>
+    /* Optional: basic skip-link utility (feel free to move into your CSS) */
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
 
-    <header data-aos="fade-down" data-aos-duration="600">
-      <img
-        src="./images/logo.png"
-        alt="Coast Infrastructure Systems logo"
-        class="light-logo"
-        width="160"
-        height="44"
-        decoding="async"
-      />
-      <img
-        src="./images/darklogo.png"
-        alt="Coast Infrastructure Systems logo"
-        class="dark-logo"
-        width="160"
-        height="44"
-        decoding="async"
-      />
+    .skip-link:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      padding: 0.5rem 0.75rem;
+      background: #111;
+      color: #fff;
+      z-index: 1000;
+    }
+  </style>
+</head>
 
-      <nav aria-label="Primary navigation">
-        <ul id="nav-links" class="nav-links">
-          <li><a class="active" href="./index.html">Home</a></li>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header data-aos="fade-down" data-aos-duration="600">
+    <img src="./images/logo.png" alt="Coast Infrastructure Systems logo" class="light-logo" width="160" height="44"
+      decoding="async" />
+    <img src="./images/darklogo.png" alt="Coast Infrastructure Systems logo" class="dark-logo" width="160" height="44"
+      decoding="async" />
+
+    <nav aria-label="Primary navigation">
+      <ul id="nav-links" class="nav-links">
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li class="dropdown">
+          <button id="servicesToggle" class="dropdown-toggle" aria-expanded="false" aria-controls="services-menu">
+            Services
+            <i class="service-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <ul id="services-menu" class="dropdown-content" role="menu" aria-label="Services">
+            <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="0">
+              <a role="menuitem" href="./printer.html">Printer Repair &amp; Maintenance</a>
+            </li>
+            <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="60">
+              <a role="menuitem" href="./mps.html">Managed Print Services (MPS) &amp; Device Leasing</a>
+            </li>
+            <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="120">
+              <a role="menuitem" href="./solar.html">Solar Energy Solutions</a>
+            </li>
+            <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="180">
+              <a role="menuitem" href="./cctv.html">CCTV &amp; Security Installations</a>
+            </li>
+            <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="240">
+              <a role="menuitem" href="#">Networking Configuration &amp; Setup</a>
+            </li>
+            <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="300">
+              <a role="menuitem" href="./procurement.html">Procurement &amp; Sourcing</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="./contact.html">Contact us</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="#FAQs">FAQs</a></li>
+      </ul>
+    </nav>
+
+    <div class="side-icons">
+      <a href="./quotation.html" class="cta-btn" data-aos="fade-up">Request a quote</a>
+      <div class="mode-toggle" onclick="modeToggle()" aria-label="Toggle color mode">
+        <i class="fa-solid fa-moon moon" aria-hidden="true"></i>
+        <i class="fa-solid fa-sun sun" aria-hidden="true"></i>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()" aria-label="Open Menu">
+        &#9776;
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero home">
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
+        <h1>Wiring Africa's Future.</h1>
+        <p>
+          Power, protection, and connectivity for homes, SMEs, and
+          enterprises—delivered by one reliable team.
+        </p>
+
+        <div class="hero-cta">
+          <a href="./quotation.html" data-aos="fade-up" data-aos-delay="60">Request a Free Quote</a>
+          <a href="./contact.html#visit" data-aos="fade-up" data-aos-delay="120">Talk to an Expert</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <h2 data-aos="fade-up">SERVICE HIGHLIGHTS</h2>
+      <div class="services-text" data-aos="fade-up" data-aos-delay="60">
+        <p>Smart infrastructure for Power, Protection, and Digital Reach</p>
+        <div class="cta">
+          <a href="#services" data-aos="fade-left" data-aos-delay="120">
+            Explore All Services
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="service-cards" aria-label="Service list">
+        <div class="cards" data-aos="fade-up" data-aos-delay="0">
+          <img src="./images/servicecards1.png" alt="Solar Energy Solutions" loading="lazy" decoding="async" width="640"
+            height="420" />
+          <div class="card-text">
+            <span><i class="fa-solid fa-solar-panel" aria-hidden="true"></i></span>
+            <div>
+              <a href="./solar.html">
+                <h3>Solar Energy Solutions</h3>
+              </a>
+              <p>
+                Reliable, cost-saving solar systems tailored for homes and
+                businesses.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards" data-aos="fade-up" data-aos-delay="60">
+          <img src="./images/servicecards2.png" alt="CCTV & Security Installations" loading="lazy" decoding="async"
+            width="640" height="420" />
+          <div class="card-text">
+            <span><i class="fa-solid fa-video" aria-hidden="true"></i></span>
+            <div>
+              <a href="./cctv.html">
+                <h3>CCTV &amp; Security Installations</h3>
+              </a>
+              <p>
+                Smart surveillance setups to monitor and protect what matters
+                most.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards" data-aos="fade-up" data-aos-delay="120">
+          <img src="./images/servicecards3.png" alt="Networking & Configuration" loading="lazy" decoding="async"
+            width="640" height="420" />
+          <div class="card-text">
+            <span><i class="fa-solid fa-network-wired" aria-hidden="true"></i></span>
+            <div>
+              <a href="#">
+                <h3>Networking &amp; Configuration</h3>
+              </a>
+              <p>
+                Seamless connectivity solutions for homes, offices and growing
+                teams.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards" data-aos="fade-up" data-aos-delay="180">
+          <img src="./images/servicecards5.png" alt="Procurement & Sourcing" loading="lazy" decoding="async" width="640"
+            height="420" />
+          <div class="card-text">
+            <span><i class="fa-solid fa-handshake" aria-hidden="true"></i></span>
+            <div>
+              <a href="./procurement.html">
+                <h3>Procurement &amp; Sourcing</h3>
+              </a>
+              <p>
+                We find, negotiate and deliver your tech and infrastructure
+                needs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEW: Printer Repair & Maintenance card -->
+        <div class="cards" data-aos="fade-up" data-aos-delay="240">
+          <img src="./images/servicecards6.png" alt="Printer Repair & Maintenance" loading="lazy" decoding="async"
+            width="640" height="420" />
+          <div class="card-text">
+            <span><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></span>
+            <div>
+              <a href="./printer.html">
+                <h3>Printer Repair &amp; Maintenance</h3>
+              </a>
+              <p>
+                Break-fix, servicing, and preventive maintenance for office
+                printers.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MPS card -->
+        <div class="cards" data-aos="fade-up" data-aos-delay="300">
+          <img src="./images/servicecards4.png" alt="Managed Print Services" loading="lazy" decoding="async" width="640"
+            height="420" />
+          <div class="card-text">
+            <span><i class="fa-solid fa-print" aria-hidden="true"></i></span>
+            <div>
+              <a href="./mps.html">
+                <h3>Managed Print Services &amp; Device Leasing</h3>
+              </a>
+              <p>
+                All-in-one printers, toner &amp; on-site support with per-page
+                billing.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /MPS card -->
+      </div>
+    </section>
+
+    <section class="our-impact" aria-label="Impact metrics">
+      <div class="our-impact-text" data-aos="fade-right">
+        <h2>Our Impact So Far</h2>
+        <p>
+          From powering rural homes to securing urban businesses, our work
+          speaks through every panel installed and every system configured.
+          <br />
+          We're driven by results, not promises—and our numbers prove it
+        </p>
+      </div>
+      <ul class="works-done">
+        <li class="work-cards" data-aos="zoom-in" data-aos-delay="0">
+          <h2>30+</h2>
+          <p>Solar Projects Installed</p>
+        </li>
+        <li class="work-cards" data-aos="zoom-in" data-aos-delay="80">
+          <h2>50+</h2>
+          <p>CCTV Systems Deployed</p>
+        </li>
+        <li class="work-cards" data-aos="zoom-in" data-aos-delay="160">
+          <h2>100+</h2>
+          <p>Domains Registered</p>
+        </li>
+        <li class="work-cards" data-aos="zoom-in" data-aos-delay="240">
+          <h2>100+</h2>
+          <p>Procured items Delivered</p>
+        </li>
+        <li class="work-cards" data-aos="zoom-in" data-aos-delay="320">
+          <h2>5</h2>
+          <p>Industry Partnerships</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="our-partners" data-aos="fade-up" aria-label="Partners carousel">
+      <div class="our-partners-text">
+        <h2>Our Trusted Partners</h2>
+        <p>Just some of our leading brands that trust Coast Infrastructure</p>
+      </div>
+
+      <!-- Flickity HTML init -->
+      <div class="carousel" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false, "pageDots": false }'
+        aria-label="Partner logos">
+        <div class="carousel-cell">
+          <span><i class="fa-brands fa-microsoft" aria-hidden="true"></i>
+            microsoft</span>
+        </div>
+        <div class="carousel-cell">
+          <span><i class="fa-brands fa-google" aria-hidden="true"></i>
+            google</span>
+        </div>
+        <div class="carousel-cell">
+          <span><i class="fa-brands fa-microsoft" aria-hidden="true"></i>
+            microsoft</span>
+        </div>
+        <div class="carousel-cell">
+          <span><i class="fa-brands fa-google" aria-hidden="true"></i>
+            google</span>
+        </div>
+        <div class="carousel-cell">
+          <span><i class="fa-brands fa-microsoft" aria-hidden="true"></i>
+            microsoft</span>
+        </div>
+        <div class="carousel-cell">
+          <span><i class="fa-brands fa-microsoft" aria-hidden="true"></i>
+            microsoft</span>
+        </div>
+        <div class="carousel-cell">
+          <span><i class="fa-brands fa-google" aria-hidden="true"></i>
+            google</span>
+        </div>
+        <div class="carousel-cell">
+          <span><i class="fa-brands fa-microsoft" aria-hidden="true"></i>
+            microsoft</span>
+        </div>
+        <div class="carousel-cell">
+          <span><i class="fa-brands fa-google" aria-hidden="true"></i>
+            google</span>
+        </div>
+        <div class="carousel-cell">
+          <span><i class="fa-brands fa-microsoft" aria-hidden="true"></i>
+            microsoft</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" data-aos="fade-up" id="FAQs" aria-label="Testimonials">
+      <div class="testimonial-head">
+        <h3>Testimonials</h3>
+        <h2>Our Happy Customers</h2>
+      </div>
+      <div class="carousel1" data-flickity='{"initialIndex": 2, "wrapAround": true}' aria-label="Customer testimonials">
+        <div class="carousel-cell two" data-aos="fade-up" data-aos-delay="0">
+          <div>
+            <span class="quote"><i class="fa-solid fa-quote-left" aria-hidden="true"></i></span>
+            <p>
+              They installed our solar system and cctv within 3days, and it's
+              been perfect since. Highly Professional.
+            </p>
+            <span class="user"><i class="fa-solid fa-circle-user" aria-hidden="true"></i></span>
+            <h4>Mrs. Adebayo</h4>
+            <p>Ibadan</p>
+          </div>
+        </div>
+        <div class="carousel-cell two" data-aos="fade-up" data-aos-delay="60">
+          <div>
+            <span class="quote"><i class="fa-solid fa-quote-left" aria-hidden="true"></i></span>
+            <p>
+              They installed our solar system and cctv within 3days, and it's
+              been perfect since. Highly Professional.
+            </p>
+            <span class="user"><i class="fa-solid fa-circle-user" aria-hidden="true"></i></span>
+            <h4>Mrs. Adebayo</h4>
+            <p>Ibadan</p>
+          </div>
+        </div>
+        <div class="carousel-cell two" data-aos="fade-up" data-aos-delay="120">
+          <div>
+            <span class="quote"><i class="fa-solid fa-quote-left" aria-hidden="true"></i></span>
+            <p>
+              They installed our solar system and cctv within 3days, and it's
+              been perfect since. Highly Professional.
+            </p>
+            <span class="user"><i class="fa-solid fa-circle-user" aria-hidden="true"></i></span>
+            <h4>Mrs. Adebayo</h4>
+            <p>Ibadan</p>
+          </div>
+        </div>
+        <div class="carousel-cell two" data-aos="fade-up" data-aos-delay="180">
+          <div>
+            <span class="quote"><i class="fa-solid fa-quote-left" aria-hidden="true"></i></span>
+            <p>
+              They installed our solar system and cctv within 3days, and it's
+              been perfect since. Highly Professional.
+            </p>
+            <span class="user"><i class="fa-solid fa-circle-user" aria-hidden="true"></i></span>
+            <h4>Mrs. Adebayo</h4>
+            <p>Ibadan</p>
+          </div>
+        </div>
+        <div class="carousel-cell two" data-aos="fade-up" data-aos-delay="240">
+          <div>
+            <span class="quote"><i class="fa-solid fa-quote-left" aria-hidden="true"></i></span>
+            <p>
+              They installed our solar system and cctv within 3days, and it's
+              been perfect since. Highly Professional.
+            </p>
+            <span class="user"><i class="fa-solid fa-circle-user" aria-hidden="true"></i></span>
+            <h4>Mrs. Adebayo</h4>
+            <p>Ibadan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="get-started">
+      <div class="get-started-text" data-aos="fade-up">
+        <p>Ready to power up your space or brand?</p>
+        <h3>Let's get you started.</h3>
+      </div>
+      <div class="bottom-cta">
+        <div class="cta" data-aos="fade-up" data-aos-delay="0">
+          <a href="./quotation.html">Request a Free Quote</a>
+        </div>
+        <div class="cta" data-aos="fade-up" data-aos-delay="80">
+          <a href="./contact.html#visit">Book a Site Visit</a>
+        </div>
+        <div class="cta" data-aos="fade-up" data-aos-delay="160">
+          <a href="https://wa.me/2349067633729">Chat with Us on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-aos="fade" data-aos-duration="600">
+    <div class="footer-header">
+      <h3>Newsletter</h3>
+      <div class="subscribe">
+        <form action="/subscribe" method="post">
+          <h4>Subscribe now</h4>
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-content">
+      <div class="about">
+        <h4>Company</h4>
+        <img src="./images/darklogo.png" alt="Coast Infrastructure Systems logo" width="160" height="44" loading="lazy"
+          decoding="async" />
+        <p>Reliable infrastructure, power, and security solutions</p>
+        <p>Member of the Coast Systems Group.</p>
+        <p>Serving Enterprises, SME's, and Homes across Nigeria.</p>
+      </div>
+
+      <div class="links">
+        <h4>Links</h4>
+        <ul class="link-list">
           <li><a href="./about.html">About Us</a></li>
-          <li class="dropdown">
-            <button
-              id="servicesToggle"
-              class="dropdown-toggle"
-              aria-expanded="false"
-              aria-controls="services-menu"
-            >
-              Services
-              <i
-                class="service-icon fa-solid fa-chevron-down"
-                aria-hidden="true"
-              ></i>
-            </button>
-            <ul
-              id="services-menu"
-              class="dropdown-content"
-              role="menu"
-              aria-label="Services"
-            >
-              <li
-                class="dropdown-menu"
-                role="none"
-                data-aos="fade-right"
-                data-aos-delay="0"
-              >
-                <a role="menuitem" href="./printer.html"
-                  >Printer Repair &amp; Maintenance</a
-                >
-              </li>
-              <li
-                class="dropdown-menu"
-                role="none"
-                data-aos="fade-right"
-                data-aos-delay="60"
-              >
-                <a role="menuitem" href="./mps.html"
-                  >Managed Print Services (MPS) &amp; Device Leasing</a
-                >
-              </li>
-              <li
-                class="dropdown-menu"
-                role="none"
-                data-aos="fade-right"
-                data-aos-delay="120"
-              >
-                <a role="menuitem" href="./solar.html"
-                  >Solar Energy Solutions</a
-                >
-              </li>
-              <li
-                class="dropdown-menu"
-                role="none"
-                data-aos="fade-right"
-                data-aos-delay="180"
-              >
-                <a role="menuitem" href="./cctv.html"
-                  >CCTV &amp; Security Installations</a
-                >
-              </li>
-              <li
-                class="dropdown-menu"
-                role="none"
-                data-aos="fade-right"
-                data-aos-delay="240"
-              >
-                <a role="menuitem" href="#"
-                  >Networking Configuration &amp; Setup</a
-                >
-              </li>
-              <li
-                class="dropdown-menu"
-                role="none"
-                data-aos="fade-right"
-                data-aos-delay="300"
-              >
-                <a role="menuitem" href="./procurement.html"
-                  >Procurement &amp; Sourcing</a
-                >
-              </li>
-            </ul>
-          </li>
           <li><a href="./contact.html">Contact us</a></li>
           <li><a href="./projects.html">Projects</a></li>
           <li><a href="#FAQs">FAQs</a></li>
-        </ul>
-      </nav>
-
-      <div class="side-icons">
-        <a href="./quotation.html" class="cta-btn" data-aos="fade-up"
-          >Request a quote</a
-        >
-        <div
-          class="mode-toggle"
-          onclick="modeToggle()"
-          aria-label="Toggle color mode"
-        >
-          <i class="fa-solid fa-moon moon" aria-hidden="true"></i>
-          <i class="fa-solid fa-sun sun" aria-hidden="true"></i>
-        </div>
-        <div class="hamburger" onclick="toggleMenu()" aria-label="Open Menu">
-          &#9776;
-        </div>
-      </div>
-    </header>
-
-    <main id="main">
-      <section class="hero home">
-        <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
-          <h1>Wiring Africa's Future.</h1>
-          <p>
-            Power, protection, and connectivity for homes, SMEs, and
-            enterprises—delivered by one reliable team.
-          </p>
-
-          <div class="hero-cta">
-            <a href="./quotation.html" data-aos="fade-up" data-aos-delay="60"
-              >Request a Free Quote</a
-            >
-            <a
-              href="./contact.html#visit"
-              data-aos="fade-up"
-              data-aos-delay="120"
-              >Talk to an Expert</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="services">
-        <h2 data-aos="fade-up">SERVICE HIGHLIGHTS</h2>
-        <div class="services-text" data-aos="fade-up" data-aos-delay="60">
-          <p>Smart infrastructure for Power, Protection, and Digital Reach</p>
-          <div class="cta">
-            <a href="#services" data-aos="fade-left" data-aos-delay="120">
-              Explore All Services
-              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="service-cards" aria-label="Service list">
-          <div class="cards" data-aos="fade-up" data-aos-delay="0">
-            <img
-              src="./images/servicecards1.jpg"
-              alt="Solar Energy Solutions"
-              loading="lazy"
-              decoding="async"
-              width="640"
-              height="420"
-            />
-            <div class="card-text">
-              <span
-                ><i class="fa-solid fa-solar-panel" aria-hidden="true"></i
-              ></span>
-              <div>
-                <a href="./solar.html"><h3>Solar Energy Solutions</h3></a>
-                <p>
-                  Reliable, cost-saving solar systems tailored for homes and
-                  businesses.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="cards" data-aos="fade-up" data-aos-delay="60">
-            <img
-              src="./images/servicecards2.jpg"
-              alt="CCTV & Security Installations"
-              loading="lazy"
-              decoding="async"
-              width="640"
-              height="420"
-            />
-            <div class="card-text">
-              <span><i class="fa-solid fa-video" aria-hidden="true"></i></span>
-              <div>
-                <a href="./cctv.html"
-                  ><h3>CCTV &amp; Security Installations</h3></a
-                >
-                <p>
-                  Smart surveillance setups to monitor and protect what matters
-                  most.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="cards" data-aos="fade-up" data-aos-delay="120">
-            <img
-              src="./images/servicecards3.jpg"
-              alt="Networking & Configuration"
-              loading="lazy"
-              decoding="async"
-              width="640"
-              height="420"
-            />
-            <div class="card-text">
-              <span
-                ><i class="fa-solid fa-network-wired" aria-hidden="true"></i
-              ></span>
-              <div>
-                <a href="#"><h3>Networking &amp; Configuration</h3></a>
-                <p>
-                  Seamless connectivity solutions for homes, offices and growing
-                  teams.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="cards" data-aos="fade-up" data-aos-delay="180">
-            <img
-              src="./images/servicecards5.jpg"
-              alt="Procurement & Sourcing"
-              loading="lazy"
-              decoding="async"
-              width="640"
-              height="420"
-            />
-            <div class="card-text">
-              <span
-                ><i class="fa-solid fa-handshake" aria-hidden="true"></i
-              ></span>
-              <div>
-                <a href="./procurement.html"
-                  ><h3>Procurement &amp; Sourcing</h3></a
-                >
-                <p>
-                  We find, negotiate and deliver your tech and infrastructure
-                  needs.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- NEW: Printer Repair & Maintenance card -->
-          <div class="cards" data-aos="fade-up" data-aos-delay="240">
-            <img
-              src="./images/servicecards6.jpg"
-              alt="Printer Repair & Maintenance"
-              loading="lazy"
-              decoding="async"
-              width="640"
-              height="420"
-            />
-            <div class="card-text">
-              <span
-                ><i
-                  class="fa-solid fa-screwdriver-wrench"
-                  aria-hidden="true"
-                ></i
-              ></span>
-              <div>
-                <a href="./printer.html"
-                  ><h3>Printer Repair &amp; Maintenance</h3></a
-                >
-                <p>
-                  Break-fix, servicing, and preventive maintenance for office
-                  printers.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- MPS card -->
-          <div class="cards" data-aos="fade-up" data-aos-delay="300">
-            <img
-              src="./images/servicecards4.jpg"
-              alt="Managed Print Services"
-              loading="lazy"
-              decoding="async"
-              width="640"
-              height="420"
-            />
-            <div class="card-text">
-              <span><i class="fa-solid fa-print" aria-hidden="true"></i></span>
-              <div>
-                <a href="./mps.html"
-                  ><h3>Managed Print Services &amp; Device Leasing</h3></a
-                >
-                <p>
-                  All-in-one printers, toner &amp; on-site support with per-page
-                  billing.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- /MPS card -->
-        </div>
-      </section>
-
-      <section class="our-impact" aria-label="Impact metrics">
-        <div class="our-impact-text" data-aos="fade-right">
-          <h2>Our Impact So Far</h2>
-          <p>
-            From powering rural homes to securing urban businesses, our work
-            speaks through every panel installed and every system configured.
-            <br />
-            We're driven by results, not promises—and our numbers prove it
-          </p>
-        </div>
-        <ul class="works-done">
-          <li class="work-cards" data-aos="zoom-in" data-aos-delay="0">
-            <h2>30+</h2>
-            <p>Solar Projects Installed</p>
-          </li>
-          <li class="work-cards" data-aos="zoom-in" data-aos-delay="80">
-            <h2>50+</h2>
-            <p>CCTV Systems Deployed</p>
-          </li>
-          <li class="work-cards" data-aos="zoom-in" data-aos-delay="160">
-            <h2>100+</h2>
-            <p>Domains Registered</p>
-          </li>
-          <li class="work-cards" data-aos="zoom-in" data-aos-delay="240">
-            <h2>100+</h2>
-            <p>Procured items Delivered</p>
-          </li>
-          <li class="work-cards" data-aos="zoom-in" data-aos-delay="320">
-            <h2>5</h2>
-            <p>Industry Partnerships</p>
+          <li><a href="./quotation.html">Request a Free Quote</a></li>
+          <li>
+            <a href="./quotation.html?type=mps">Request an MPS Quote</a>
           </li>
         </ul>
-      </section>
-
-      <section
-        class="our-partners"
-        data-aos="fade-up"
-        aria-label="Partners carousel"
-      >
-        <div class="our-partners-text">
-          <h2>Our Trusted Partners</h2>
-          <p>Just some of our leading brands that trust Coast Infrastructure</p>
-        </div>
-
-        <!-- Flickity HTML init -->
-        <div
-          class="carousel"
-          data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false, "pageDots": false }'
-          aria-label="Partner logos"
-        >
-          <div class="carousel-cell">
-            <span
-              ><i class="fa-brands fa-microsoft" aria-hidden="true"></i>
-              microsoft</span
-            >
-          </div>
-          <div class="carousel-cell">
-            <span
-              ><i class="fa-brands fa-google" aria-hidden="true"></i>
-              google</span
-            >
-          </div>
-          <div class="carousel-cell">
-            <span
-              ><i class="fa-brands fa-microsoft" aria-hidden="true"></i>
-              microsoft</span
-            >
-          </div>
-          <div class="carousel-cell">
-            <span
-              ><i class="fa-brands fa-google" aria-hidden="true"></i>
-              google</span
-            >
-          </div>
-          <div class="carousel-cell">
-            <span
-              ><i class="fa-brands fa-microsoft" aria-hidden="true"></i>
-              microsoft</span
-            >
-          </div>
-          <div class="carousel-cell">
-            <span
-              ><i class="fa-brands fa-microsoft" aria-hidden="true"></i>
-              microsoft</span
-            >
-          </div>
-          <div class="carousel-cell">
-            <span
-              ><i class="fa-brands fa-google" aria-hidden="true"></i>
-              google</span
-            >
-          </div>
-          <div class="carousel-cell">
-            <span
-              ><i class="fa-brands fa-microsoft" aria-hidden="true"></i>
-              microsoft</span
-            >
-          </div>
-          <div class="carousel-cell">
-            <span
-              ><i class="fa-brands fa-google" aria-hidden="true"></i>
-              google</span
-            >
-          </div>
-          <div class="carousel-cell">
-            <span
-              ><i class="fa-brands fa-microsoft" aria-hidden="true"></i>
-              microsoft</span
-            >
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="testimonials"
-        data-aos="fade-up"
-        id="FAQs"
-        aria-label="Testimonials"
-      >
-        <div class="testimonial-head">
-          <h3>Testimonials</h3>
-          <h2>Our Happy Customers</h2>
-        </div>
-        <div
-          class="carousel1"
-          data-flickity='{"initialIndex": 2, "wrapAround": true}'
-          aria-label="Customer testimonials"
-        >
-          <div class="carousel-cell two" data-aos="fade-up" data-aos-delay="0">
-            <div>
-              <span class="quote"
-                ><i class="fa-solid fa-quote-left" aria-hidden="true"></i
-              ></span>
-              <p>
-                They installed our solar system and cctv within 3days, and it's
-                been perfect since. Highly Professional.
-              </p>
-              <span class="user"
-                ><i class="fa-solid fa-circle-user" aria-hidden="true"></i
-              ></span>
-              <h4>Mrs. Adebayo</h4>
-              <p>Ibadan</p>
-            </div>
-          </div>
-          <div class="carousel-cell two" data-aos="fade-up" data-aos-delay="60">
-            <div>
-              <span class="quote"
-                ><i class="fa-solid fa-quote-left" aria-hidden="true"></i
-              ></span>
-              <p>
-                They installed our solar system and cctv within 3days, and it's
-                been perfect since. Highly Professional.
-              </p>
-              <span class="user"
-                ><i class="fa-solid fa-circle-user" aria-hidden="true"></i
-              ></span>
-              <h4>Mrs. Adebayo</h4>
-              <p>Ibadan</p>
-            </div>
-          </div>
-          <div
-            class="carousel-cell two"
-            data-aos="fade-up"
-            data-aos-delay="120"
-          >
-            <div>
-              <span class="quote"
-                ><i class="fa-solid fa-quote-left" aria-hidden="true"></i
-              ></span>
-              <p>
-                They installed our solar system and cctv within 3days, and it's
-                been perfect since. Highly Professional.
-              </p>
-              <span class="user"
-                ><i class="fa-solid fa-circle-user" aria-hidden="true"></i
-              ></span>
-              <h4>Mrs. Adebayo</h4>
-              <p>Ibadan</p>
-            </div>
-          </div>
-          <div
-            class="carousel-cell two"
-            data-aos="fade-up"
-            data-aos-delay="180"
-          >
-            <div>
-              <span class="quote"
-                ><i class="fa-solid fa-quote-left" aria-hidden="true"></i
-              ></span>
-              <p>
-                They installed our solar system and cctv within 3days, and it's
-                been perfect since. Highly Professional.
-              </p>
-              <span class="user"
-                ><i class="fa-solid fa-circle-user" aria-hidden="true"></i
-              ></span>
-              <h4>Mrs. Adebayo</h4>
-              <p>Ibadan</p>
-            </div>
-          </div>
-          <div
-            class="carousel-cell two"
-            data-aos="fade-up"
-            data-aos-delay="240"
-          >
-            <div>
-              <span class="quote"
-                ><i class="fa-solid fa-quote-left" aria-hidden="true"></i
-              ></span>
-              <p>
-                They installed our solar system and cctv within 3days, and it's
-                been perfect since. Highly Professional.
-              </p>
-              <span class="user"
-                ><i class="fa-solid fa-circle-user" aria-hidden="true"></i
-              ></span>
-              <h4>Mrs. Adebayo</h4>
-              <p>Ibadan</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="get-started">
-        <div class="get-started-text" data-aos="fade-up">
-          <p>Ready to power up your space or brand?</p>
-          <h3>Let's get you started.</h3>
-        </div>
-        <div class="bottom-cta">
-          <div class="cta" data-aos="fade-up" data-aos-delay="0">
-            <a href="./quotation.html">Request a Free Quote</a>
-          </div>
-          <div class="cta" data-aos="fade-up" data-aos-delay="80">
-            <a href="./contact.html#visit">Book a Site Visit</a>
-          </div>
-          <div class="cta" data-aos="fade-up" data-aos-delay="160">
-            <a href="https://wa.me/2349067633729">Chat with Us on WhatsApp</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer data-aos="fade" data-aos-duration="600">
-      <div class="footer-header">
-        <h3>Newsletter</h3>
-        <div class="subscribe">
-          <form action="/subscribe" method="post">
-            <h4>Subscribe now</h4>
-            <label for="email" class="sr-only">Email</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="Email"
-              required
-            />
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
       </div>
 
-      <div class="footer-content">
-        <div class="about">
-          <h4>Company</h4>
-          <img
-            src="./images/darklogo.png"
-            alt="Coast Infrastructure Systems logo"
-            width="160"
-            height="44"
-            loading="lazy"
-            decoding="async"
-          />
-          <p>Reliable infrastructure, power, and security solutions</p>
-          <p>Member of the Coast Systems Group.</p>
-          <p>Serving Enterprises, SME's, and Homes across Nigeria.</p>
-        </div>
-
-        <div class="links">
-          <h4>Links</h4>
-          <ul class="link-list">
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./contact.html">Contact us</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="#FAQs">FAQs</a></li>
-            <li><a href="./quotation.html">Request a Free Quote</a></li>
-            <li>
-              <a href="./quotation.html?type=mps">Request an MPS Quote</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="working-hours">
-          <h4>Our Services</h4>
-          <ul class="link-list">
-            <li><a href="./solar.html">Solar Energy Solutions</a></li>
-            <li>
-              <a href="./printer.html">Printers Repair and Maintenance</a>
-            </li>
-            <li>
-              <a href="./mps.html"
-                >Managed Print Services &amp; Device Leasing</a
-              >
-            </li>
-            <li><a href="./cctv.html">CCTV &amp; Security Installations</a></li>
-            <li><a href="#">Networking Configuration &amp; Setup</a></li>
-            <li><a href="./procurement.html">Procurement &amp; Sourcing</a></li>
-          </ul>
-        </div>
-
-        <div class="get-in-touch">
-          <h4>Get in Touch</h4>
-          <ul class="contact">
-            <li>
-              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-              <span>Address: </span> Ibadan, Oyo state, Nigeria
-            </li>
-            <li>
-              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-              <span>Email: </span>
-              <a href="mailto:hi@coastinfrastructure.com.ng"
-                >hello@coastinfrastructure.com.ng</a
-              >
-            </li>
-            <li>
-              <i class="fa-solid fa-phone" aria-hidden="true"></i>
-              <span>Phone: </span>
-              <a href="tel:+2349067633729">+234 906 763 3729</a>
-            </li>
-            <li>
-              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-              <span>WhatsApp: </span>
-              <a href="https://wa.me/2349067633729">+234 906 763 3729</a>
-            </li>
-            <li><span>Mon-Fri:</span> 9:00 AM - 5:00 PM</li>
-            <li><span>Response Time:</span> Within 24hrs</li>
-          </ul>
-        </div>
+      <div class="working-hours">
+        <h4>Our Services</h4>
+        <ul class="link-list">
+          <li><a href="./solar.html">Solar Energy Solutions</a></li>
+          <li>
+            <a href="./printer.html">Printers Repair and Maintenance</a>
+          </li>
+          <li>
+            <a href="./mps.html">Managed Print Services &amp; Device Leasing</a>
+          </li>
+          <li><a href="./cctv.html">CCTV &amp; Security Installations</a></li>
+          <li><a href="#">Networking Configuration &amp; Setup</a></li>
+          <li><a href="./procurement.html">Procurement &amp; Sourcing</a></li>
+        </ul>
       </div>
 
-      <ul class="media-links">
-        <li>
-          <a href="https://www.facebook.com/profile.php?id=61582789742908#"
-            ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
-            ><span class="sr-only">Facebook</span></a
-          >
-        </li>
-        <li>
-          <a href="#"
-            ><i class="fa-brands fa-x-twitter" aria-hidden="true"></i
-            ><span class="sr-only">X (Twitter)</span></a
-          >
-        </li>
-        <li>
-          <a href="https://www.instagram.com/coast_infrastructure"
-            ><i class="fa-brands fa-instagram" aria-hidden="true"></i
-            ><span class="sr-only">Instagram</span></a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/company/coast-infrastructure-systems-limited"
-            ><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i
-            ><span class="sr-only">LinkedIn</span></a
-          >
-        </li>
-      </ul>
+      <div class="get-in-touch">
+        <h4>Get in Touch</h4>
+        <ul class="contact">
+          <li>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Address: </span> Ibadan, Oyo state, Nigeria
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span>Email: </span>
+            <a href="mailto:hi@coastinfrastructure.com.ng">hello@coastinfrastructure.com.ng</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <span>Phone: </span>
+            <a href="tel:+2349067633729">+234 906 763 3729</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span>WhatsApp: </span>
+            <a href="https://wa.me/2349067633729">+234 906 763 3729</a>
+          </li>
+          <li><span>Mon-Fri:</span> 9:00 AM - 5:00 PM</li>
+          <li><span>Response Time:</span> Within 24hrs</li>
+        </ul>
+      </div>
+    </div>
 
-      <p class="footer-copyright">
-        &COPY; 2025 by Coast System and Technologies all rights reserved
-      </p>
-    </footer>
+    <ul class="media-links">
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=61582789742908#"><i class="fa-brands fa-facebook-f"
+            aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i><span class="sr-only">X
+            (Twitter)</span></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/coast_infrastructure"><i class="fa-brands fa-instagram"
+            aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coast-infrastructure-systems-limited"><i
+            class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+      </li>
+    </ul>
 
-    <!-- Scripts -->
-    <script src="./js/script.js" defer></script>
-    <script
-      src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
-      defer
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+    <p class="footer-copyright">
+      &COPY; 2025 by Coast System and Technologies all rights reserved
+    </p>
+  </footer>
 
-    <script>
-      // Respect reduced-motion and smaller screens
-      const reduceMotion = () =>
-        window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
-        window.innerWidth < 768;
+  <!-- Scripts -->
+  <script src="./js/script.js" defer></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
 
-      document.addEventListener("DOMContentLoaded", () => {
-        // Accessible dropdown behavior
-        const toggle = document.getElementById("servicesToggle");
-        const menu = document.getElementById("services-menu");
+  <script>
+    // Respect reduced-motion and smaller screens
+    const reduceMotion = () =>
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+      window.innerWidth < 768;
 
-        function closeMenu() {
-          toggle.setAttribute("aria-expanded", "false");
-          menu.classList.remove("open");
-        }
-        function openMenu() {
-          toggle.setAttribute("aria-expanded", "true");
-          menu.classList.add("open");
-        }
-        function toggleMenuA11y() {
-          const isOpen = toggle.getAttribute("aria-expanded") === "true";
-          isOpen ? closeMenu() : openMenu();
-        }
+    document.addEventListener("DOMContentLoaded", () => {
+      // Accessible dropdown behavior
+      const toggle = document.getElementById("servicesToggle");
+      const menu = document.getElementById("services-menu");
 
-        toggle.addEventListener("click", (e) => {
-          e.stopPropagation();
-          toggleMenuA11y();
-        });
+      function closeMenu() {
+        toggle.setAttribute("aria-expanded", "false");
+        menu.classList.remove("open");
+      }
+      function openMenu() {
+        toggle.setAttribute("aria-expanded", "true");
+        menu.classList.add("open");
+      }
+      function toggleMenuA11y() {
+        const isOpen = toggle.getAttribute("aria-expanded") === "true";
+        isOpen ? closeMenu() : openMenu();
+      }
 
-        // Close on outside click / Escape
-        document.addEventListener("click", (e) => {
-          if (!menu.contains(e.target) && e.target !== toggle) {
-            closeMenu();
-          }
-        });
-        document.addEventListener("keydown", (e) => {
-          if (e.key === "Escape") closeMenu();
-        });
-
-        // AOS init
-        AOS.init({
-          duration: 500,
-          easing: "ease-out-cubic",
-          offset: 80,
-          once: true,
-          anchorPlacement: "top-bottom",
-          disable: reduceMotion,
-        });
+      toggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleMenuA11y();
       });
 
-      window.addEventListener("load", () =>
-        setTimeout(() => AOS.refresh(), 300)
-      );
-    </script>
-  </body>
+      // Close on outside click / Escape
+      document.addEventListener("click", (e) => {
+        if (!menu.contains(e.target) && e.target !== toggle) {
+          closeMenu();
+        }
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeMenu();
+      });
+
+      // AOS init
+      AOS.init({
+        duration: 500,
+        easing: "ease-out-cubic",
+        offset: 80,
+        once: true,
+        anchorPlacement: "top-bottom",
+        disable: reduceMotion,
+      });
+    });
+
+    window.addEventListener("load", () =>
+      setTimeout(() => AOS.refresh(), 300)
+    );
+  </script>
+</body>
+
 </html>

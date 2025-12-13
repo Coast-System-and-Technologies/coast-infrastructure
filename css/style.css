@@ -72,6 +72,7 @@ button,
 button:is(:hover, :focus-visible) {
   line-height: 0;
   border: 0;
+  background: none;
 }
 
 /* to remove all list decoration */
@@ -253,6 +254,7 @@ header img {
   background-color: #002147;
   color: #ffc93c !important;
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -303,6 +305,7 @@ header img {
   margin-block-start: 10rem;
   flex-basis: 50%;
 }
+
 .hero h1 {
   font-size: var(--h1font-size);
   font-weight: var(--h1font-weight);
@@ -362,9 +365,12 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-color); /* white */
-  padding: 0.5rem 1rem; /* space around dots */
-  border-radius: 2rem; /* pill shape */
+  background-color: var(--bg-color);
+  /* white */
+  padding: 0.5rem 1rem;
+  /* space around dots */
+  border-radius: 2rem;
+  /* pill shape */
   position: absolute;
   bottom: 2rem;
   left: 50%;
@@ -415,6 +421,7 @@ header img {
 .card-btn span:is(:hover, :focus-visible) {
   background-color: #bdbdbd;
 }
+
 /* hero section ends here */
 
 /****************************/
@@ -484,7 +491,8 @@ header img {
   bottom: 0.5rem;
   width: 95%;
   left: 0;
-  right: 0; /* allows margin auto to center */
+  right: 0;
+  /* allows margin auto to center */
   margin: auto;
   /* background-color: var(--primary-color); */
   text-align: center;
@@ -563,6 +571,7 @@ header img {
   font-size: var(--h2font-size);
   font-weight: var(--h2font-weight);
 }
+
 /*our-impact section ends here*/
 
 /* our partners starts here */
@@ -864,6 +873,7 @@ input::placeholder {
 .footer-content span {
   font-weight: 600;
 }
+
 .footer-content .hours {
   margin-block-start: 1rem;
 }
@@ -894,6 +904,7 @@ input::placeholder {
   color: var(--plain-color);
   text-align: center;
 }
+
 /* footer ends here */
 
 /*******************************
@@ -1020,6 +1031,7 @@ input::placeholder {
 .mission-vision .our-text {
   color: var(--plain-color);
 }
+
 /* Our mission and vision ends here */
 
 /************************************/
@@ -1037,11 +1049,9 @@ input::placeholder {
 
 .what-we-do::before {
   position: absolute;
-  background-image: radial-gradient(
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.5)
-  );
+  background-image: radial-gradient(rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5));
   inset: 0;
   content: "";
 }
@@ -1092,6 +1102,7 @@ input::placeholder {
   color: black;
   font-size: 1.2rem;
 }
+
 /* what we do ends here */
 
 /************************/
@@ -1187,6 +1198,7 @@ input::placeholder {
 .vision-content img {
   height: 7rem;
 }
+
 /* bigger vision section ends here */
 
 /* Work with us section starts here */
@@ -1227,6 +1239,7 @@ input::placeholder {
   padding-inline-end: 15px;
   font-size: 1rem;
 }
+
 /* Work with us section starts here */
 
 /* About us page ends here */
@@ -1273,6 +1286,7 @@ input::placeholder {
   font-weight: var(--h2font-weight);
   padding-block-end: 2.5rem;
 }
+
 /* keep an eye section starts here */
 
 /* security services section starts here */
@@ -1322,6 +1336,7 @@ input::placeholder {
   position: relative;
   transition: transform 0.5s ease;
 }
+
 /* security services section starts here */
 
 /* camera types section starts here */
@@ -1373,6 +1388,7 @@ input::placeholder {
   color: var(--primary-color);
   font-style: italic;
 }
+
 /* camera types section starts here */
 
 /* who we install for section starts here */
@@ -1408,6 +1424,7 @@ input::placeholder {
   padding-block-end: 1.5rem;
   font-size: 4rem;
 }
+
 /* who we install for section starts here */
 
 .what-we-do.why-coast {
@@ -1511,6 +1528,7 @@ input::placeholder {
   padding: 3rem;
   background-color: #daeaee;
 }
+
 .procure-head {
   text-align: center;
   padding-block-end: 2rem;
@@ -1670,12 +1688,10 @@ margin: left;
 }
 
 .hero.contactus::before {
-  background-image: linear-gradient(
-    120deg,
-    rgba(0, 11, 41, 0.9),
-    rgba(0, 29, 41, 0.8),
-    rgba(0, 26, 41, 0.7)
-  );
+  background-image: linear-gradient(120deg,
+      rgba(0, 11, 41, 0.9),
+      rgba(0, 29, 41, 0.8),
+      rgba(0, 26, 41, 0.7));
 }
 
 .contact-container {
@@ -1763,6 +1779,7 @@ label {
   gap: 2rem;
   width: 100%;
 }
+
 /* 
 .getintouch-buttons button{
   width: 100%;
@@ -1987,6 +2004,7 @@ label {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   /* 2.General Styling ends */
 
   /* header */
@@ -2015,16 +2033,15 @@ label {
   .hamburger {
     display: block;
   }
+
   .hero {
     padding: 1rem;
   }
 
   .hero::before {
-    background-image: radial-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    );
+    background-image: radial-gradient(rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6));
     content: "";
     inset: 0;
     position: absolute;
@@ -2037,6 +2054,7 @@ label {
     font-size: 1.5rem !important;
     margin-bottom: 0;
   }
+
   .hero p,
   .hero-cta a {
     font-size: 1rem !important;
@@ -2048,6 +2066,7 @@ label {
     flex-basis: 100%;
     margin-block-start: 4.5rem;
   }
+
   .hero-cta {
     flex-direction: column;
     justify-content: center;
@@ -2158,6 +2177,7 @@ label {
 }
 
 @media (max-width: 639px) {
+
   .sample-container,
   .ss-container,
   .process-container,
@@ -2187,15 +2207,18 @@ label {
     font-size: 2.5rem;
     padding-block: 1rem;
   }
+
   .hero p,
   .hero-cta a {
     font-size: 1.5rem;
   }
+
   .hero-content {
     width: 100%;
     text-align: center;
     flex-basis: 100%;
   }
+
   .hero-cta {
     justify-content: center;
   }
