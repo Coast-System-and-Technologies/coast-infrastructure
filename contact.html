@@ -1,395 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./images/favicon/site.webmanifest" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coast Infrastructure</title>
-  </head>
-  <body>
-    <header>
-      <img src="./images/logo.png" alt="logo" class="light-logo" />
-      <img src="./images/darklogo.png" alt="darklogo" class="dark-logo" />
-      <ul id="nav-links" class="nav-links" role="list">
-        <li role="listitem"><a href="./index.html">Home</a></li>
-        <li role="listitem"><a href="./about.html">About Us</a></li>
-        <li role="listitem" class="dropdown" onclick="toggleDropdown(event)">
-          <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
-          <ul class="dropdown-content" role="list">
-            <li class="dropdown-menu" role="listitem">
-              <a href="./solar.html">Solar Energy Solutions</a>
-            </li>
-            <li class="dropdown-menu" role="listitem">
-              <a href="./cctv.html">CCTV & Security Installations</a>
-            </li>
-            <!-- <li class="dropdown-menu" role="listitem">
+
+<head>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon/site.webmanifest" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coast Infrastructure</title>
+</head>
+
+<body>
+  <header>
+    <img src="./images/logo.png" alt="logo" class="light-logo" />
+    <img src="./images/darklogo.png" alt="darklogo" class="dark-logo" />
+    <ul id="nav-links" class="nav-links" role="list">
+      <li role="listitem"><a href="./index.html">Home</a></li>
+      <li role="listitem"><a href="./about.html">About Us</a></li>
+      <li role="listitem" class="dropdown" onclick="toggleDropdown(event)">
+        <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown-content" role="list">
+          <li class="dropdown-menu" role="listitem">
+            <a href="./solar.html">Solar Energy Solutions</a>
+          </li>
+          <li class="dropdown-menu" role="listitem">
+            <a href="./cctv.html">CCTV & Security Installations</a>
+          </li>
+          <!-- <li class="dropdown-menu" role="listitem">
               <a href="#">Networking Configuration & Setup</a>
             </li>
               -->
-            <li class="dropdown-menu" role="listitem">
-              <a href="./procurement.html">Procurement & Sourcing</a>
-            </li>
-          </ul>
-        </li>
-        <li role="listitem">
-          <a class="active" href="./contact.html">Contact us</a>
-        </li>
-        <li role="listitem"><a href="#">Projects</a></li>
-        <li role="listitem"><a href="#FAQs">FAQs</a></li>
-      </ul>
-      <div class="side-icons">
-        <a href="#" class="cta-btn">Request a quote</a>
-        <div class="mode-toggle" onclick="modeToggle()">
-          <i class="fa-solid fa-moon moon"></i>
-          <i class="fa-solid fa-sun sun"></i>
-        </div>
-        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+          <li class="dropdown-menu" role="listitem">
+            <a href="./procurement.html">Procurement & Sourcing</a>
+          </li>
+        </ul>
+      </li>
+      <li role="listitem">
+        <a class="active" href="./contact.html">Contact us</a>
+      </li>
+      <li role="listitem"><a href="#">Projects</a></li>
+      <li role="listitem"><a href="#FAQs">FAQs</a></li>
+    </ul>
+    <div class="side-icons">
+      <a href="#" class="cta-btn">Request a quote</a>
+      <div class="mode-toggle" onclick="modeToggle()">
+        <i class="fa-solid fa-moon moon"></i>
+        <i class="fa-solid fa-sun sun"></i>
       </div>
-    </header>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </div>
+  </header>
 
-    <section class="hero contactus">
-      <div>
-        <h1>Contact Us</h1>
-      </div>
-    </section>
+  <section class="hero contactus">
+    <div>
+      <h1>Contact Us</h1>
+    </div>
+  </section>
 
-    <section class="contact-container">
-      <div class="direct-contact">
-        <h2>Direct Contact</h2>
-        <div class="contacts">
-          <span><i class="fa-solid fa-location-dot"></i></span>
-          <h3>Office Address</h3>
-          <p>
-            No 35, Bola Ige way, Along Sango Eleyele Road, Ibadan 200282, Oyo
-          </p>
-        </div>
-        <div class="contacts">
-          <span><i class="fa-solid fa-phone"></i></span>
-          <h3>Phone</h3>
-          <p>+234 807 299 1328</p>
-        </div>
-        <div class="contacts">
-          <span><i class="fa-brands fa-whatsapp"></i></span>
-          <h3>WhatsApp</h3>
-          <p>+234 807 299 1328</p>
-        </div>
-        <div class="contacts">
-          <span><i class="fa-solid fa-envelope"></i></span>
-          <h3>Email</h3>
-          <a href="#">support@coastinfrastructure.com.ng</a>
-        </div>
-      </div>
-      <div class="getintouch-contact">
-        <h2>Get in <span>Touch</span></h2>
+  <section class="contact-container">
+    <div class="direct-contact">
+      <h2>Direct Contact</h2>
+      <div class="contacts">
+        <span><i class="fa-solid fa-location-dot"></i></span>
+        <h3>Office Address</h3>
         <p>
-          Whether you need a solar installation, CCTV setup, networking, domain
-          services, or procurement, our team is ready to help you build smarter,
-          safer, and more connected systems
+          36, Ladoke Akintola way, Ibadan, Oyo State, Nigeria
         </p>
-        <form class="getintouch-form">
-          <label>
-            <input type="text" name="name" placeholder="Name" required />
-          </label>
-          <label>
-            <input type="email" name="email" placeholder="Email" required />
-          </label>
-          <label>
-            <input
-              type="tel"
-              name="phone-number"
-              placeholder="Phone Number"
-              required
-            />
-          </label>
-          <select name="service" id="services">
-            <option value="" disabled selected>Service Needed</option>
-            <option value="solar">Solar Energy Solutions</option>
-            <option value="cctv">CCTV & Security Installations</option>
-            <option value="networking">Networking Configuration & Setup</option>
-            <option value="domain">Domain Name Services</option>
-            <option value="procurement">Procurement & Sourcing</option>
-          </select>
-          <textarea name="message" placeholder="Project Description"></textarea>
-          <div class="getintouch-buttons">
-            <button class="submitbtn" type="submit">
-              <a href="#">SEND</a>
-            </button>
-            <button class="requestbtn">
-              <a href="#">Request a Free Quote</a>
-            </button>
-          </div>
+      </div>
+      <div class="contacts">
+        <span><i class="fa-solid fa-phone"></i></span>
+        <h3>Phone</h3>
+        <p>+234 807 299 1328</p>
+      </div>
+      <div class="contacts">
+        <span><i class="fa-brands fa-whatsapp"></i></span>
+        <h3>WhatsApp</h3>
+        <p>+234 807 299 1328</p>
+      </div>
+      <div class="contacts">
+        <span><i class="fa-solid fa-envelope"></i></span>
+        <h3>Email</h3>
+        <a href="#">support@coastinfrastructure.com.ng</a>
+      </div>
+    </div>
+    <div class="getintouch-contact">
+      <h2>Get in <span>Touch</span></h2>
+      <p>
+        Whether you need a solar installation, CCTV setup, networking, domain
+        services, or procurement, our team is ready to help you build smarter,
+        safer, and more connected systems
+      </p>
+      <form class="getintouch-form">
+        <label>
+          <input type="text" name="name" placeholder="Name" required />
+        </label>
+        <label>
+          <input type="email" name="email" placeholder="Email" required />
+        </label>
+        <label>
+          <input type="tel" name="phone-number" placeholder="Phone Number" required />
+        </label>
+        <select name="service" id="services">
+          <option value="" disabled selected>Service Needed</option>
+          <option value="solar">Solar Energy Solutions</option>
+          <option value="cctv">CCTV & Security Installations</option>
+          <option value="networking">Networking Configuration & Setup</option>
+          <option value="domain">Domain Name Services</option>
+          <option value="procurement">Procurement & Sourcing</option>
+        </select>
+        <textarea name="message" placeholder="Project Description"></textarea>
+        <div class="getintouch-buttons">
+          <button class="submitbtn" type="submit">
+            <a href="#">SEND</a>
+          </button>
+          <button class="requestbtn">
+            <a href="#">Request a Free Quote</a>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="options">
+    <div class="option-card">
+      <a href="#"><span><i class="fa-solid fa-file"></i></span>View Packages</a>
+    </div>
+    <div class="option-card">
+      <a href="#"><span><i class="fa-solid fa-screwdriver-wrench"></i></span>Explore
+        Our Work</a>
+    </div>
+    <div class="option-card">
+      <a href="#"><span><i class="fa-solid fa-circle-question"></i></span>Read FAQs</a>
+    </div>
+  </section>
+
+  <section class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.413876453929!2d3.8713876739812685!3d7.419363812107015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d7fb999f27b%3A0xeb0ad645e4453680!2sCoast%20Research%20Technology%20-Best%20software%20engineering%20company%20%7C%20Best%20software%20company%20in%20ibadan%20%7C%20Top%20computer%20training%20school!5e0!3m2!1sen!2sng!4v1758750425643!5m2!1sen!2sng"
+      width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <section class="get-started">
+    <div class="get-started-text">
+      <h3>Ready to Get Connected?</h3>
+      <p>Let us help you build a network that works as hard as you do</p>
+    </div>
+    <div class="bottom-cta">
+      <div class="cta"><a href="#">Request a Networking Quote</a></div>
+      <div class="cta"><a href="#">Call Us for a Site Visit</a></div>
+    </div>
+  </section>
+
+  <footer data-aos="fade" data-aos-duration="600">
+    <div class="footer-header">
+      <h3>Newsletter</h3>
+      <div class="subscribe">
+        <form action="/subscribe" method="post">
+          <h4>Subscribe now</h4>
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email" required />
+          <button type="submit">Subscribe</button>
         </form>
       </div>
-    </section>
+    </div>
 
-    <section class="options">
-      <div class="option-card">
-        <a href="#"
-          ><span><i class="fa-solid fa-file"></i></span>View Packages</a
-        >
-      </div>
-      <div class="option-card">
-        <a href="#"
-          ><span><i class="fa-solid fa-screwdriver-wrench"></i></span>Explore
-          Our Work</a
-        >
-      </div>
-      <div class="option-card">
-        <a href="#"
-          ><span><i class="fa-solid fa-circle-question"></i></span>Read FAQs</a
-        >
-      </div>
-    </section>
-
-    <section class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.413876453929!2d3.8713876739812685!3d7.419363812107015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d7fb999f27b%3A0xeb0ad645e4453680!2sCoast%20Research%20Technology%20-Best%20software%20engineering%20company%20%7C%20Best%20software%20company%20in%20ibadan%20%7C%20Top%20computer%20training%20school!5e0!3m2!1sen!2sng!4v1758750425643!5m2!1sen!2sng"
-        width="100%"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-
-    <section class="get-started">
-      <div class="get-started-text">
-        <h3>Ready to Get Connected?</h3>
-        <p>Let us help you build a network that works as hard as you do</p>
-      </div>
-      <div class="bottom-cta">
-        <div class="cta"><a href="#">Request a Networking Quote</a></div>
-        <div class="cta"><a href="#">Call Us for a Site Visit</a></div>
-      </div>
-    </section>
-
-    <footer data-aos="fade" data-aos-duration="600">
-      <div class="footer-header">
-        <h3>Newsletter</h3>
-        <div class="subscribe">
-          <form action="/subscribe" method="post">
-            <h4>Subscribe now</h4>
-            <label for="email" class="sr-only">Email</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="Email"
-              required
-            />
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
+    <div class="footer-content">
+      <div class="about">
+        <h4>Company</h4>
+        <img src="./images/darklogo.png" alt="Coast Infrastructure Systems logo" width="160" height="44" loading="lazy"
+          decoding="async" />
+        <p>Reliable infrastructure, power, and security solutions</p>
+        <p>Member of the Coast Systems Group.</p>
+        <p>Serving Enterprises, SME's, and Homes across Nigeria.</p>
       </div>
 
-      <div class="footer-content">
-        <div class="about">
-          <h4>Company</h4>
-          <img
-            src="./images/darklogo.png"
-            alt="Coast Infrastructure Systems logo"
-            width="160"
-            height="44"
-            loading="lazy"
-            decoding="async"
-          />
-          <p>Reliable infrastructure, power, and security solutions</p>
-          <p>Member of the Coast Systems Group.</p>
-          <p>Serving Enterprises, SME's, and Homes across Nigeria.</p>
-        </div>
-
-        <div class="links">
-          <h4>Links</h4>
-          <ul class="link-list">
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./contact.html">Contact us</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="#FAQs">FAQs</a></li>
-            <li><a href="./quotation.html">Request a Free Quote</a></li>
-            <li>
-              <a href="./quotation.html?type=mps">Request an MPS Quote</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="working-hours">
-          <h4>Our Services</h4>
-          <ul class="link-list">
-            <li><a href="./solar.html">Solar Energy Solutions</a></li>
-            <li>
-              <a href="./printer.html">Printers Repair and Maintenance</a>
-            </li>
-            <li>
-              <a href="./mps.html"
-                >Managed Print Services &amp; Device Leasing</a
-              >
-            </li>
-            <li><a href="./cctv.html">CCTV &amp; Security Installations</a></li>
-            <li><a href="#">Networking Configuration &amp; Setup</a></li>
-            <li><a href="./procurement.html">Procurement &amp; Sourcing</a></li>
-          </ul>
-        </div>
-
-        <div class="get-in-touch">
-          <h4>Get in Touch</h4>
-          <ul class="contact">
-            <li>
-              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-              <span>Address: </span> Ibadan, Oyo state, Nigeria
-            </li>
-            <li>
-              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-              <span>Email: </span>
-              <a href="mailto:hi@coastinfrastructure.com.ng"
-                >hello@coastinfrastructure.com.ng</a
-              >
-            </li>
-            <li>
-              <i class="fa-solid fa-phone" aria-hidden="true"></i>
-              <span>Phone: </span>
-              <a href="tel:+2349067633729">+234 906 763 3729</a>
-            </li>
-            <li>
-              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-              <span>WhatsApp: </span>
-              <a href="https://wa.me/2349067633729">+234 906 763 3729</a>
-            </li>
-            <li><span>Mon-Fri:</span> 9:00 AM - 5:00 PM</li>
-            <li><span>Response Time:</span> Within 24hrs</li>
-          </ul>
-        </div>
+      <div class="links">
+        <h4>Links</h4>
+        <ul class="link-list">
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact us</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="#FAQs">FAQs</a></li>
+          <li><a href="./quotation.html">Request a Free Quote</a></li>
+          <li>
+            <a href="./quotation.html?type=mps">Request an MPS Quote</a>
+          </li>
+        </ul>
       </div>
 
-      <ul class="media-links">
-        <li>
-          <a href="https://www.facebook.com/profile.php?id=61582789742908#"
-            ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
-            ><span class="sr-only">Facebook</span></a
-          >
-        </li>
-        <li>
-          <a href="#"
-            ><i class="fa-brands fa-x-twitter" aria-hidden="true"></i
-            ><span class="sr-only">X (Twitter)</span></a
-          >
-        </li>
-        <li>
-          <a href="https://www.instagram.com/coast_infrastructure"
-            ><i class="fa-brands fa-instagram" aria-hidden="true"></i
-            ><span class="sr-only">Instagram</span></a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/company/coast-infrastructure-systems-limited"
-            ><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i
-            ><span class="sr-only">LinkedIn</span></a
-          >
-        </li>
-      </ul>
+      <div class="working-hours">
+        <h4>Our Services</h4>
+        <ul class="link-list">
+          <li><a href="./solar.html">Solar Energy Solutions</a></li>
+          <li>
+            <a href="./printer.html">Printers Repair and Maintenance</a>
+          </li>
+          <li>
+            <a href="./mps.html">Managed Print Services &amp; Device Leasing</a>
+          </li>
+          <li><a href="./cctv.html">CCTV &amp; Security Installations</a></li>
+          <li><a href="#">Networking Configuration &amp; Setup</a></li>
+          <li><a href="./procurement.html">Procurement &amp; Sourcing</a></li>
+        </ul>
+      </div>
 
-      <p class="footer-copyright">
-        &COPY; 2025 by Coast System and Technologies all rights reserved
-      </p>
-    </footer>
+      <div class="get-in-touch">
+        <h4>Get in Touch</h4>
+        <ul class="contact">
+          <li>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Address: </span> Ibadan, Oyo state, Nigeria
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span>Email: </span>
+            <a href="mailto:hi@coastinfrastructure.com.ng">hello@coastinfrastructure.com.ng</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <span>Phone: </span>
+            <a href="tel:+2349067633729">+234 906 763 3729</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span>WhatsApp: </span>
+            <a href="https://wa.me/2349067633729">+234 906 763 3729</a>
+          </li>
+          <li><span>Mon-Fri:</span> 9:00 AM - 5:00 PM</li>
+          <li><span>Response Time:</span> Within 24hrs</li>
+        </ul>
+      </div>
+    </div>
 
-    <!-- Scripts -->
-    <script src="./js/script.js" defer></script>
-    <script
-      src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
-      defer
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+    <ul class="media-links">
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=61582789742908#"><i class="fa-brands fa-facebook-f"
+            aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i><span class="sr-only">X
+            (Twitter)</span></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/coast_infrastructure"><i class="fa-brands fa-instagram"
+            aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coast-infrastructure-systems-limited"><i
+            class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+      </li>
+    </ul>
 
-    <script>
-      // Respect reduced-motion and smaller screens
-      const reduceMotion = () =>
-        window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
-        window.innerWidth < 768;
+    <p class="footer-copyright">
+      &COPY; 2025 by Coast System and Technologies all rights reserved
+    </p>
+  </footer>
 
-      document.addEventListener("DOMContentLoaded", () => {
-        // Accessible dropdown behavior
-        const toggle = document.getElementById("servicesToggle");
-        const menu = document.getElementById("services-menu");
+  <!-- Scripts -->
+  <script src="./js/script.js" defer></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
 
-        function closeMenu() {
-          toggle.setAttribute("aria-expanded", "false");
-          menu.classList.remove("open");
-        }
-        function openMenu() {
-          toggle.setAttribute("aria-expanded", "true");
-          menu.classList.add("open");
-        }
-        function toggleMenuA11y() {
-          const isOpen = toggle.getAttribute("aria-expanded") === "true";
-          isOpen ? closeMenu() : openMenu();
-        }
+  <script>
+    // Respect reduced-motion and smaller screens
+    const reduceMotion = () =>
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+      window.innerWidth < 768;
 
-        toggle.addEventListener("click", (e) => {
-          e.stopPropagation();
-          toggleMenuA11y();
-        });
+    document.addEventListener("DOMContentLoaded", () => {
+      // Accessible dropdown behavior
+      const toggle = document.getElementById("servicesToggle");
+      const menu = document.getElementById("services-menu");
 
-        // Close on outside click / Escape
-        document.addEventListener("click", (e) => {
-          if (!menu.contains(e.target) && e.target !== toggle) {
-            closeMenu();
-          }
-        });
-        document.addEventListener("keydown", (e) => {
-          if (e.key === "Escape") closeMenu();
-        });
+      function closeMenu() {
+        toggle.setAttribute("aria-expanded", "false");
+        menu.classList.remove("open");
+      }
+      function openMenu() {
+        toggle.setAttribute("aria-expanded", "true");
+        menu.classList.add("open");
+      }
+      function toggleMenuA11y() {
+        const isOpen = toggle.getAttribute("aria-expanded") === "true";
+        isOpen ? closeMenu() : openMenu();
+      }
 
-        // AOS init
-        AOS.init({
-          duration: 500,
-          easing: "ease-out-cubic",
-          offset: 80,
-          once: true,
-          anchorPlacement: "top-bottom",
-          disable: reduceMotion,
-        });
+      toggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleMenuA11y();
       });
 
-      window.addEventListener("load", () =>
-        setTimeout(() => AOS.refresh(), 300)
-      );
-    </script>
-  </body>
+      // Close on outside click / Escape
+      document.addEventListener("click", (e) => {
+        if (!menu.contains(e.target) && e.target !== toggle) {
+          closeMenu();
+        }
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeMenu();
+      });
+
+      // AOS init
+      AOS.init({
+        duration: 500,
+        easing: "ease-out-cubic",
+        offset: 80,
+        once: true,
+        anchorPlacement: "top-bottom",
+        disable: reduceMotion,
+      });
+    });
+
+    window.addEventListener("load", () =>
+      setTimeout(() => AOS.refresh(), 300)
+    );
+  </script>
+</body>
+
 </html>

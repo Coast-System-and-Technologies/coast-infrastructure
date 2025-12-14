@@ -270,15 +270,29 @@ header img {
 /********************/
 
 /* hero section starts here */
-.hero {
+.hero.home {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin-block-start: 5.1rem;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
   padding: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero.home::before {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6));
+  content: "";
+  inset: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
 
 .hero.home {
@@ -303,20 +317,19 @@ header img {
 .hero-content {
   position: relative;
   z-index: 10;
-  margin-block-start: 10rem;
-  flex-basis: 50%;
+  flex-basis: 60%;
 }
 
 .hero h1 {
-  font-size: var(--h1font-size);
+  font-size: 4.5rem;
   font-weight: var(--h1font-weight);
-  line-height: 4rem;
+  line-height: normal;
   margin-bottom: 1.5rem;
   color: var(--accent-color2);
 }
 
 .hero p {
-  font-size: var(--pfont-size);
+  font-size: 1.2rem;
   margin-bottom: 2rem;
   color: white;
 }
@@ -943,9 +956,12 @@ input::placeholder {
 /* About us page starts here  */
 
 /* hero section starts here */
-.hero.aboutus {
+.hero.aboutus,
+.hero.contactus {
   padding: 4rem;
-  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/about\ hero.png) no-repeat center center/cover;
+  height: 500px;
+  margin: 0;
 }
 
 .hero.aboutus div,
@@ -954,6 +970,7 @@ input::placeholder {
 .hero.procure div,
 .hero.contactus div {
   position: relative;
+  width: 100%;
   z-index: 10;
   height: 100%;
   display: flex;
@@ -993,12 +1010,14 @@ input::placeholder {
   padding: 3rem;
   display: flex;
   gap: 3rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .who-we-are img {
-  width: 40%;
+  width: 50%;
   object-fit: cover;
-  height: 60vh;
+  height: 30rem;
   border: 10px solid var(--accent-color2);
   border-radius: 10px;
   border-bottom-right-radius: 60%;
@@ -1199,6 +1218,206 @@ input::placeholder {
 }
 
 /*Our approach section ends here*/
+
+/*
+ * Team Section Styling
+ */
+.team-section {
+  padding-block: 5rem;
+  background-color: #f3f3f3;
+}
+
+.section-title {
+  width: min(80%, 900px);
+  margin: auto;
+}
+
+.team-section .section-title h2,
+.team-member-title h2 {
+  text-align: center;
+  font-size: var(--h2font-size);
+  font-weight: var(--h2font-weight);
+  color: var(--primary-color);
+}
+
+.team-section .section-title p {
+  text-align: center;
+  margin-block: 1rem 3rem;
+}
+
+.ceo-section {
+  width: min(80%, 1200px);
+  margin: auto;
+  padding-block: 2rem;
+}
+
+.ceo-card {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background-color: var(--bg-color);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 4rem;
+}
+
+.ceo-image-container {
+  flex: 0 0 25rem;
+  height: 25rem;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 10px 10px 0 var(--accent-color2);
+}
+
+.ceo-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ceo-info {
+  flex: 1;
+}
+
+.ceo-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.ceo-title {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+.ceo-info .social-links a:hover {
+  background-color: var(--accent-color2);
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+
+.team-member-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-member-title * {
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.team-member-title h2 {
+  flex-basis: 30%;
+}
+
+.team-member-title p {
+  flex-basis: 70%;
+}
+
+.team-section .team-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: min(80%, 1200px);
+  margin: 0 auto;
+}
+
+.team-section .team-member-card {
+  background-color: var(--bg-color);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 300px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.team-section .team-member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.team-section .member-image-container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  /* Apply border-radius only to the top corners */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.team-section .member-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0 0 50%;
+}
+
+/* Member Info (Name, Title, Social) */
+.team-section .member-info {
+  padding: 15px 10px 0;
+}
+
+.team-section .member-name {
+  font-size: var(--h3font-size);
+  font-weight: var(--h3font-weight);
+  color: var(--primary-color);
+  margin: 10px 0 5px;
+}
+
+.team-section .member-title {
+  font-size: 1em;
+  color: #6c757d;
+  margin: 0 0 15px;
+}
+
+/* Social Links */
+.team-section .social-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.team-section .social-links a {
+  color: var(--primary-color);
+  font-size: 1.2em;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--accent-color2);
+  border-radius: 50%;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.team-section .social-links a:hover {
+  background-color: var(--primary-color);
+  color: var(--accent-color2);
+  border-color: var(--primary-color);
+}
+
+.ceo-info .social-links {
+  justify-content: flex-start;
+}
+
 
 /* bigger vision section starts here */
 .bigger-vision,
@@ -1711,7 +1930,7 @@ margin: left;
 
 /* contact us page starts here*/
 .hero.contactus {
-  background-image: url(/images/contactusbg.jpg);
+  background-image: url(/images/contactusbg.png);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 82%);
 }
 
@@ -1876,6 +2095,7 @@ label {
 }
 
 /* contact us page ends here*/
+
 
 /***** mobile view ****/
 @media (max-width: 1250px) {
@@ -2066,7 +2286,7 @@ label {
     padding: 1rem;
   }
 
-  .hero::before {
+  .hero.home::before {
     background-image: radial-gradient(rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.6));
@@ -2199,8 +2419,23 @@ label {
     font-size: 1rem;
   }
 
-  .who-we-are img {
-    height: 30vh;
+
+  .team-section .team-member-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .team-member-title {
+    flex-basis: 100%;
+  }
+
+  .team-member-title p {
+    text-align: center;
+  }
+
+  .team-section .team-member-card {
+    width: 70%;
+    margin: auto;
   }
 }
 
@@ -2226,7 +2461,7 @@ label {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   .hero.home {
     background-image: url(/images/mobile.png);
   }
@@ -2250,4 +2485,28 @@ label {
   .hero-cta {
     justify-content: center;
   }
+
+
+  .ceo-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ceo-image-container {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 200px;
+    box-shadow: none;
+    border: 5px solid var(--accent-color2);
+    border-radius: 50%;
+  }
+
+  .ceo-info .social-links {
+    justify-content: center;
+  }
+
+  .team-section .team-container {
+    gap: 20px;
+  }
+
 }
