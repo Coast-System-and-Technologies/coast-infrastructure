@@ -661,8 +661,9 @@ header img {
 
 .testimonials {
   width: 50%;
+  height: auto;
   margin: auto;
-  padding-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .testimonial-head {
@@ -691,6 +692,7 @@ header img {
 
 .carousel-cell.two {
   width: 100%;
+  height: min-content;
   margin-right: 10px;
   color: #bdbdbd;
   border-radius: 5px;
@@ -698,12 +700,11 @@ header img {
 }
 
 /* cell number */
-/* cell number */
 .carousel-cell.two:before {
   display: block;
   text-align: center;
+  line-height: 300px;
   color: white;
-  content: "";
 }
 
 .carousel-cell.two p {
@@ -721,8 +722,8 @@ header img {
 }
 
 .carousel-cell.two .user img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
 }
