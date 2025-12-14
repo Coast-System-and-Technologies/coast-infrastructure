@@ -140,6 +140,7 @@ header {
 
 header img {
   width: 10rem;
+  object-fit: contain;
 }
 
 .light-logo {
@@ -850,12 +851,19 @@ input::placeholder {
   opacity: 1;
 }
 
-.subscribe form button a {
+.subscribe form button {
   font-weight: 500;
   color: var(--primary-color);
-  padding: 7px 20px;
+  padding: 1.15rem;
   background-color: var(--accent-color2);
   border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.subscribe form button:is(:hover, :focus-visible) {
+  background-color: var(--plain-color);
+  color: var(--primary-color);
 }
 
 .footer-content {
@@ -868,6 +876,7 @@ input::placeholder {
 .footer-content img {
   margin-block: 0.6rem;
   height: 4.5rem;
+  object-fit: contain;
 }
 
 .footer-content h4 {
