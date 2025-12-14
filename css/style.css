@@ -964,9 +964,8 @@ input::placeholder {
 }
 
 
-.hero.aboutus,
-{
-background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/about\ hero.png) no-repeat center center/cover;
+.hero.aboutus {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/about\ hero.png) no-repeat center center/cover;
 }
 
 .hero.contactus {
@@ -1251,11 +1250,11 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images
 
 .team-section .section-title p {
   text-align: center;
-  margin-block: 1rem 3rem;
+  margin-block: 1rem;
 }
 
 .ceo-section {
-  width: min(80%, 1200px);
+  width: min(90%, 1200px);
   margin: auto;
   padding-block: 2rem;
 }
@@ -1323,7 +1322,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images
 .team-member-title * {
   flex-grow: 1;
   flex-shrink: 0;
-  padding: 20px;
+  padding: .5rem 0rem;
   box-sizing: border-box;
 }
 
@@ -2294,6 +2293,13 @@ label {
     padding: 1rem;
   }
 
+  .ceo-card {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+
+
   .hero.home::before {
     background-image: radial-gradient(rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.6),
@@ -2336,7 +2342,7 @@ label {
   footer,
   .who-we-are,
   .getintouch-contact {
-    padding: 2rem;
+    padding: 2rem 1rem;
   }
 
   .our-impact,
@@ -2350,11 +2356,12 @@ label {
   .what-we-procure,
   .contact-container,
   .options {
-    padding: 3rem 2rem;
+    padding: 3rem 1rem;
   }
 
   .vision-content p {
     text-align: center;
+    font-size: .8rem;
   }
 
   .services-text p,
@@ -2442,7 +2449,7 @@ label {
   }
 
   .team-section .team-member-card {
-    width: 70%;
+    width: 100%;
     margin: auto;
   }
 }
@@ -2458,6 +2465,11 @@ label {
 
   .ss-content {
     min-height: 100%;
+  }
+
+  .ceo-title,
+  .team-member-title p {
+    font-size: .8rem;
   }
 
   .process-cards {
@@ -2515,6 +2527,10 @@ label {
 
   .team-section .team-container {
     gap: 20px;
+  }
+
+  .team-member-title {
+    flex-basis: 100%;
   }
 
 }
