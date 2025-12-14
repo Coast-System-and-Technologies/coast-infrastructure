@@ -959,9 +959,18 @@ input::placeholder {
 .hero.aboutus,
 .hero.contactus {
   padding: 4rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/about\ hero.png) no-repeat center center/cover;
   height: 500px;
   margin: 0;
+}
+
+
+.hero.aboutus,
+{
+background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/about\ hero.png) no-repeat center center/cover;
+}
+
+.hero.contactus {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/contactusbg.png) no-repeat center center/cover;
 }
 
 .hero.aboutus div,
@@ -1930,7 +1939,6 @@ margin: left;
 
 /* contact us page starts here*/
 .hero.contactus {
-  background-image: url(/images/contactusbg.png);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 82%);
 }
 
