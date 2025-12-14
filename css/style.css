@@ -596,12 +596,12 @@ header img {
 
 .carousel {
   background: var(--bg-color);
-  height: 50px;
+  height: 200px;
 }
 
 .carousel-cell {
   width: 20%;
-  height: 50px;
+  height: 120px;
   margin-right: 10px;
   background: var(--bg-color);
   color: #bdbdbd;
@@ -609,12 +609,24 @@ header img {
   counter-increment: gallery-cell;
 }
 
-.carousel-cell span {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  align-items: center;
-  padding-block-start: 12px;
+.partners .carousel-cell span {
+  width: clamp(110px, 12vw, 160px);
+  aspect-ratio: 2 / 1;
+  background: #eee;
+  border-radius: 8px;
+  padding: 14px;
+  display: grid;
+  place-items: center;
+}
+
+
+.partners .carousel-cell span img {
+  max-width: 100%;
+  max-height: 48px;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  object-fit: contain;
 }
 
 /* cell number */
@@ -649,8 +661,8 @@ header img {
 
 .testimonials {
   width: 50%;
-  height: 70vh;
   margin: auto;
+  padding-bottom: 4rem;
 }
 
 .testimonial-head {
@@ -679,7 +691,6 @@ header img {
 
 .carousel-cell.two {
   width: 100%;
-  min-height: 50vh;
   margin-right: 10px;
   color: #bdbdbd;
   border-radius: 5px;
@@ -687,11 +698,12 @@ header img {
 }
 
 /* cell number */
+/* cell number */
 .carousel-cell.two:before {
   display: block;
   text-align: center;
-  line-height: 300px;
   color: white;
+  content: "";
 }
 
 .carousel-cell.two p {
@@ -704,9 +716,15 @@ header img {
 }
 
 .carousel-cell.two .user {
-  font-size: 8rem;
-  color: var(--primary-color);
   margin-block: 1rem;
+  display: block;
+}
+
+.carousel-cell.two .user img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .carousel-cell.two div {
