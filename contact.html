@@ -14,102 +14,130 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
   <link rel="manifest" href="./images/favicon/site.webmanifest" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Coast Infrastructure</title>
 </head>
 
 <body>
-  <header>
-    <img src="./images/logo.png" alt="logo" class="light-logo" />
-    <img src="./images/darklogo.png" alt="darklogo" class="dark-logo" />
-    <ul id="nav-links" class="nav-links" role="list">
+  <header data-aos="fade-down" data-aos-duration="600">
+    <img src="./images/logo.png" alt="logo" class="light-logo" data-aos="fade-down" data-aos-delay="0" />
+    <img src="./images/darklogo.png" alt="darklogo" class="dark-logo" data-aos="fade-down" data-aos-delay="60" />
+
+    <ul id="nav-links" class="nav-links" role="list" data-aos="fade-down" data-aos-delay="120">
       <li role="listitem"><a href="./index.html">Home</a></li>
       <li role="listitem"><a href="./about.html">About Us</a></li>
-      <li role="listitem" class="dropdown" onclick="toggleDropdown(event)">
-        <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
-        <ul class="dropdown-content" role="list">
-          <li class="dropdown-menu" role="listitem">
-            <a href="./solar.html">Solar Energy Solutions</a>
+
+      <li class="dropdown">
+        <button id="servicesToggle" class="dropdown-toggle" aria-expanded="false" aria-controls="services-menu">
+          Services
+          <i class="service-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+        </button>
+
+        <ul id="services-menu" class="dropdown-content" role="menu" aria-label="Services">
+          <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="0">
+            <a role="menuitem" href="./solar.html">Solar Energy Solutions</a>
           </li>
-          <li class="dropdown-menu" role="listitem">
-            <a href="./cctv.html">CCTV & Security Installations</a>
+
+          <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="60">
+            <a role="menuitem" href="./cctv.html">CCTV &amp; Security Installations</a>
           </li>
-          <!-- <li class="dropdown-menu" role="listitem">
-              <a href="#">Networking Configuration & Setup</a>
-            </li>
-              -->
-          <li class="dropdown-menu" role="listitem">
-            <a href="./procurement.html">Procurement & Sourcing</a>
+
+          <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="120">
+            <a role="menuitem" href="networking.html">Networking Configuration &amp; Setup</a>
+          </li>
+
+          <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="180">
+            <a role="menuitem" href="./procurement.html">Procurement &amp; Sourcing</a>
+          </li>
+
+          <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="240">
+            <a role="menuitem" href="./printer.html">Printer Repair &amp; Maintenance</a>
+          </li>
+
+          <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="300">
+            <a role="menuitem" href="./mps.html">Managed Print Services (MPS) &amp; Device Leasing</a>
           </li>
         </ul>
       </li>
+
       <li role="listitem">
         <a class="active" href="./contact.html">Contact us</a>
       </li>
-      <li role="listitem"><a href="#">Projects</a></li>
-      <li role="listitem"><a href="#FAQs">FAQs</a></li>
+      <li role="listitem"><a href="./project.html">Projects</a></li>
+      <li role="listitem"><a href="./FAQs.html">FAQs</a></li>
     </ul>
-    <div class="side-icons">
-      <a href="#" class="cta-btn">Request a quote</a>
-      <div class="mode-toggle" onclick="modeToggle()">
+
+    <div class="side-icons" data-aos="fade-up" data-aos-delay="220">
+      <a href="#" class="cta-btn" data-aos="fade-up" data-aos-delay="260">Request a quote</a>
+      <div class="mode-toggle" onclick="modeToggle()" data-aos="fade-up" data-aos-delay="320">
         <i class="fa-solid fa-moon moon"></i>
         <i class="fa-solid fa-sun sun"></i>
       </div>
-      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      <div class="hamburger" onclick="toggleMenu()" data-aos="fade-up" data-aos-delay="380">&#9776;</div>
     </div>
   </header>
 
-  <section class="hero contactus">
-    <div>
+  <section class="hero contactus" data-aos="fade" data-aos-duration="700">
+    <div data-aos="zoom-in" data-aos-delay="80">
       <h1>Contact Us</h1>
     </div>
   </section>
 
-  <section class="contact-container">
-    <div class="direct-contact">
-      <h2>Direct Contact</h2>
-      <div class="contacts">
+  <section class="contact-container" data-aos="fade-up">
+    <div class="direct-contact" data-aos="fade-right" data-aos-delay="80">
+      <h2 data-aos="fade-up" data-aos-delay="0">Direct Contact</h2>
+
+      <div class="contacts" data-aos="fade-up" data-aos-delay="60">
         <span><i class="fa-solid fa-location-dot"></i></span>
         <h3>Office Address</h3>
-        <p>
-          36, Ladoke Akintola way, Ibadan, Oyo State, Nigeria
-        </p>
+        <p>36, Ladoke Akintola way, Ibadan, Oyo State, Nigeria</p>
       </div>
-      <div class="contacts">
+
+      <div class="contacts" data-aos="fade-up" data-aos-delay="120">
         <span><i class="fa-solid fa-phone"></i></span>
         <h3>Phone</h3>
         <p>+234 807 299 1328</p>
       </div>
-      <div class="contacts">
+
+      <div class="contacts" data-aos="fade-up" data-aos-delay="180">
         <span><i class="fa-brands fa-whatsapp"></i></span>
         <h3>WhatsApp</h3>
         <p>+234 807 299 1328</p>
       </div>
-      <div class="contacts">
+
+      <div class="contacts" data-aos="fade-up" data-aos-delay="240">
         <span><i class="fa-solid fa-envelope"></i></span>
         <h3>Email</h3>
         <a href="#">support@coastinfrastructure.com.ng</a>
       </div>
     </div>
-    <div class="getintouch-contact">
-      <h2>Get in <span>Touch</span></h2>
-      <p>
+
+    <div class="getintouch-contact" data-aos="fade-left" data-aos-delay="120">
+      <h2 data-aos="fade-up" data-aos-delay="0">Get in <span>Touch</span></h2>
+
+      <p data-aos="fade-up" data-aos-delay="60">
         Whether you need a solar installation, CCTV setup, networking, domain
         services, or procurement, our team is ready to help you build smarter,
         safer, and more connected systems
       </p>
-      <form class="getintouch-form">
-        <label>
+
+      <form class="getintouch-form" data-aos="fade-up" data-aos-delay="120">
+        <label data-aos="fade-up" data-aos-delay="0">
           <input type="text" name="name" placeholder="Name" required />
         </label>
-        <label>
+
+        <label data-aos="fade-up" data-aos-delay="60">
           <input type="email" name="email" placeholder="Email" required />
         </label>
-        <label>
+
+        <label data-aos="fade-up" data-aos-delay="120">
           <input type="tel" name="phone-number" placeholder="Phone Number" required />
         </label>
-        <select name="service" id="services">
+
+        <select name="service" id="services" data-aos="fade-up" data-aos-delay="180">
           <option value="" disabled selected>Service Needed</option>
           <option value="solar">Solar Energy Solutions</option>
           <option value="cctv">CCTV & Security Installations</option>
@@ -117,12 +145,14 @@
           <option value="domain">Domain Name Services</option>
           <option value="procurement">Procurement & Sourcing</option>
         </select>
-        <textarea name="message" placeholder="Project Description"></textarea>
+
+        <textarea name="message" placeholder="Project Description" data-aos="fade-up" data-aos-delay="240"></textarea>
+
         <div class="getintouch-buttons">
-          <button class="submitbtn" type="submit">
+          <button class="submitbtn" type="submit" data-aos="zoom-in" data-aos-delay="300">
             <a href="#">SEND</a>
           </button>
-          <button class="requestbtn">
+          <button class="requestbtn" data-aos="zoom-in" data-aos-delay="380">
             <a href="#">Request a Free Quote</a>
           </button>
         </div>
@@ -130,34 +160,33 @@
     </div>
   </section>
 
-  <section class="options">
-    <div class="option-card">
+  <section class="options" data-aos="fade-up">
+    <div class="option-card" data-aos="zoom-in" data-aos-delay="0">
       <a href="#"><span><i class="fa-solid fa-file"></i></span>View Packages</a>
     </div>
-    <div class="option-card">
-      <a href="#"><span><i class="fa-solid fa-screwdriver-wrench"></i></span>Explore
-        Our Work</a>
+    <div class="option-card" data-aos="zoom-in" data-aos-delay="80">
+      <a href="#"><span><i class="fa-solid fa-screwdriver-wrench"></i></span>Explore Our Work</a>
     </div>
-    <div class="option-card">
+    <div class="option-card" data-aos="zoom-in" data-aos-delay="160">
       <a href="#"><span><i class="fa-solid fa-circle-question"></i></span>Read FAQs</a>
     </div>
   </section>
 
-  <section class="map">
+  <section class="map" data-aos="fade-up" data-aos-delay="80">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.413876453929!2d3.8713876739812685!3d7.419363812107015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d7fb999f27b%3A0xeb0ad645e4453680!2sCoast%20Research%20Technology%20-Best%20software%20engineering%20company%20%7C%20Best%20software%20company%20in%20ibadan%20%7C%20Top%20computer%20training%20school!5e0!3m2!1sen!2sng!4v1758750425643!5m2!1sen!2sng"
       width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
 
-  <section class="get-started">
-    <div class="get-started-text">
+  <section class="get-started" data-aos="fade-up">
+    <div class="get-started-text" data-aos="fade-up" data-aos-delay="60">
       <h3>Ready to Get Connected?</h3>
       <p>Let us help you build a network that works as hard as you do</p>
     </div>
     <div class="bottom-cta">
-      <div class="cta"><a href="#">Request a Networking Quote</a></div>
-      <div class="cta"><a href="#">Call Us for a Site Visit</a></div>
+      <div class="cta" data-aos="zoom-in" data-aos-delay="140"><a href="#">Request a Networking Quote</a></div>
+      <div class="cta" data-aos="zoom-in" data-aos-delay="220"><a href="#">Call Us for a Site Visit</a></div>
     </div>
   </section>
 
@@ -192,9 +221,7 @@
           <li><a href="./projects.html">Projects</a></li>
           <li><a href="#FAQs">FAQs</a></li>
           <li><a href="./quotation.html">Request a Free Quote</a></li>
-          <li>
-            <a href="./quotation.html?type=mps">Request an MPS Quote</a>
-          </li>
+          <li><a href="./quotation.html?type=mps">Request an MPS Quote</a></li>
         </ul>
       </div>
 
@@ -202,12 +229,8 @@
         <h4>Our Services</h4>
         <ul class="link-list">
           <li><a href="./solar.html">Solar Energy Solutions</a></li>
-          <li>
-            <a href="./printer.html">Printers Repair and Maintenance</a>
-          </li>
-          <li>
-            <a href="./mps.html">Managed Print Services &amp; Device Leasing</a>
-          </li>
+          <li><a href="./printer.html">Printers Repair and Maintenance</a></li>
+          <li><a href="./mps.html">Managed Print Services &amp; Device Leasing</a></li>
           <li><a href="./cctv.html">CCTV &amp; Security Installations</a></li>
           <li><a href="#">Networking Configuration &amp; Setup</a></li>
           <li><a href="./procurement.html">Procurement &amp; Sourcing</a></li>
@@ -278,38 +301,6 @@
       window.innerWidth < 768;
 
     document.addEventListener("DOMContentLoaded", () => {
-      // Accessible dropdown behavior
-      const toggle = document.getElementById("servicesToggle");
-      const menu = document.getElementById("services-menu");
-
-      function closeMenu() {
-        toggle.setAttribute("aria-expanded", "false");
-        menu.classList.remove("open");
-      }
-      function openMenu() {
-        toggle.setAttribute("aria-expanded", "true");
-        menu.classList.add("open");
-      }
-      function toggleMenuA11y() {
-        const isOpen = toggle.getAttribute("aria-expanded") === "true";
-        isOpen ? closeMenu() : openMenu();
-      }
-
-      toggle.addEventListener("click", (e) => {
-        e.stopPropagation();
-        toggleMenuA11y();
-      });
-
-      // Close on outside click / Escape
-      document.addEventListener("click", (e) => {
-        if (!menu.contains(e.target) && e.target !== toggle) {
-          closeMenu();
-        }
-      });
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") closeMenu();
-      });
-
       // AOS init
       AOS.init({
         duration: 500,

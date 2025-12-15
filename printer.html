@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Printer Repair & Maintenance | Coast Infrastructure</title>
+</head>
+
+<body>
+    <header data-aos="fade-down" data-aos-duration="600">
+        <img src="./images/logo.png" alt="logo" class="light-logo" data-aos="fade-down" data-aos-delay="0" />
+        <img src="./images/darklogo.png" alt="darklogo" class="dark-logo" data-aos="fade-down" data-aos-delay="60" />
+
+        <ul id="nav-links" class="nav-links" role="list" data-aos="fade-down" data-aos-delay="120">
+            <li role="listitem"><a href="./index.html">Home</a></li>
+            <li role="listitem"><a href="./about.html">About Us</a></li>
+
+            <li class="dropdown active">
+                <button id="servicesToggle" class="dropdown-toggle" aria-expanded="false" aria-controls="services-menu">
+                    Services
+                    <i class="service-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </button>
+
+                <ul id="services-menu" class="dropdown-content" role="menu" aria-label="Services">
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="0">
+                        <a role="menuitem" href="./solar.html">Solar Energy Solutions</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="60">
+                        <a role="menuitem" href="./cctv.html">CCTV &amp; Security Installations</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="120">
+                        <a role="menuitem" href="networking.html">Networking Configuration &amp; Setup</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="180">
+                        <a role="menuitem" href="./procurement.html">Procurement &amp; Sourcing</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="240">
+                        <a role="menuitem" href="./printer.html">Printer Repair &amp; Maintenance</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="300">
+                        <a role="menuitem" href="./mps.html">Managed Print Services (MPS) &amp; Device Leasing</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li role="listitem"><a href="./contact.html">Contact us</a></li>
+            <li role="listitem"><a href="#">Projects</a></li>
+            <li role="listitem"><a href="#FAQs">FAQs</a></li>
+        </ul>
+
+        <div class="side-icons" data-aos="fade-up" data-aos-delay="220">
+            <a href="#" class="cta-btn" data-aos="fade-up" data-aos-delay="260">Request a quote</a>
+            <div class="mode-toggle" onclick="modeToggle()" data-aos="fade-up" data-aos-delay="320">
+                <i class="fa-solid fa-moon moon"></i>
+                <i class="fa-solid fa-sun sun"></i>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()" data-aos="fade-up" data-aos-delay="380">&#9776;</div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero solar" data-aos="fade" data-aos-duration="700">
+        <div data-aos="zoom-in" data-aos-delay="80">
+            <h1>Printer Repair &amp; Maintenance</h1>
+            <p>Clear Prints. Faster Fixes. Less Downtime.</p>
+        </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="keep-eye" data-aos="fade-up">
+        <div class="keep-img">
+            <img src="./images/printerkeep1.jpg" alt="Printer servicing" data-aos="fade-right" data-aos-delay="80" />
+            <img class="second-img" src="./images/printerkeep2.jpg" alt="Office printer maintenance"
+                data-aos="fade-right" data-aos-delay="160" />
+        </div>
+
+        <div class="keep-container" data-aos="fade-left" data-aos-delay="120">
+            <h2 data-aos="fade-up" data-aos-delay="0">Keep Your Office Printing Smooth and Reliable</h2>
+            <p data-aos="fade-up" data-aos-delay="60">
+                When printers fail, work stalls — invoices, reports, receipts, and
+                documentation all get delayed. Coast Infrastructure Systems Limited
+                provides fast, professional printer repair and preventive maintenance
+                to keep your office running.
+            </p>
+            <br />
+            <p data-aos="fade-up" data-aos-delay="120">
+                Whether it’s faint prints, paper jams, error codes, toner issues, or
+                a complete breakdown, we diagnose properly, fix efficiently, and help
+                you prevent repeat faults.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="security-services" data-aos="fade-up">
+        <h2 data-aos="fade-up" data-aos-delay="60">Our Printer Services Include</h2>
+
+        <div class="ss-container">
+            <div class="ss-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="icon-container" data-aos="zoom-in" data-aos-delay="40">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <div class="ss-content" data-aos="fade-up" data-aos-delay="80">
+                    <h3>Printer Diagnosis & Repair</h3>
+                    <p>
+                        Full inspection, error-code troubleshooting, and repair for common
+                        and complex printer faults.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ss-card" data-aos="fade-up" data-aos-delay="80">
+                <div class="icon-container" data-aos="zoom-in" data-aos-delay="40">
+                    <i class="fa-solid fa-print"></i>
+                </div>
+                <div class="ss-content" data-aos="fade-up" data-aos-delay="80">
+                    <h3>Print Quality Fixes</h3>
+                    <p>
+                        Faint prints, lines, blotches, ghosting — we resolve root causes
+                        (toner, drum, fuser, rollers, settings).
+                    </p>
+                </div>
+            </div>
+
+            <div class="ss-card" data-aos="fade-up" data-aos-delay="160">
+                <div class="icon-container" data-aos="zoom-in" data-aos-delay="40">
+                    <i class="fa-solid fa-file-circle-xmark"></i>
+                </div>
+                <div class="ss-content" data-aos="fade-up" data-aos-delay="80">
+                    <h3>Paper Jam & Feeding Repairs</h3>
+                    <p>
+                        Tray issues, pickup rollers, misfeeds, sensor faults, alignment
+                        and paper path repairs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ss-card" data-aos="fade-up" data-aos-delay="240">
+                <div class="icon-container" data-aos="zoom-in" data-aos-delay="40">
+                    <i class="fa-solid fa-gears"></i>
+                </div>
+                <div class="ss-content" data-aos="fade-up" data-aos-delay="80">
+                    <h3>Preventive Maintenance</h3>
+                    <p>
+                        Cleaning, calibration, lubrication, part checks and servicing to
+                        reduce breakdowns and extend lifespan.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ss-card" data-aos="fade-up" data-aos-delay="320">
+                <div class="icon-container" data-aos="zoom-in" data-aos-delay="40">
+                    <i class="fa-solid fa-plug-circle-bolt"></i>
+                </div>
+                <div class="ss-content" data-aos="fade-up" data-aos-delay="80">
+                    <h3>Installation & Setup</h3>
+                    <p>
+                        Driver installation, network printer setup, sharing, scanning
+                        configuration, and user testing.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ss-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-container" data-aos="zoom-in" data-aos-delay="40">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                </div>
+                <div class="ss-content" data-aos="fade-up" data-aos-delay="80">
+                    <h3>Parts & Consumables Support</h3>
+                    <p>
+                        We help source genuine parts and consumables (toner, drum, fuser,
+                        rollers) depending on your budget and model.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRANDS / TYPES -->
+    <section class="camera-types" data-aos="fade-up">
+        <h2 data-aos="fade-up" data-aos-delay="60">Printer Types & Brands We Support</h2>
+
+        <div class="camera-container">
+            <div class="camera-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="camera-img bulletcam" data-aos="zoom-in" data-aos-delay="60">
+                    <img src="./images/laserprinter.jpg" alt="Laser printers" />
+                </div>
+                <div class="camera-content" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Laser Printers</h3>
+                    <p>HP, Canon, Brother, Kyocera, Ricoh (and equivalents)</p>
+                </div>
+            </div>
+
+            <div class="camera-card" data-aos="fade-up" data-aos-delay="80">
+                <div class="camera-img" data-aos="zoom-in" data-aos-delay="60">
+                    <img src="./images/mfpprinter.jpg" alt="Multi-function printers" />
+                </div>
+                <div class="camera-content" data-aos="fade-up" data-aos-delay="100">
+                    <h3>MFP / All-in-One</h3>
+                    <p>Print, Scan, Copy — setup, servicing, and repairs</p>
+                </div>
+            </div>
+
+            <div class="camera-card" data-aos="fade-up" data-aos-delay="160">
+                <div class="camera-img" data-aos="zoom-in" data-aos-delay="60">
+                    <img src="./images/officeprinter.jpg" alt="Office printers" />
+                </div>
+                <div class="camera-content" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Office & Enterprise Units</h3>
+                    <p>Heavy-duty usage support, servicing schedules, part replacement</p>
+                </div>
+            </div>
+
+            <div class="camera-card" data-aos="fade-up" data-aos-delay="240">
+                <div class="camera-img" data-aos="zoom-in" data-aos-delay="60">
+                    <img src="./images/consumables.jpg" alt="Printer consumables" />
+                </div>
+                <div class="camera-content" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Consumables & Parts</h3>
+                    <p>Toner, drum, fuser unit, rollers, belts, sensors</p>
+                </div>
+            </div>
+
+            <div class="camera-card" data-aos="fade-up" data-aos-delay="320">
+                <div class="camera-img" data-aos="zoom-in" data-aos-delay="60">
+                    <img src="./images/networkprinter.jpg" alt="Network printers" />
+                </div>
+                <div class="camera-content" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Network Printing</h3>
+                    <p>Shared printers, scan-to-email/folder, office connectivity</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHO NEEDS THIS -->
+    <section class="install" data-aos="fade-up">
+        <h2 data-aos="fade-up" data-aos-delay="60">Who Needs This?</h2>
+
+        <div class="install-container">
+            <div class="install-cards" data-aos="zoom-in" data-aos-delay="0">
+                <span><i class="fa-solid fa-building"></i></span>
+                <p>Offices & Corporate Teams</p>
+            </div>
+            <div class="install-cards" data-aos="zoom-in" data-aos-delay="80">
+                <span><i class="fa-solid fa-store"></i></span>
+                <p>Retail Stores & Logistics</p>
+            </div>
+            <div class="install-cards" data-aos="zoom-in" data-aos-delay="160">
+                <span><i class="fa-solid fa-hospital"></i></span>
+                <p>Hospitals, Clinics & Pharmacies</p>
+            </div>
+            <div class="install-cards" data-aos="zoom-in" data-aos-delay="240">
+                <span><i class="fa-solid fa-graduation-cap"></i></span>
+                <p>Schools, Training Centres & Libraries</p>
+            </div>
+            <div class="install-cards" data-aos="zoom-in" data-aos-delay="320">
+                <span><i class="fa-solid fa-landmark"></i></span>
+                <p>Government Offices & NGOs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY COAST -->
+    <section class="what-we-do why-coast" data-aos="fade-up">
+        <div class="what-header" data-aos="fade-up" data-aos-delay="60">
+            <h2>Why Choose Coast Infrastructure for Printer Support?</h2>
+        </div>
+
+        <div class="what-cards">
+            <div class="what-card" data-aos="fade-up" data-aos-delay="0">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <h3>Accurate diagnosis — we fix the cause, not the symptoms</h3>
+            </div>
+
+            <div class="what-card" data-aos="fade-up" data-aos-delay="80">
+                <span><i class="fa-solid fa-stopwatch"></i></span>
+                <h3>Fast turnaround to reduce downtime</h3>
+            </div>
+
+            <div class="what-card" data-aos="fade-up" data-aos-delay="160">
+                <span><i class="fa-solid fa-toolbox"></i></span>
+                <h3>Professional repairs and clean servicing</h3>
+            </div>
+
+            <div class="what-card" data-aos="fade-up" data-aos-delay="240">
+                <span><i class="fa-solid fa-shield-halved"></i></span>
+                <h3>Preventive maintenance to avoid repeat breakdowns</h3>
+            </div>
+
+            <div class="what-card" data-aos="fade-up" data-aos-delay="320">
+                <span><i class="fa-solid fa-headset"></i></span>
+                <h3>Support for offices and service contracts</h3>
+            </div>
+
+            <div class="what-card" data-aos="fade-up" data-aos-delay="400">
+                <span><i class="fa-solid fa-network-wired"></i></span>
+                <h3>We also help with network printing and office setup</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="sample-packages" data-aos="fade-up">
+        <h2 data-aos="fade-up" data-aos-delay="60">Sample Service Packages</h2>
+
+        <div class="sample-container">
+            <div class="sample-card" data-aos="fade-up" data-aos-delay="0">
+                <span data-aos="zoom-in" data-aos-delay="40"><i class="fa-solid fa-wrench"></i></span>
+                <div class="package-label">
+                    <a href="#">
+                        <h3>Quick Fix</h3>
+                    </a>
+                </div>
+                <p>
+                    Diagnosis + minor repair / setup<br />
+                    <br />
+                    Best for: Home users & small offices
+                </p>
+            </div>
+
+            <div class="sample-card" data-aos="fade-up" data-aos-delay="80">
+                <span data-aos="zoom-in" data-aos-delay="40"><i class="fa-solid fa-briefcase"></i></span>
+                <div class="package-label">
+                    <a href="#">
+                        <h3>Office Care</h3>
+                    </a>
+                </div>
+                <p>
+                    Repair + cleaning + calibration<br />
+                    <br />
+                    Best for: Busy office printers
+                </p>
+            </div>
+
+            <div class="sample-card" data-aos="fade-up" data-aos-delay="160">
+                <span data-aos="zoom-in" data-aos-delay="40"><i class="fa-solid fa-calendar-check"></i></span>
+                <div class="package-label">
+                    <a href="#">
+                        <h3>Maintenance Plan</h3>
+                    </a>
+                </div>
+                <p>
+                    Scheduled servicing (monthly/quarterly)<br />
+                    <br />
+                    Best for: Teams that can’t afford downtime
+                </p>
+            </div>
+
+            <div class="sample-card" data-aos="fade-up" data-aos-delay="240">
+                <span data-aos="zoom-in" data-aos-delay="40"><i class="fa-solid fa-building"></i></span>
+                <div class="package-label">
+                    <a href="#">
+                        <h3>Business Support</h3>
+                    </a>
+                </div>
+                <p>
+                    Multi-unit support + parts sourcing<br />
+                    <br />
+                    Best for: Schools, facilities, enterprises
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="get-started" data-aos="fade-up">
+        <div class="get-started-text" data-aos="fade-up" data-aos-delay="60">
+            <h3>Need Your Printer Fixed Today?</h3>
+            <p>Tell us the model and fault — we’ll take it from there.</p>
+        </div>
+
+        <div class="bottom-cta">
+            <div class="cta" data-aos="zoom-in" data-aos-delay="140"><a href="#">Request Printer Repair</a></div>
+            <div class="cta" data-aos="zoom-in" data-aos-delay="220"><a href="#">Get a Maintenance Quote</a></div>
+        </div>
+    </section>
+
+    <!-- FOOTER (UNCHANGED) -->
+    <footer data-aos="fade" data-aos-duration="600">
+        <div class="footer-header">
+            <h3>Newsletter</h3>
+            <div class="subscribe">
+                <form action="/subscribe" method="post">
+                    <h4>Subscribe now</h4>
+                    <label for="email" class="sr-only">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Email" required />
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="about">
+                <h4>Company</h4>
+                <img src="./images/darklogo.png" alt="Coast Infrastructure Systems logo" width="160" height="44"
+                    loading="lazy" decoding="async" />
+                <p>Reliable infrastructure, power, and security solutions</p>
+                <p>Member of the Coast Systems Group.</p>
+                <p>Serving Enterprises, SME's, and Homes across Nigeria.</p>
+            </div>
+
+            <div class="links">
+                <h4>Links</h4>
+                <ul class="link-list">
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact us</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="#FAQs">FAQs</a></li>
+                    <li><a href="./quotation.html">Request a Free Quote</a></li>
+                    <li>
+                        <a href="./quotation.html?type=mps">Request an MPS Quote</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="working-hours">
+                <h4>Our Services</h4>
+                <ul class="link-list">
+                    <li><a href="./solar.html">Solar Energy Solutions</a></li>
+                    <li>
+                        <a href="./printer.html">Printers Repair and Maintenance</a>
+                    </li>
+                    <li>
+                        <a href="./mps.html">Managed Print Services &amp; Device Leasing</a>
+                    </li>
+                    <li><a href="./cctv.html">CCTV &amp; Security Installations</a></li>
+                    <li><a href="#">Networking Configuration &amp; Setup</a></li>
+                    <li><a href="./procurement.html">Procurement &amp; Sourcing</a></li>
+                </ul>
+            </div>
+
+            <div class="get-in-touch">
+                <h4>Get in Touch</h4>
+                <ul class="contact">
+                    <li>
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <span>Address: </span> Ibadan, Oyo state, Nigeria
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <span>Email: </span>
+                        <a href="mailto:hi@coastinfrastructure.com.ng">hello@coastinfrastructure.com.ng</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <span>Phone: </span>
+                        <a href="tel:+2349067633729">+234 906 763 3729</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                        <span>WhatsApp: </span>
+                        <a href="https://wa.me/2349067633729">+234 906 763 3729</a>
+                    </li>
+                    <li><span>Mon-Fri:</span> 9:00 AM - 5:00 PM</li>
+                    <li><span>Response Time:</span> Within 24hrs</li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="media-links">
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=61582789742908#"><i class="fa-brands fa-facebook-f"
+                        aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i><span class="sr-only">X
+                        (Twitter)</span></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/coast_infrastructure"><i class="fa-brands fa-instagram"
+                        aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/coast-infrastructure-systems-limited"><i
+                        class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span
+                        class="sr-only">LinkedIn</span></a>
+            </li>
+        </ul>
+
+        <p class="footer-copyright">
+            &COPY; 2025 by Coast System and Technologies all rights reserved
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/script.js" defer></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+
+    <script>
+        const reduceMotion = () =>
+            window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+            window.innerWidth < 768;
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggle = document.getElementById("servicesToggle");
+            const menu = document.getElementById("services-menu");
+
+            function closeMenu() {
+                if (!toggle || !menu) return;
+                toggle.setAttribute("aria-expanded", "false");
+                menu.classList.remove("open");
+            }
+            function openMenu() {
+                if (!toggle || !menu) return;
+                toggle.setAttribute("aria-expanded", "true");
+                menu.classList.add("open");
+            }
+            function toggleMenuA11y() {
+                if (!toggle || !menu) return;
+                const isOpen = toggle.getAttribute("aria-expanded") === "true";
+                isOpen ? closeMenu() : openMenu();
+            }
+
+            if (toggle) {
+                toggle.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    toggleMenuA11y();
+                });
+            }
+
+            document.addEventListener("click", (e) => {
+                if (menu && toggle && !menu.contains(e.target) && e.target !== toggle) {
+                    closeMenu();
+                }
+            });
+
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Escape") closeMenu();
+            });
+
+            AOS.init({
+                duration: 500,
+                easing: "ease-out-cubic",
+                offset: 80,
+                once: true,
+                anchorPlacement: "top-bottom",
+                disable: reduceMotion,
+            });
+        });
+
+        window.addEventListener("load", () =>
+            setTimeout(() => AOS.refresh(), 300)
+        );
+    </script>
+</body>
+
+</html>

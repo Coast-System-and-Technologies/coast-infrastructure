@@ -1,615 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./images/favicon/site.webmanifest" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coast Infrastructure</title>
-  </head>
-  <body>
-    <header>
-      <img src="./images/logo.png" alt="logo" class="light-logo" />
-      <img src="./images/darklogo.png" alt="darklogo" class="dark-logo" />
-      <ul id="nav-links" class="nav-links" role="list">
-        <li role="listitem"><a href="./index.html">Home</a></li>
-        <li role="listitem"><a href="./about.html">About Us</a></li>
-        <li role="listitem" class="dropdown" onclick="toggleDropdown(event)">
-          <a class="active" href="#"
-            >Services <i class="fa-solid fa-chevron-down"></i
-          ></a>
-          <ul class="dropdown-content" role="list">
-            <li class="dropdown-menu" role="listitem">
-              <a href="./solar.html">Solar Energy Solutions</a>
-            </li>
-            <li class="dropdown-menu" role="listitem">
-              <a href="./cctv.html">CCTV & Security Installations</a>
-            </li>
-            <li class="dropdown-menu" role="listitem">
-              <a href="#">Networking Configuration & Setup</a>
-            </li>
 
-            <li class="dropdown-menu" role="listitem">
-              <a href="./procurement.html">Procurement & Sourcing</a>
-            </li>
-          </ul>
-        </li>
-        <li role="listitem"><a href="./contact.html">Contact us</a></li>
-        <li role="listitem"><a href="#">Projects</a></li>
-        <li role="listitem"><a href="#FAQs">FAQs</a></li>
-      </ul>
-      <div class="side-icons">
-        <a href="#" class="cta-btn">Request a quote</a>
-        <div class="mode-toggle" onclick="modeToggle()">
-          <i class="fa-solid fa-moon moon"></i>
-          <i class="fa-solid fa-sun sun"></i>
-        </div>
-        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+<head>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon/site.webmanifest" />
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coast Infrastructure</title>
+</head>
+
+<body>
+  <header data-aos="fade-down" data-aos-duration="600">
+    <img src="./images/logo.png" alt="logo" class="light-logo" data-aos="fade-down" data-aos-delay="0" />
+    <img src="./images/darklogo.png" alt="darklogo" class="dark-logo" data-aos="fade-down" data-aos-delay="60" />
+
+    <ul id="nav-links" class="nav-links" role="list" data-aos="fade-down" data-aos-delay="120">
+      <li role="listitem"><a href="./index.html">Home</a></li>
+      <li role="listitem"><a href="./about.html">About Us</a></li>
+
+      <li class="dropdown active">
+        <button id="servicesToggle" class="dropdown-toggle" aria-expanded="false" aria-controls="services-menu">
+          Services
+          <i class="service-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+        </button>
+
+        <ul id="services-menu" class="dropdown-content" role="menu" aria-label="Services">
+          <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="0">
+            <a role="menuitem" href="./solar.html">Solar Energy Solutions</a>
+          </li>
+          <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="60">
+            <a role="menuitem" href="./cctv.html">CCTV &amp; Security Installations</a>
+          </li>
+          <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="120">
+            <a role="menuitem" href="networking.html">Networking Configuration &amp; Setup</a>
+          </li>
+          <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="180">
+            <a role="menuitem" href="./procurement.html">Procurement &amp; Sourcing</a>
+          </li>
+          <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="240">
+            <a role="menuitem" href="./printer.html">Printer Repair &amp; Maintenance</a>
+          </li>
+          <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="300">
+            <a role="menuitem" href="./mps.html">Managed Print Services (MPS) &amp; Device Leasing</a>
+          </li>
+        </ul>
+      </li>
+
+      <li role="listitem"><a href="./contact.html">Contact us</a></li>
+      <li role="listitem"><a href="#">Projects</a></li>
+      <li role="listitem"><a href="#FAQs">FAQs</a></li>
+    </ul>
+
+    <div class="side-icons" data-aos="fade-up" data-aos-delay="220">
+      <a href="#" class="cta-btn" data-aos="fade-up" data-aos-delay="260">Request a quote</a>
+      <div class="mode-toggle" onclick="modeToggle()" data-aos="fade-up" data-aos-delay="320">
+        <i class="fa-solid fa-moon moon"></i>
+        <i class="fa-solid fa-sun sun"></i>
       </div>
-    </header>
+      <div class="hamburger" onclick="toggleMenu()" data-aos="fade-up" data-aos-delay="380">&#9776;</div>
+    </div>
+  </header>
 
-    <section class="hero procure">
-      <div>
-        <h1>Procurement & Sourcing</h1>
-        <p>The Right Tech. Delivered Right</p>
-      </div>
-    </section>
+  <section class="hero procure" data-aos="fade" data-aos-duration="700">
+    <div data-aos="zoom-in" data-aos-delay="80">
+      <h1>Procurement & Sourcing</h1>
+      <p>The Right Tech. Delivered Right</p>
+    </div>
+  </section>
 
-    <section class="keep-eye">
-      <div class="keep-img">
-        <img src="./images/smartsourcing1.jpg" alt="CCTV" />
-        <img class="second-img" src="./images/smartsourcing2.jpg" alt="CCTV" />
-      </div>
-      <div class="keep-container">
-        <h2>Smart Sourcing for Smarter Projects</h2>
-        <p>
-          At Coast Infrastructure Systems Limited, we understand that great
-          infrastructure depends on quality components. That s why we offer
-          reliable procurement and sourcing services for a wide range of
-          technology and infrastructure related products
-        </p>
-        <br />
-        <p>
-          Whether you re launching a new setup, scaling an office, or managing a
-          multi site deployment we source, negotiate, and deliver the tools you
-          need to build efficiently and operate confidently
-        </p>
-      </div>
-    </section>
+  <section class="keep-eye" data-aos="fade-up">
+    <div class="keep-img">
+      <img src="./images/smartsourcing1.jpg" alt="CCTV" data-aos="fade-right" data-aos-delay="80" />
+      <img class="second-img" src="./images/smartsourcing2.jpg" alt="CCTV" data-aos="fade-right" data-aos-delay="160" />
+    </div>
 
-    <section class="what-we-procure">
-      <div class="procure-head">
-        <h2>What We Procure</h2>
-        <p>
-          We handle the procurement of a wide range of certified, high
-          performance equipment, including:
-        </p>
-      </div>
-      <div class="procure-container">
-        <div class="procure-card">
-          <div class="procure-content">
-            <span><i class="fa-solid fa-bolt"></i></span>
-            <h3>Power & Energy</h3>
-            <ul role="list">
-              <li role="listitem">
-                Solar panels (monocrystalline, polycrystalline)
-              </li>
-              <li role="listitem">Inverters (1kVA-20kVA, hybrid, smart)</li>
-              <li role="listitem">Deep cycle and lithium batteries</li>
-              <li role="listitem">
-                Charge controllers, breakers, and accessories
-              </li>
-            </ul>
-          </div>
-          <div class="procure-img">
-            <img src="./images/procurecard1.jpg" alt="solar panels" />
-          </div>
-        </div>
-
-        <div class="procure-card">
-          <div class="procure-content">
-            <span><i class="fa-solid fa-video"></i></span>
-            <h3>Security & Surveillance</h3>
-            <ul role="list">
-              <li role="listitem">CC TV cameras (IP, dome, bullet, PTZ)</li>
-              <li role="listitem">DVRs/NVRs and hard drives</li>
-              <li role="listitem">
-                Surveillance accessories (cables, connectors, adapters)
-              </li>
-            </ul>
-          </div>
-          <div class="procure-img">
-            <img src="./images/procurecard2.jpg" alt="security camera" />
-          </div>
-        </div>
-
-        <div class="procure-card">
-          <div class="procure-content">
-            <span><i class="fa-solid fa-globe"></i></span>
-            <h3>Networking & Connectivity</h3>
-            <ul role="list">
-              <li role="listitem">Routers , switches, and access points</li>
-              <li role="listitem">Ethernet and fiber optic cables</li>
-              <li role="listitem">Patch panels, faceplates, and racks</li>
-            </ul>
-          </div>
-          <div class="procure-img">
-            <img src="./images/procurecard3.jpg" alt="networking" />
-          </div>
-        </div>
-
-        <div class="procure-card">
-          <div class="procure-content">
-            <span><i class="fa-solid fa-robot"></i></span>
-            <h3>General Tech Infrastructure</h3>
-            <ul role="list">
-              <li role="listitem">Smart devices and IoT hardware</li>
-              <li role="listitem">Installation tools and accessories</li>
-              <li role="listitem">Office tech (printers, UPS, modems)</li>
-            </ul>
-          </div>
-          <div class="procure-img">
-            <img src="./images/procurecard4.jpg" alt="tech infrastructure" />
-          </div>
-        </div>
-
-        <div class="procure-card">
-          <div class="procure-content">
-            <span><i class="fa-solid fa-hard-drive"></i></span>
-            <h3>Digital Assets</h3>
-            <ul role="list">
-              <li role="listitem">Domain names (standard and premium)</li>
-              <li role="listitem">SSL certificates</li>
-              <li role="listitem">Software licensing (by request)</li>
-            </ul>
-          </div>
-          <div class="procure-img">
-            <img
-              src="./images/procurecard5.jpg"
-              alt="web
-              hosting"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="install">
-      <h2>Who Needs This?</h2>
-      <div class="install-container">
-        <div class="install-cards">
-          <span><i class="fa-solid fa-house"></i></span>
-          <p>Residential Buildings & Estates</p>
-        </div>
-        <div class="install-cards">
-          <span><i class="fa-solid fa-store"></i></span>
-          <p>Retail Stores & Warehouses</p>
-        </div>
-        <div class="install-cards">
-          <span><i class="fa-solid fa-building"></i></span>
-          <p>Office Complexes</p>
-        </div>
-        <div class="install-cards">
-          <span><i class="fa-solid fa-place-of-worship"></i></span>
-          <p>Hospitals & Schools</p>
-        </div>
-        <div class="install-cards">
-          <span><i class="fa-solid fa-map-location-dot"></i></span>
-          <p>Government Agencies & NGOs</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="procurement-process">
-      <h2>Our Procurement Process</h2>
-      <div class="process-container">
-        <div class="process-cards">
-          <div class="process-icon">
-            <i class="fa-solid fa-square-check"></i>
-          </div>
-          <div class="line-container">
-            <div class="circle"></div>
-            <div class="lines"></div>
-          </div>
-          <div>
-            <h3>Consultation & Needs Assessment</h3>
-            <p>
-              We discuss your requirements, usage environment, and constraints.
-            </p>
-          </div>
-        </div>
-        <div class="process-cards">
-          <div class="process-icon">
-            <i class="fa-solid fa-magnifying-glass-dollar"></i>
-          </div>
-          <div class="line-container">
-            <div class="circle"></div>
-            <div class="lines"></div>
-          </div>
-          <div>
-            <h3>Sourcing & Supplier Vetting</h3>
-            <p>
-              We identify trusted vendors and negotiate pricing on your behalf.
-            </p>
-          </div>
-        </div>
-        <div class="process-cards">
-          <div class="process-icon"><i class="fa-solid fa-truck-fast"></i></div>
-          <div class="line-container">
-            <div class="circle"></div>
-            <div class="lines"></div>
-          </div>
-          <div>
-            <h3>Delivery & Quality Assurance</h3>
-            <p>
-              Items are inspected and delivered to your location, ready for
-              setup.
-            </p>
-          </div>
-        </div>
-        <div class="process-cards">
-          <div class="process-icon">
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-          </div>
-          <div class="line-container">
-            <div class="circle"></div>
-            <div class="lines"></div>
-          </div>
-          <div>
-            <h3>Optional Installation Support</h3>
-            <p>
-              Pair your procurement with our installation services for a
-              seamless experience.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="what-we-do why-coast">
-      <div class="what-header">
-        <h2>Why Work With Us?</h2>
-      </div>
-      <div class="what-cards">
-        <div class="what-card">
-          <span><i class="fa-solid fa-certificate"></i></span>
-          <h3>Access to certified brands and global vendors</h3>
-        </div>
-        <div class="what-card">
-          <span><i class="fa-solid fa-shield-halved"></i></span>
-          <h3>Vendor verification and fraud prevention</h3>
-        </div>
-        <div class="what-card">
-          <span><i class="fa-solid fa-sack-dollar"></i></span>
-          <h3>Cost effective pricing without compromise</h3>
-        </div>
-        <div class="what-card">
-          <span><i class="fa-solid fa-clock-rotate-left"></i></span>
-          <h3>Transparent timelines and communication</h3>
-        </div>
-        <div class="what-card">
-          <span><i class="fa-solid fa-truck-fast"></i></span>
-          <h3>Nationwide delivery support</h3>
-        </div>
-        <div class="what-card">
-          <span><i class="fa-solid fa-puzzle-piece"></i></span>
-          <h3>
-            Available as a standalone service or part of your infrastructure
-            project
-          </h3>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section class="success-stories">
-      <div class="side-header">
-        <h2>Client Success Stories</h2>
-        <p>Hear from businesses that trust our solutions</p>
-      </div>
-      <div class="story-slider">
-        <div
-          class="carousel"
-          data-flickity='{ "freeScroll": true, "wrapAround": true }'>
-          <div class="carousel-cell">
-            <p>
-              "Coast Infrastructure transformed our entire network
-              infrastructure with incredible professionalism and expertise."
-            </p>
-            <img src="" alt="" />
-            <div>
-              <h4>Michael Okonkwo</h4>
-              <p>CEO, TechNova Solutions</p>
-            </div>
-            <div><a href="#">Read case study <i class="fa-solid fa-chevron-right"></i></a></div>
-          </div>
-          <div class="carousel-cell">
-            <p>
-              "Coast Infrastructure transformed our entire network
-              infrastructure with incredible professionalism and expertise."
-            </p>
-            <img src="" alt="" />
-            <div>
-              <h4>Michael Okonkwo</h4>
-              <p>CEO, TechNova Solutions</p>
-            </div>
-            <div><a href="#">Read case study <i class="fa-solid fa-chevron-right"></i></a></div>
-          </div>
-          <div class="carousel-cell">
-            <p>
-              "Coast Infrastructure transformed our entire network
-              infrastructure with incredible professionalism and expertise."
-            </p>
-            <img src="" alt="" />
-            <div>
-              <h4>Michael Okonkwo</h4>
-              <p>CEO, TechNova Solutions</p>
-            </div>
-            <div><a href="#">Read case study <i class="fa-solid fa-chevron-right"></i></a></div>
-          </div>
-          <div class="carousel-cell">
-            <p>
-              "Coast Infrastructure transformed our entire network
-              infrastructure with incredible professionalism and expertise."
-            </p>
-            <img src="" alt="" />
-            <div>
-              <h4>Michael Okonkwo</h4>
-              <p>CEO, TechNova Solutions</p>
-            </div>
-            <div><a href="#">Read case study <i class="fa-solid fa-chevron-right"></i></a></div>
-          </div>
-          <div class="carousel-cell">
-            <p>
-              "Coast Infrastructure transformed our entire network
-              infrastructure with incredible professionalism and expertise."
-            </p>
-            <img src="" alt="" />
-            <div>
-              <h4>Michael Okonkwo</h4>
-              <p>CEO, TechNova Solutions</p>
-            </div>
-            <div><a href="#">Read case study <i class="fa-solid fa-chevron-right"></i></a></div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <section class="get-started">
-      <div class="get-started-text">
-        <h3>Ready to Get Connected?</h3>
-        <p>Let us help you build a network that works as hard as you do</p>
-      </div>
-      <div class="bottom-cta">
-        <div class="cta"><a href="#">Request a Networking Quote</a></div>
-        <div class="cta"><a href="#">Call Us for a Site Visit</a></div>
-      </div>
-    </section>
-
-    <footer data-aos="fade" data-aos-duration="600">
-      <div class="footer-header">
-        <h3>Newsletter</h3>
-        <div class="subscribe">
-          <form action="/subscribe" method="post">
-            <h4>Subscribe now</h4>
-            <label for="email" class="sr-only">Email</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="Email"
-              required
-            />
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
-      </div>
-
-      <div class="footer-content">
-        <div class="about">
-          <h4>Company</h4>
-          <img
-            src="./images/darklogo.png"
-            alt="Coast Infrastructure Systems logo"
-            width="160"
-            height="44"
-            loading="lazy"
-            decoding="async"
-          />
-          <p>Reliable infrastructure, power, and security solutions</p>
-          <p>Member of the Coast Systems Group.</p>
-          <p>Serving Enterprises, SME's, and Homes across Nigeria.</p>
-        </div>
-
-        <div class="links">
-          <h4>Links</h4>
-          <ul class="link-list">
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./contact.html">Contact us</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="#FAQs">FAQs</a></li>
-            <li><a href="./quotation.html">Request a Free Quote</a></li>
-            <li>
-              <a href="./quotation.html?type=mps">Request an MPS Quote</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="working-hours">
-          <h4>Our Services</h4>
-          <ul class="link-list">
-            <li><a href="./solar.html">Solar Energy Solutions</a></li>
-            <li>
-              <a href="./printer.html">Printers Repair and Maintenance</a>
-            </li>
-            <li>
-              <a href="./mps.html"
-                >Managed Print Services &amp; Device Leasing</a
-              >
-            </li>
-            <li><a href="./cctv.html">CCTV &amp; Security Installations</a></li>
-            <li><a href="#">Networking Configuration &amp; Setup</a></li>
-            <li><a href="./procurement.html">Procurement &amp; Sourcing</a></li>
-          </ul>
-        </div>
-
-        <div class="get-in-touch">
-          <h4>Get in Touch</h4>
-          <ul class="contact">
-            <li>
-              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-              <span>Address: </span> Ibadan, Oyo state, Nigeria
-            </li>
-            <li>
-              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-              <span>Email: </span>
-              <a href="mailto:hi@coastinfrastructure.com.ng"
-                >hello@coastinfrastructure.com.ng</a
-              >
-            </li>
-            <li>
-              <i class="fa-solid fa-phone" aria-hidden="true"></i>
-              <span>Phone: </span>
-              <a href="tel:+2349067633729">+234 906 763 3729</a>
-            </li>
-            <li>
-              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-              <span>WhatsApp: </span>
-              <a href="https://wa.me/2349067633729">+234 906 763 3729</a>
-            </li>
-            <li><span>Mon-Fri:</span> 9:00 AM - 5:00 PM</li>
-            <li><span>Response Time:</span> Within 24hrs</li>
-          </ul>
-        </div>
-      </div>
-
-      <ul class="media-links">
-        <li>
-          <a href="https://www.facebook.com/profile.php?id=61582789742908#"
-            ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
-            ><span class="sr-only">Facebook</span></a
-          >
-        </li>
-        <li>
-          <a href="#"
-            ><i class="fa-brands fa-x-twitter" aria-hidden="true"></i
-            ><span class="sr-only">X (Twitter)</span></a
-          >
-        </li>
-        <li>
-          <a href="https://www.instagram.com/coast_infrastructure"
-            ><i class="fa-brands fa-instagram" aria-hidden="true"></i
-            ><span class="sr-only">Instagram</span></a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/company/coast-infrastructure-systems-limited"
-            ><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i
-            ><span class="sr-only">LinkedIn</span></a
-          >
-        </li>
-      </ul>
-
-      <p class="footer-copyright">
-        &COPY; 2025 by Coast System and Technologies all rights reserved
+    <div class="keep-container" data-aos="fade-left" data-aos-delay="120">
+      <h2 data-aos="fade-up" data-aos-delay="0">Smart Sourcing for Smarter Projects</h2>
+      <p data-aos="fade-up" data-aos-delay="60">
+        At Coast Infrastructure Systems Limited, we understand that great
+        infrastructure depends on quality components. That s why we offer
+        reliable procurement and sourcing services for a wide range of
+        technology and infrastructure related products
       </p>
-    </footer>
+      <br />
+      <p data-aos="fade-up" data-aos-delay="120">
+        Whether you re launching a new setup, scaling an office, or managing a
+        multi site deployment we source, negotiate, and deliver the tools you
+        need to build efficiently and operate confidently
+      </p>
+    </div>
+  </section>
 
-    <!-- Scripts -->
-    <script src="./js/script.js" defer></script>
-    <script
-      src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
-      defer
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+  <section class="what-we-procure" data-aos="fade-up">
+    <div class="procure-head">
+      <h2 data-aos="fade-up" data-aos-delay="60">What We Procure</h2>
+      <p data-aos="fade-up" data-aos-delay="120">
+        We handle the procurement of a wide range of certified, high
+        performance equipment, including:
+      </p>
+    </div>
 
-    <script>
-      // Respect reduced-motion and smaller screens
-      const reduceMotion = () =>
-        window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
-        window.innerWidth < 768;
+    <div class="procure-container">
+      <div class="procure-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="procure-content" data-aos="fade-up" data-aos-delay="80">
+          <span data-aos="zoom-in" data-aos-delay="40"><i class="fa-solid fa-bolt"></i></span>
+          <h3>Power & Energy</h3>
+          <ul role="list">
+            <li role="listitem">Solar panels (monocrystalline, polycrystalline)</li>
+            <li role="listitem">Inverters (1kVA-20kVA, hybrid, smart)</li>
+            <li role="listitem">Deep cycle and lithium batteries</li>
+            <li role="listitem">Charge controllers, breakers, and accessories</li>
+          </ul>
+        </div>
+        <div class="procure-img" data-aos="zoom-in" data-aos-delay="140">
+          <img src="./images/procurecard1.jpg" alt="solar panels" />
+        </div>
+      </div>
 
-      document.addEventListener("DOMContentLoaded", () => {
-        // Accessible dropdown behavior
-        const toggle = document.getElementById("servicesToggle");
-        const menu = document.getElementById("services-menu");
+      <div class="procure-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="procure-content" data-aos="fade-up" data-aos-delay="80">
+          <span data-aos="zoom-in" data-aos-delay="40"><i class="fa-solid fa-video"></i></span>
+          <h3>Security & Surveillance</h3>
+          <ul role="list">
+            <li role="listitem">CC TV cameras (IP, dome, bullet, PTZ)</li>
+            <li role="listitem">DVRs/NVRs and hard drives</li>
+            <li role="listitem">Surveillance accessories (cables, connectors, adapters)</li>
+          </ul>
+        </div>
+        <div class="procure-img" data-aos="zoom-in" data-aos-delay="140">
+          <img src="./images/procurecard2.jpg" alt="security camera" />
+        </div>
+      </div>
 
-        function closeMenu() {
-          toggle.setAttribute("aria-expanded", "false");
-          menu.classList.remove("open");
-        }
-        function openMenu() {
-          toggle.setAttribute("aria-expanded", "true");
-          menu.classList.add("open");
-        }
-        function toggleMenuA11y() {
-          const isOpen = toggle.getAttribute("aria-expanded") === "true";
-          isOpen ? closeMenu() : openMenu();
-        }
+      <div class="procure-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="procure-content" data-aos="fade-up" data-aos-delay="80">
+          <span data-aos="zoom-in" data-aos-delay="40"><i class="fa-solid fa-globe"></i></span>
+          <h3>Networking & Connectivity</h3>
+          <ul role="list">
+            <li role="listitem">Routers , switches, and access points</li>
+            <li role="listitem">Ethernet and fiber optic cables</li>
+            <li role="listitem">Patch panels, faceplates, and racks</li>
+          </ul>
+        </div>
+        <div class="procure-img" data-aos="zoom-in" data-aos-delay="140">
+          <img src="./images/procurecard3.jpg" alt="networking" />
+        </div>
+      </div>
 
-        toggle.addEventListener("click", (e) => {
-          e.stopPropagation();
-          toggleMenuA11y();
-        });
+      <div class="procure-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="procure-content" data-aos="fade-up" data-aos-delay="80">
+          <span data-aos="zoom-in" data-aos-delay="40"><i class="fa-solid fa-robot"></i></span>
+          <h3>General Tech Infrastructure</h3>
+          <ul role="list">
+            <li role="listitem">Smart devices and IoT hardware</li>
+            <li role="listitem">Installation tools and accessories</li>
+            <li role="listitem">Office tech (printers, UPS, modems)</li>
+          </ul>
+        </div>
+        <div class="procure-img" data-aos="zoom-in" data-aos-delay="140">
+          <img src="./images/procurecard4.jpg" alt="tech infrastructure" />
+        </div>
+      </div>
 
-        // Close on outside click / Escape
-        document.addEventListener("click", (e) => {
-          if (!menu.contains(e.target) && e.target !== toggle) {
-            closeMenu();
-          }
-        });
-        document.addEventListener("keydown", (e) => {
-          if (e.key === "Escape") closeMenu();
-        });
+      <div class="procure-card" data-aos="fade-up" data-aos-delay="320">
+        <div class="procure-content" data-aos="fade-up" data-aos-delay="80">
+          <span data-aos="zoom-in" data-aos-delay="40"><i class="fa-solid fa-hard-drive"></i></span>
+          <h3>Digital Assets</h3>
+          <ul role="list">
+            <li role="listitem">Domain names (standard and premium)</li>
+            <li role="listitem">SSL certificates</li>
+            <li role="listitem">Software licensing (by request)</li>
+          </ul>
+        </div>
+        <div class="procure-img" data-aos="zoom-in" data-aos-delay="140">
+          <img src="./images/procurecard5.jpg" alt="web hosting" />
+        </div>
+      </div>
+    </div>
+  </section>
 
-        // AOS init
-        AOS.init({
-          duration: 500,
-          easing: "ease-out-cubic",
-          offset: 80,
-          once: true,
-          anchorPlacement: "top-bottom",
-          disable: reduceMotion,
-        });
+  <section class="install" data-aos="fade-up">
+    <h2 data-aos="fade-up" data-aos-delay="60">Who Needs This?</h2>
+    <div class="install-container">
+      <div class="install-cards" data-aos="zoom-in" data-aos-delay="0">
+        <span><i class="fa-solid fa-house"></i></span>
+        <p>Residential Buildings & Estates</p>
+      </div>
+      <div class="install-cards" data-aos="zoom-in" data-aos-delay="80">
+        <span><i class="fa-solid fa-store"></i></span>
+        <p>Retail Stores & Warehouses</p>
+      </div>
+      <div class="install-cards" data-aos="zoom-in" data-aos-delay="160">
+        <span><i class="fa-solid fa-building"></i></span>
+        <p>Office Complexes</p>
+      </div>
+      <div class="install-cards" data-aos="zoom-in" data-aos-delay="240">
+        <span><i class="fa-solid fa-place-of-worship"></i></span>
+        <p>Hospitals & Schools</p>
+      </div>
+      <div class="install-cards" data-aos="zoom-in" data-aos-delay="320">
+        <span><i class="fa-solid fa-map-location-dot"></i></span>
+        <p>Government Agencies & NGOs</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="procurement-process" data-aos="fade-up">
+    <h2 data-aos="fade-up" data-aos-delay="60">Our Procurement Process</h2>
+
+    <div class="process-container">
+      <div class="process-cards" data-aos="fade-up" data-aos-delay="0">
+        <div class="process-icon" data-aos="zoom-in" data-aos-delay="40">
+          <i class="fa-solid fa-square-check"></i>
+        </div>
+        <div class="line-container" data-aos="fade" data-aos-delay="80">
+          <div class="circle"></div>
+          <div class="lines"></div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="120">
+          <h3>Consultation & Needs Assessment</h3>
+          <p>We discuss your requirements, usage environment, and constraints.</p>
+        </div>
+      </div>
+
+      <div class="process-cards" data-aos="fade-up" data-aos-delay="80">
+        <div class="process-icon" data-aos="zoom-in" data-aos-delay="40">
+          <i class="fa-solid fa-magnifying-glass-dollar"></i>
+        </div>
+        <div class="line-container" data-aos="fade" data-aos-delay="80">
+          <div class="circle"></div>
+          <div class="lines"></div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="120">
+          <h3>Sourcing & Supplier Vetting</h3>
+          <p>We identify trusted vendors and negotiate pricing on your behalf.</p>
+        </div>
+      </div>
+
+      <div class="process-cards" data-aos="fade-up" data-aos-delay="160">
+        <div class="process-icon" data-aos="zoom-in" data-aos-delay="40">
+          <i class="fa-solid fa-truck-fast"></i>
+        </div>
+        <div class="line-container" data-aos="fade" data-aos-delay="80">
+          <div class="circle"></div>
+          <div class="lines"></div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="120">
+          <h3>Delivery & Quality Assurance</h3>
+          <p>Items are inspected and delivered to your location, ready for setup.</p>
+        </div>
+      </div>
+
+      <div class="process-cards" data-aos="fade-up" data-aos-delay="240">
+        <div class="process-icon" data-aos="zoom-in" data-aos-delay="40">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+        </div>
+        <div class="line-container" data-aos="fade" data-aos-delay="80">
+          <div class="circle"></div>
+          <div class="lines"></div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="120">
+          <h3>Optional Installation Support</h3>
+          <p>Pair your procurement with our installation services for a seamless experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="what-we-do why-coast" data-aos="fade-up">
+    <div class="what-header" data-aos="fade-up" data-aos-delay="60">
+      <h2>Why Work With Us?</h2>
+    </div>
+
+    <div class="what-cards">
+      <div class="what-card" data-aos="fade-up" data-aos-delay="0">
+        <span><i class="fa-solid fa-certificate"></i></span>
+        <h3>Access to certified brands and global vendors</h3>
+      </div>
+      <div class="what-card" data-aos="fade-up" data-aos-delay="80">
+        <span><i class="fa-solid fa-shield-halved"></i></span>
+        <h3>Vendor verification and fraud prevention</h3>
+      </div>
+      <div class="what-card" data-aos="fade-up" data-aos-delay="160">
+        <span><i class="fa-solid fa-sack-dollar"></i></span>
+        <h3>Cost effective pricing without compromise</h3>
+      </div>
+      <div class="what-card" data-aos="fade-up" data-aos-delay="240">
+        <span><i class="fa-solid fa-clock-rotate-left"></i></span>
+        <h3>Transparent timelines and communication</h3>
+      </div>
+      <div class="what-card" data-aos="fade-up" data-aos-delay="320">
+        <span><i class="fa-solid fa-truck-fast"></i></span>
+        <h3>Nationwide delivery support</h3>
+      </div>
+      <div class="what-card" data-aos="fade-up" data-aos-delay="400">
+        <span><i class="fa-solid fa-puzzle-piece"></i></span>
+        <h3>Available as a standalone service or part of your infrastructure project</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="get-started" data-aos="fade-up">
+    <div class="get-started-text" data-aos="fade-up" data-aos-delay="60">
+      <h3>Ready to Get Connected?</h3>
+      <p>Let us help you build a network that works as hard as you do</p>
+    </div>
+    <div class="bottom-cta">
+      <div class="cta" data-aos="zoom-in" data-aos-delay="140"><a href="#">Request a Networking Quote</a></div>
+      <div class="cta" data-aos="zoom-in" data-aos-delay="220"><a href="#">Call Us for a Site Visit</a></div>
+    </div>
+  </section>
+
+  <footer data-aos="fade" data-aos-duration="600">
+    <!-- footer unchanged -->
+    <div class="footer-header">
+      <h3>Newsletter</h3>
+      <div class="subscribe">
+        <form action="/subscribe" method="post">
+          <h4>Subscribe now</h4>
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-content">
+      <div class="about">
+        <h4>Company</h4>
+        <img src="./images/darklogo.png" alt="Coast Infrastructure Systems logo" width="160" height="44" loading="lazy"
+          decoding="async" />
+        <p>Reliable infrastructure, power, and security solutions</p>
+        <p>Member of the Coast Systems Group.</p>
+        <p>Serving Enterprises, SME's, and Homes across Nigeria.</p>
+      </div>
+
+      <div class="links">
+        <h4>Links</h4>
+        <ul class="link-list">
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact us</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="#FAQs">FAQs</a></li>
+          <li><a href="./quotation.html">Request a Free Quote</a></li>
+          <li><a href="./quotation.html?type=mps">Request an MPS Quote</a></li>
+        </ul>
+      </div>
+
+      <div class="working-hours">
+        <h4>Our Services</h4>
+        <ul class="link-list">
+          <li><a href="./solar.html">Solar Energy Solutions</a></li>
+          <li><a href="./printer.html">Printers Repair and Maintenance</a></li>
+          <li><a href="./mps.html">Managed Print Services &amp; Device Leasing</a></li>
+          <li><a href="./cctv.html">CCTV &amp; Security Installations</a></li>
+          <li><a href="#">Networking Configuration &amp; Setup</a></li>
+          <li><a href="./procurement.html">Procurement &amp; Sourcing</a></li>
+        </ul>
+      </div>
+
+      <div class="get-in-touch">
+        <h4>Get in Touch</h4>
+        <ul class="contact">
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span>Address: </span> Ibadan, Oyo state,
+            Nigeria</li>
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <span>Email: </span>
+            <a href="mailto:hi@coastinfrastructure.com.ng">hello@coastinfrastructure.com.ng</a>
+          </li>
+          <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <span>Phone: </span>
+            <a href="tel:+2349067633729">+234 906 763 3729</a>
+          </li>
+          <li><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> <span>WhatsApp: </span>
+            <a href="https://wa.me/2349067633729">+234 906 763 3729</a>
+          </li>
+          <li><span>Mon-Fri:</span> 9:00 AM - 5:00 PM</li>
+          <li><span>Response Time:</span> Within 24hrs</li>
+        </ul>
+      </div>
+    </div>
+
+    <ul class="media-links">
+      <li><a href="https://www.facebook.com/profile.php?id=61582789742908#"><i class="fa-brands fa-facebook-f"
+            aria-hidden="true"></i><span class="sr-only">Facebook</span></a></li>
+      <li><a href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i><span class="sr-only">X
+            (Twitter)</span></a></li>
+      <li><a href="https://www.instagram.com/coast_infrastructure"><i class="fa-brands fa-instagram"
+            aria-hidden="true"></i><span class="sr-only">Instagram</span></a></li>
+      <li><a href="https://www.linkedin.com/company/coast-infrastructure-systems-limited"><i
+            class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a></li>
+    </ul>
+
+    <p class="footer-copyright">
+      &COPY; 2025 by Coast System and Technologies all rights reserved
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/script.js" defer></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+
+  <script>
+    // Respect reduced-motion and smaller screens
+    const reduceMotion = () =>
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+      window.innerWidth < 768;
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById("servicesToggle");
+      const menu = document.getElementById("services-menu");
+
+      function closeMenu() {
+        toggle.setAttribute("aria-expanded", "false");
+        menu.classList.remove("open");
+      }
+      function openMenu() {
+        toggle.setAttribute("aria-expanded", "true");
+        menu.classList.add("open");
+      }
+      function toggleMenuA11y() {
+        const isOpen = toggle.getAttribute("aria-expanded") === "true";
+        isOpen ? closeMenu() : openMenu();
+      }
+
+      toggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleMenuA11y();
       });
 
-      window.addEventListener("load", () =>
-        setTimeout(() => AOS.refresh(), 300)
-      );
-    </script>
-  </body>
+      document.addEventListener("click", (e) => {
+        if (!menu.contains(e.target) && e.target !== toggle) closeMenu();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeMenu();
+      });
+
+      AOS.init({
+        duration: 500,
+        easing: "ease-out-cubic",
+        offset: 80,
+        once: true,
+        anchorPlacement: "top-bottom",
+        disable: reduceMotion,
+      });
+    });
+
+    window.addEventListener("load", () =>
+      setTimeout(() => AOS.refresh(), 300)
+    );
+  </script>
+</body>
+
 </html>

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Managed Print Services & Device Leasing | Coast Infrastructure</title>
+</head>
+
+<body>
+    <header data-aos="fade-down" data-aos-duration="600">
+        <img src="./images/logo.png" alt="logo" class="light-logo" data-aos="fade-down" data-aos-delay="0" />
+        <img src="./images/darklogo.png" alt="darklogo" class="dark-logo" data-aos="fade-down" data-aos-delay="60" />
+
+        <ul id="nav-links" class="nav-links" role="list" data-aos="fade-down" data-aos-delay="120">
+            <li role="listitem"><a href="./index.html">Home</a></li>
+            <li role="listitem"><a href="./about.html">About Us</a></li>
+
+            <li class="dropdown active">
+                <button id="servicesToggle" class="dropdown-toggle" aria-expanded="false" aria-controls="services-menu">
+                    Services
+                    <i class="service-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </button>
+
+                <ul id="services-menu" class="dropdown-content" role="menu" aria-label="Services">
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="0">
+                        <a role="menuitem" href="./solar.html">Solar Energy Solutions</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="60">
+                        <a role="menuitem" href="./cctv.html">CCTV &amp; Security Installations</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="120">
+                        <a role="menuitem" href="networking.html">Networking Configuration &amp; Setup</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="180">
+                        <a role="menuitem" href="./procurement.html">Procurement &amp; Sourcing</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="240">
+                        <a role="menuitem" href="./printer.html">Printer Repair &amp; Maintenance</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="300">
+                        <a role="menuitem" href="./mps.html">Managed Print Services (MPS) &amp; Device Leasing</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li role="listitem"><a href="./contact.html">Contact us</a></li>
+            <li role="listitem"><a href="#">Projects</a></li>
+            <li role="listitem"><a href="#FAQs">FAQs</a></li>
+        </ul>
+
+        <div class="side-icons" data-aos="fade-up" data-aos-delay="220">
+            <a href="#" class="cta-btn" data-aos="fade-up" data-aos-delay="260">Request a quote</a>
+            <div class="mode-toggle" onclick="modeToggle()" data-aos="fade-up" data-aos-delay="320">
+                <i class="fa-solid fa-moon moon"></i>
+                <i class="fa-solid fa-sun sun"></i>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()" data-aos="fade-up" data-aos-delay="380">&#9776;</div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero solar" data-aos="fade" data-aos-duration="700">
+        <div data-aos="zoom-in" data-aos-delay="80">
+            <h1>Managed Print Services (MPS) &amp; Device Leasing</h1>
+            <p>All-in-one printing, toner, and support — with predictable costs.</p>
+        </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="keep-eye" data-aos="fade-up">
+        <div class="keep-img">
+            <img src="./images/mpskeep1.jpg" alt="Managed print services for offices" data-aos="fade-right"
+                data-aos-delay="80" />
+            <img class="second-img" src="./images/mpskeep2.jpg" alt="Office device leasing and support"
+                data-aos="fade-right" data-aos-delay="160" />
+        </div>
+
+        <div class="keep-container" data-aos="fade-left" data-aos-delay="120">
+            <h2 data-aos="fade-up" data-aos-delay="0">Print Without Stress, Downtime, or Surprise Expenses</h2>
+            <p data-aos="fade-up" data-aos-delay="60">
+                Managing printers across a growing office can be frustrating — toner runs
+                out, machines break, and costs become unpredictable. Coast Infrastructure
+                Systems Limited provides Managed Print Services (MPS) so your team can print
+                smoothly while you control spend.
+            </p>
+            <br />
+            <p data-aos="fade-up" data-aos-delay="120">
+                We deploy and manage the right devices for your needs, provide consumables,
+                handle repairs, and track usage — all under a simple service plan. We also
+                offer device leasing for printers and essential office IT equipment.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="security-services" data-aos="fade-up">
+        <h2 data-aos="fade-up" data-aos-delay="60">Our MPS & Leasing Services Include</h2>
+
+        <div class="ss-container">
+            <div class="ss-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="icon-container" data-aos="zoom-in" data-aos-delay="40">
+                    <i class="fa-solid fa-print"></i>
+                </div>
+                <div class="ss-content" data-aos="fade-up" data-aos-delay="80">
+                    <h3>Printer Supply & Deployment</h3>
+                    <p>
+                        We recommend and deploy the right printers/MFPs based on your volume,
+                        workflow, and budget.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ss-card" data-aos="fade-up" data-aos-delay="80">
+                <div class="icon-container" data-aos="zoom-in" data-aos-delay="40">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                </div>
+                <div class="ss-content" data-aos="fade-up" data-aos-delay="80">
+                    <h3>Cost-Per-Page Billing</h3>
+                    <p>
+                        Predictable monthly billing based on usage — ideal for offices that want
+                        controlled printing costs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ss-card" data-aos="fade-up" data-aos-delay="160">
+                <div class="icon-container" data-aos="zoom-in" data-aos-delay="40">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                </div>
+                <div class="ss-content" data-aos="fade-up" data-aos-delay="80">
+                    <h3>Toner & Consumables Management</h3>
+                    <p>
+                        Automated/managed replenishment so your team never gets stuck in the middle
+                        of critical work.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ss-card" data-aos="fade-up" data-aos-delay="240">
+                <div class="icon-container" data-aos="zoom-in" data-aos-delay="40">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <div class="ss-content" data-aos="fade-up" data-aos-delay="80">
+                    <h3>Maintenance & Repairs (Included)</h3>
+                    <p>
+                        Preventive maintenance and quick fixes to reduce downtime and extend device
+                        lifespan.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ss-card" data-aos="fade-up" data-aos-delay="320">
+                <div class="icon-container" data-aos="zoom-in" data-aos-delay="40">
+                    <i class="fa-solid fa-network-wired"></i>
+                </div>
+                <div class="ss-content" data-aos="fade-up" data-aos-delay="80">
+                    <h3>Network Printing & User Setup</h3>
+                    <p>
+                        Driver setup, printer sharing, scan configuration, and smooth access for
+                        teams.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ss-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-container" data-aos="zoom-in" data-aos-delay="40">
+                    <i class="fa-solid fa-laptop"></i>
+                </div>
+                <div class="ss-content" data-aos="fade-up" data-aos-delay="80">
+                    <h3>Device Leasing</h3>
+                    <p>
+                        Lease printers and essential office devices for flexible operations — great
+                        for startups and expanding teams.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEVICES / OPTIONS -->
+    <section class="camera-types" data-aos="fade-up">
+        <h2 data-aos="fade-up" data-aos-delay="60">Devices & Options We Provide</h2>
+
+        <div class="camera-container">
+            <div class="camera-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="camera-img bulletcam" data-aos="zoom-in" data-aos-delay="60">
+                    <img src="./images/mfpprinter.jpg" alt="Multi-function printers" />
+                </div>
+                <div class="camera-content" data-aos="fade-up" data-aos-delay="100">
+                    <h3>MFP / All-in-One Printers</h3>
+                    <p>Print, scan, copy for busy teams and front desks</p>
+                </div>
+            </div>
+
+            <div class="camera-card" data-aos="fade-up" data-aos-delay="80">
+                <div class="camera-img" data-aos="zoom-in" data-aos-delay="60">
+                    <img src="./images/laserprinter.jpg" alt="Laser printers" />
+                </div>
+                <div class="camera-content" data-aos="fade-up" data-aos-delay="100">
+                    <h3>High-Volume Laser Printers</h3>
+                    <p>Reliable output for frequent reporting and operations</p>
+                </div>
+            </div>
+
+            <div class="camera-card" data-aos="fade-up" data-aos-delay="160">
+                <div class="camera-img" data-aos="zoom-in" data-aos-delay="60">
+                    <img src="./images/officeprinter.jpg" alt="Office print environment" />
+                </div>
+                <div class="camera-content" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Office Print Setup</h3>
+                    <p>Shared printing, scan-to-email/folder, and access control options</p>
+                </div>
+            </div>
+
+            <div class="camera-card" data-aos="fade-up" data-aos-delay="240">
+                <div class="camera-img" data-aos="zoom-in" data-aos-delay="60">
+                    <img src="./images/consumables.jpg" alt="Toner and consumables" />
+                </div>
+                <div class="camera-content" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Consumables & Parts</h3>
+                    <p>Toner, drum, fuser units, rollers — managed and supplied</p>
+                </div>
+            </div>
+
+            <div class="camera-card" data-aos="fade-up" data-aos-delay="320">
+                <div class="camera-img" data-aos="zoom-in" data-aos-delay="60">
+                    <img src="./images/deviceleasing.jpg" alt="Device leasing" />
+                </div>
+                <div class="camera-content" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Leasing Support</h3>
+                    <p>Flexible plans with maintenance and support options</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHO NEEDS THIS -->
+    <section class="install" data-aos="fade-up">
+        <h2 data-aos="fade-up" data-aos-delay="60">Who Is This For?</h2>
+
+        <div class="install-container">
+            <div class="install-cards" data-aos="zoom-in" data-aos-delay="0">
+                <span><i class="fa-solid fa-building"></i></span>
+                <p>Corporate Offices & Admin Teams</p>
+            </div>
+            <div class="install-cards" data-aos="zoom-in" data-aos-delay="80">
+                <span><i class="fa-solid fa-graduation-cap"></i></span>
+                <p>Schools, Training Centres & Exam Offices</p>
+            </div>
+            <div class="install-cards" data-aos="zoom-in" data-aos-delay="160">
+                <span><i class="fa-solid fa-hospital"></i></span>
+                <p>Hospitals, Clinics & Medical Records Units</p>
+            </div>
+            <div class="install-cards" data-aos="zoom-in" data-aos-delay="240">
+                <span><i class="fa-solid fa-store"></i></span>
+                <p>Retail Chains & Logistics Operations</p>
+            </div>
+            <div class="install-cards" data-aos="zoom-in" data-aos-delay="320">
+                <span><i class="fa-solid fa-landmark"></i></span>
+                <p>Government Agencies & NGOs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY COAST -->
+    <section class="what-we-do why-coast" data-aos="fade-up">
+        <div class="what-header" data-aos="fade-up" data-aos-delay="60">
+            <h2>Why Choose Coast Infrastructure for MPS?</h2>
+        </div>
+
+        <div class="what-cards">
+            <div class="what-card" data-aos="fade-up" data-aos-delay="0">
+                <span><i class="fa-solid fa-coins"></i></span>
+                <h3>Predictable costs with clear service terms</h3>
+            </div>
+
+            <div class="what-card" data-aos="fade-up" data-aos-delay="80">
+                <span><i class="fa-solid fa-stopwatch"></i></span>
+                <h3>Quick support to reduce downtime</h3>
+            </div>
+
+            <div class="what-card" data-aos="fade-up" data-aos-delay="160">
+                <span><i class="fa-solid fa-chart-line"></i></span>
+                <h3>Usage insight to control waste and over-printing</h3>
+            </div>
+
+            <div class="what-card" data-aos="fade-up" data-aos-delay="240">
+                <span><i class="fa-solid fa-boxes-stacked"></i></span>
+                <h3>Consumables management so teams stay productive</h3>
+            </div>
+
+            <div class="what-card" data-aos="fade-up" data-aos-delay="320">
+                <span><i class="fa-solid fa-shield-halved"></i></span>
+                <h3>Reliable devices and proper preventive maintenance</h3>
+            </div>
+
+            <div class="what-card" data-aos="fade-up" data-aos-delay="400">
+                <span><i class="fa-solid fa-handshake"></i></span>
+                <h3>Flexible leasing for startups and expanding teams</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="sample-packages" data-aos="fade-up">
+        <h2 data-aos="fade-up" data-aos-delay="60">Sample MPS Packages</h2>
+
+        <div class="sample-container">
+            <div class="sample-card" data-aos="fade-up" data-aos-delay="0">
+                <span data-aos="zoom-in" data-aos-delay="40"><i class="fa-solid fa-print"></i></span>
+                <div class="package-label">
+                    <a href="#">
+                        <h3>Starter MPS</h3>
+                    </a>
+                </div>
+                <p>
+                    One device + basic support<br />
+                    <br />
+                    Best for: Small teams & startups
+                </p>
+            </div>
+
+            <div class="sample-card" data-aos="fade-up" data-aos-delay="80">
+                <span data-aos="zoom-in" data-aos-delay="40"><i class="fa-solid fa-briefcase"></i></span>
+                <div class="package-label">
+                    <a href="#">
+                        <h3>Office Standard</h3>
+                    </a>
+                </div>
+                <p>
+                    1–2 devices + toner management<br />
+                    <br />
+                    Best for: Admin offices (5–30 users)
+                </p>
+            </div>
+
+            <div class="sample-card" data-aos="fade-up" data-aos-delay="160">
+                <span data-aos="zoom-in" data-aos-delay="40"><i class="fa-solid fa-building"></i></span>
+                <div class="package-label">
+                    <a href="#">
+                        <h3>Business Pro</h3>
+                    </a>
+                </div>
+                <p>
+                    Multi-device coverage + service SLAs<br />
+                    <br />
+                    Best for: Busy departments and branches
+                </p>
+            </div>
+
+            <div class="sample-card" data-aos="fade-up" data-aos-delay="240">
+                <span data-aos="zoom-in" data-aos-delay="40"><i class="fa-solid fa-industry"></i></span>
+                <div class="package-label">
+                    <a href="#">
+                        <h3>Custom Enterprise</h3>
+                    </a>
+                </div>
+                <p>
+                    Fleet management + reporting + leasing options<br />
+                    <br />
+                    Best for: Schools, hospitals, large organisations
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="get-started" data-aos="fade-up">
+        <div class="get-started-text" data-aos="fade-up" data-aos-delay="60">
+            <h3>Want Predictable Printing Costs?</h3>
+            <p>Tell us your monthly volume — we’ll recommend the right plan.</p>
+        </div>
+
+        <div class="bottom-cta">
+            <div class="cta" data-aos="zoom-in" data-aos-delay="140"><a href="#">Request an MPS Quote</a></div>
+            <div class="cta" data-aos="zoom-in" data-aos-delay="220"><a href="#">Ask About Device Leasing</a></div>
+        </div>
+    </section>
+
+    <!-- FOOTER (UNCHANGED) -->
+    <footer data-aos="fade" data-aos-duration="600">
+        <div class="footer-header">
+            <h3>Newsletter</h3>
+            <div class="subscribe">
+                <form action="/subscribe" method="post">
+                    <h4>Subscribe now</h4>
+                    <label for="email" class="sr-only">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Email" required />
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="about">
+                <h4>Company</h4>
+                <img src="./images/darklogo.png" alt="Coast Infrastructure Systems logo" width="160" height="44"
+                    loading="lazy" decoding="async" />
+                <p>Reliable infrastructure, power, and security solutions</p>
+                <p>Member of the Coast Systems Group.</p>
+                <p>Serving Enterprises, SME's, and Homes across Nigeria.</p>
+            </div>
+
+            <div class="links">
+                <h4>Links</h4>
+                <ul class="link-list">
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact us</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="#FAQs">FAQs</a></li>
+                    <li><a href="./quotation.html">Request a Free Quote</a></li>
+                    <li><a href="./quotation.html?type=mps">Request an MPS Quote</a></li>
+                </ul>
+            </div>
+
+            <div class="working-hours">
+                <h4>Our Services</h4>
+                <ul class="link-list">
+                    <li><a href="./solar.html">Solar Energy Solutions</a></li>
+                    <li><a href="./printer.html">Printers Repair and Maintenance</a></li>
+                    <li><a href="./mps.html">Managed Print Services &amp; Device Leasing</a></li>
+                    <li><a href="./cctv.html">CCTV &amp; Security Installations</a></li>
+                    <li><a href="#">Networking Configuration &amp; Setup</a></li>
+                    <li><a href="./procurement.html">Procurement &amp; Sourcing</a></li>
+                </ul>
+            </div>
+
+            <div class="get-in-touch">
+                <h4>Get in Touch</h4>
+                <ul class="contact">
+                    <li>
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <span>Address: </span> Ibadan, Oyo state, Nigeria
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <span>Email: </span>
+                        <a href="mailto:hi@coastinfrastructure.com.ng">hello@coastinfrastructure.com.ng</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <span>Phone: </span>
+                        <a href="tel:+2349067633729">+234 906 763 3729</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                        <span>WhatsApp: </span>
+                        <a href="https://wa.me/2349067633729">+234 906 763 3729</a>
+                    </li>
+                    <li><span>Mon-Fri:</span> 9:00 AM - 5:00 PM</li>
+                    <li><span>Response Time:</span> Within 24hrs</li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="media-links">
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=61582789742908#"><i class="fa-brands fa-facebook-f"
+                        aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i><span class="sr-only">X
+                        (Twitter)</span></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/coast_infrastructure"><i class="fa-brands fa-instagram"
+                        aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/coast-infrastructure-systems-limited"><i
+                        class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span
+                        class="sr-only">LinkedIn</span></a>
+            </li>
+        </ul>
+
+        <p class="footer-copyright">
+            &COPY; 2025 by Coast System and Technologies all rights reserved
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/script.js" defer></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+
+    <script>
+        const reduceMotion = () =>
+            window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+            window.innerWidth < 768;
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggle = document.getElementById("servicesToggle");
+            const menu = document.getElementById("services-menu");
+
+            function closeMenu() {
+                if (!toggle || !menu) return;
+                toggle.setAttribute("aria-expanded", "false");
+                menu.classList.remove("open");
+            }
+            function openMenu() {
+                if (!toggle || !menu) return;
+                toggle.setAttribute("aria-expanded", "true");
+                menu.classList.add("open");
+            }
+            function toggleMenuA11y() {
+                if (!toggle || !menu) return;
+                const isOpen = toggle.getAttribute("aria-expanded") === "true";
+                isOpen ? closeMenu() : openMenu();
+            }
+
+            if (toggle) {
+                toggle.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    toggleMenuA11y();
+                });
+            }
+
+            document.addEventListener("click", (e) => {
+                if (menu && toggle && !menu.contains(e.target) && e.target !== toggle) {
+                    closeMenu();
+                }
+            });
+
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Escape") closeMenu();
+            });
+
+            AOS.init({
+                duration: 500,
+                easing: "ease-out-cubic",
+                offset: 80,
+                once: true,
+                anchorPlacement: "top-bottom",
+                disable: reduceMotion,
+            });
+        });
+
+        window.addEventListener("load", () =>
+            setTimeout(() => AOS.refresh(), 300)
+        );
+    </script>
+</body>
+
+</html>
