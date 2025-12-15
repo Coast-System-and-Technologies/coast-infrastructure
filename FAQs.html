@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Managed Print Services & Device Leasing | Coast Infrastructure</title>
+</head>
+
+<body>
+    <header data-aos="fade-down" data-aos-duration="600">
+        <img src="./images/logo.png" alt="logo" class="light-logo" data-aos="fade-down" data-aos-delay="0" />
+        <img src="./images/darklogo.png" alt="darklogo" class="dark-logo" data-aos="fade-down" data-aos-delay="60" />
+
+        <ul id="nav-links" class="nav-links" role="list" data-aos="fade-down" data-aos-delay="120">
+            <li role="listitem"><a href="./index.html">Home</a></li>
+            <li role="listitem"><a href="./about.html">About Us</a></li>
+
+            <li class="dropdown">
+                <button id="servicesToggle" class="dropdown-toggle" aria-expanded="false" aria-controls="services-menu">
+                    Services
+                    <i class="service-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </button>
+
+                <ul id="services-menu" class="dropdown-content" role="menu" aria-label="Services">
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="0">
+                        <a role="menuitem" href="./solar.html">Solar Energy Solutions</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="60">
+                        <a role="menuitem" href="./cctv.html">CCTV &amp; Security Installations</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="120">
+                        <a role="menuitem" href="networking.html">Networking Configuration &amp; Setup</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="180">
+                        <a role="menuitem" href="./procurement.html">Procurement &amp; Sourcing</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="240">
+                        <a role="menuitem" href="./printer.html">Printer Repair &amp; Maintenance</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="300">
+                        <a role="menuitem" href="./mps.html">Managed Print Services (MPS) &amp; Device Leasing</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li role="listitem"><a href="./contact.html">Contact us</a></li>
+            <li role="listitem"><a href="./projects.html">Projects</a></li>
+            <li role="listitem"><a class="active" href="./faqs.html">FAQs</a></li>
+        </ul>
+
+        <div class="side-icons" data-aos="fade-up" data-aos-delay="220">
+            <a href="#" class="cta-btn" data-aos="fade-up" data-aos-delay="260">Request a quote</a>
+            <div class="mode-toggle" onclick="modeToggle()" data-aos="fade-up" data-aos-delay="320">
+                <i class="fa-solid fa-moon moon"></i>
+                <i class="fa-solid fa-sun sun"></i>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()" data-aos="fade-up" data-aos-delay="380">&#9776;</div>
+        </div>
+    </header>
+
+    <main class="faq-page">
+        <!-- HERO (like screenshot) -->
+        <section class="faq-hero" aria-labelledby="faqTitle">
+            <div class="faq-hero-overlay"></div>
+            <div class="faq-hero-inner" data-aos="fade-up" data-aos-duration="700">
+                <h1 id="faqTitle">FAQ</h1>
+                <p class="faq-breadcrumb">
+                    Coast Infrastructure Sys Ltd. <span aria-hidden="true">›</span> FAQs
+                </p>
+            </div>
+        </section>
+
+        <!-- GENERAL QUESTIONS -->
+        <section class="faq-section" aria-labelledby="generalFaqTitle">
+            <div class="faq-container">
+                <div class="faq-head" data-aos="fade-up">
+                    <span class="faq-tag">ABOUT</span>
+                    <h2 id="generalFaqTitle">General Questions</h2>
+                    <p class="faq-sub">
+                        Answers to common questions about our services, delivery process, and support.
+                        If you can’t find what you need, reach us via the contact page.
+                    </p>
+                </div>
+
+                <div class="faq-grid">
+                    <!-- LEFT COLUMN -->
+                    <div class="faq-col" data-aos="fade-up" data-aos-delay="80">
+                        <div class="faq-item is-open">
+                            <button class="faq-q" type="button" aria-expanded="true">
+                                <span class="faq-num">1.</span>
+                                How do I request a quote for a project?
+                                <span class="faq-ico" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                            </button>
+                            <div class="faq-a">
+                                Share your service need (solar, CCTV, networking, procurement, printers/MPS), location,
+                                timeline, and any
+                                existing equipment. We’ll review and respond with options and pricing.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-q" type="button" aria-expanded="false">
+                                <span class="faq-num">2.</span>
+                                What areas do you serve in Nigeria?
+                                <span class="faq-ico" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                            </button>
+                            <div class="faq-a">
+                                We operate from Ibadan and support projects nationwide depending on scope, logistics,
+                                and timeline.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-q" type="button" aria-expanded="false">
+                                <span class="faq-num">3.</span>
+                                Do you handle supply only, installation only, or both?
+                                <span class="faq-ico" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                            </button>
+                            <div class="faq-a">
+                                Both. We can supply equipment, install and configure, or work with your existing setup
+                                to improve performance.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-q" type="button" aria-expanded="false">
+                                <span class="faq-num">4.</span>
+                                How do I contact your support team?
+                                <span class="faq-ico" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                            </button>
+                            <div class="faq-a">
+                                Use the contact page, email, or WhatsApp. For ongoing clients, we also offer service
+                                contracts with faster support.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT COLUMN -->
+                    <div class="faq-col" data-aos="fade-up" data-aos-delay="120">
+                        <div class="faq-item">
+                            <button class="faq-q" type="button" aria-expanded="false">
+                                <span class="faq-num">5.</span>
+                                What determines project pricing?
+                                <span class="faq-ico" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                            </button>
+                            <div class="faq-a">
+                                Scope, equipment type, site conditions, power/load requirements, cabling distance, and
+                                timeline.
+                                We price transparently with clear deliverables.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-q" type="button" aria-expanded="false">
+                                <span class="faq-num">6.</span>
+                                How long does a typical installation take?
+                                <span class="faq-ico" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                            </button>
+                            <div class="faq-a">
+                                Depends on scope. Small jobs can be same-day; larger deployments may take several days
+                                including testing and documentation.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-q" type="button" aria-expanded="false">
+                                <span class="faq-num">7.</span>
+                                Do you offer maintenance plans?
+                                <span class="faq-ico" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                            </button>
+                            <div class="faq-a">
+                                Yes. We offer scheduled servicing for solar/backup systems, CCTV, office networks,
+                                printers and MPS fleets.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-q" type="button" aria-expanded="false">
+                                <span class="faq-num">8.</span>
+                                Do you work with organisations?
+                                <span class="faq-ico" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                            </button>
+                            <div class="faq-a">
+                                Yes. We support SMEs and enterprises with procurement, infrastructure deployments, and
+                                service contracts.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FREQUENTLY ASKED QUESTIONS -->
+        <section class="faq-section faq-alt" aria-labelledby="freqFaqTitle">
+            <div class="faq-container">
+                <div class="faq-head" data-aos="fade-up">
+                    <span class="faq-tag">INFORMATION</span>
+                    <h2 id="freqFaqTitle">Frequently Asked Questions</h2>
+                    <p class="faq-sub">
+                        Quick clarifications about delivery steps, warranties, and how we ensure uptime for your
+                        systems.
+                    </p>
+                </div>
+
+                <div class="faq-wide" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-item is-open">
+                        <button class="faq-q" type="button" aria-expanded="true">
+                            <span class="faq-num">1.</span>
+                            What is the typical work order for a project?
+                            <span class="faq-ico" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-a">
+                            We start with assessment, then propose options, then procurement, installation,
+                            testing/hand-over,
+                            and finally maintenance (optional service contract).
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-q" type="button" aria-expanded="false">
+                            <span class="faq-num">2.</span>
+                            Do you provide warranty on equipment and installations?
+                            <span class="faq-ico" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-a">
+                            Equipment warranties depend on manufacturer and sourcing.
+                            We also support post-installation checks and maintenance plans to protect uptime.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-q" type="button" aria-expanded="false">
+                            <span class="faq-num">3.</span>
+                            Can you maintain existing equipment installed by another vendor?
+                            <span class="faq-ico" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-a">
+                            Yes — after inspection. If parts or wiring are substandard, we’ll recommend corrections
+                            before we commit to SLA support.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-q" type="button" aria-expanded="false">
+                            <span class="faq-num">4.</span>
+                            Do you offer procurement for IT and office hardware too?
+                            <span class="faq-ico" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-a">
+                            Yes. We source laptops, workstations, networking devices, printers/MFPs, consumables and
+                            other essential equipment.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA STRIP (like screenshot bottom banner vibe) -->
+        <section class="faq-cta" aria-label="FAQ call to action">
+            <div class="faq-container">
+                <div class="faq-cta-box" data-aos="zoom-in" data-aos-duration="650">
+                    <div class="faq-cta-text">
+                        <h3>Still have questions?</h3>
+                        <p>Tell us what you need — we’ll respond with the right guidance and next steps.</p>
+                    </div>
+                    <div class="faq-cta-actions">
+                        <a class="faq-btn faq-btn-primary" href="./contact.html">Contact Us</a>
+                        <a class="faq-btn faq-btn-outline" href="./quotation.html">Request a Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FAQ Accordion JS (drop-in) -->
+
+
+
+    <!-- FOOTER (UNCHANGED) -->
+    <footer data-aos="fade" data-aos-duration="600">
+        <div class="footer-header">
+            <h3>Newsletter</h3>
+            <div class="subscribe">
+                <form action="/subscribe" method="post">
+                    <h4>Subscribe now</h4>
+                    <label for="email" class="sr-only">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Email" required />
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="about">
+                <h4>Company</h4>
+                <img src="./images/darklogo.png" alt="Coast Infrastructure Systems logo" width="160" height="44"
+                    loading="lazy" decoding="async" />
+                <p>Reliable infrastructure, power, and security solutions</p>
+                <p>Member of the Coast Systems Group.</p>
+                <p>Serving Enterprises, SME's, and Homes across Nigeria.</p>
+            </div>
+
+            <div class="links">
+                <h4>Links</h4>
+                <ul class="link-list">
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact us</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="#FAQs">FAQs</a></li>
+                    <li><a href="./quotation.html">Request a Free Quote</a></li>
+                    <li><a href="./quotation.html?type=mps">Request an MPS Quote</a></li>
+                </ul>
+            </div>
+
+            <div class="working-hours">
+                <h4>Our Services</h4>
+                <ul class="link-list">
+                    <li><a href="./solar.html">Solar Energy Solutions</a></li>
+                    <li><a href="./printer.html">Printers Repair and Maintenance</a></li>
+                    <li><a href="./mps.html">Managed Print Services &amp; Device Leasing</a></li>
+                    <li><a href="./cctv.html">CCTV &amp; Security Installations</a></li>
+                    <li><a href="#">Networking Configuration &amp; Setup</a></li>
+                    <li><a href="./procurement.html">Procurement &amp; Sourcing</a></li>
+                </ul>
+            </div>
+
+            <div class="get-in-touch">
+                <h4>Get in Touch</h4>
+                <ul class="contact">
+                    <li>
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <span>Address: </span> Ibadan, Oyo state, Nigeria
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <span>Email: </span>
+                        <a href="mailto:hi@coastinfrastructure.com.ng">hello@coastinfrastructure.com.ng</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <span>Phone: </span>
+                        <a href="tel:+2349067633729">+234 906 763 3729</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                        <span>WhatsApp: </span>
+                        <a href="https://wa.me/2349067633729">+234 906 763 3729</a>
+                    </li>
+                    <li><span>Mon-Fri:</span> 9:00 AM - 5:00 PM</li>
+                    <li><span>Response Time:</span> Within 24hrs</li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="media-links">
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=61582789742908#"><i class="fa-brands fa-facebook-f"
+                        aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i><span class="sr-only">X
+                        (Twitter)</span></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/coast_infrastructure"><i class="fa-brands fa-instagram"
+                        aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/coast-infrastructure-systems-limited"><i
+                        class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span
+                        class="sr-only">LinkedIn</span></a>
+            </li>
+        </ul>
+
+        <p class="footer-copyright">
+            &COPY; 2025 by Coast System and Technologies all rights reserved
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/script.js" defer></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+
+    <script>
+        const reduceMotion = () =>
+            window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+            window.innerWidth < 768;
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggle = document.getElementById("servicesToggle");
+            const menu = document.getElementById("services-menu");
+
+            function closeMenu() {
+                if (!toggle || !menu) return;
+                toggle.setAttribute("aria-expanded", "false");
+                menu.classList.remove("open");
+            }
+            function openMenu() {
+                if (!toggle || !menu) return;
+                toggle.setAttribute("aria-expanded", "true");
+                menu.classList.add("open");
+            }
+            function toggleMenuA11y() {
+                if (!toggle || !menu) return;
+                const isOpen = toggle.getAttribute("aria-expanded") === "true";
+                isOpen ? closeMenu() : openMenu();
+            }
+
+            if (toggle) {
+                toggle.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    toggleMenuA11y();
+                });
+            }
+
+            document.addEventListener("click", (e) => {
+                if (menu && toggle && !menu.contains(e.target) && e.target !== toggle) {
+                    closeMenu();
+                }
+            });
+
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Escape") closeMenu();
+            });
+
+            AOS.init({
+                duration: 500,
+                easing: "ease-out-cubic",
+                offset: 80,
+                once: true,
+                anchorPlacement: "top-bottom",
+                disable: reduceMotion,
+            });
+        });
+
+        window.addEventListener("load", () =>
+            setTimeout(() => AOS.refresh(), 300)
+        );
+
+
+
+        (function () {
+            const root = document.querySelector(".faq-page");
+            if (!root) return;
+
+            const items = root.querySelectorAll(".faq-item");
+
+            function closeItem(item) {
+                item.classList.remove("is-open");
+                const btn = item.querySelector(".faq-q");
+                if (btn) btn.setAttribute("aria-expanded", "false");
+            }
+
+            function openItem(item) {
+                item.classList.add("is-open");
+                const btn = item.querySelector(".faq-q");
+                if (btn) btn.setAttribute("aria-expanded", "true");
+            }
+
+            root.addEventListener("click", (e) => {
+                const btn = e.target.closest(".faq-q");
+                if (!btn) return;
+
+                const item = btn.closest(".faq-item");
+                if (!item) return;
+
+                const isOpen = item.classList.contains("is-open");
+
+                // close siblings within same container
+                const container = item.parentElement;
+                container.querySelectorAll(".faq-item").forEach((sib) => {
+                    if (sib !== item) closeItem(sib);
+                });
+
+                isOpen ? closeItem(item) : openItem(item);
+            });
+        })();
+    </script>
+</body>
+
+</html>

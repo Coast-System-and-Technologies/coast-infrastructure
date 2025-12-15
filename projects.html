@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Coast Infrastructure</title>
+</head>
+
+<body>
+    <header data-aos="fade-down" data-aos-duration="600">
+        <img src="./images/logo.png" alt="logo" class="light-logo" data-aos="fade-down" data-aos-delay="0" />
+        <img src="./images/darklogo.png" alt="darklogo" class="dark-logo" data-aos="fade-down" data-aos-delay="60" />
+
+        <ul id="nav-links" class="nav-links" role="list" data-aos="fade-down" data-aos-delay="120">
+            <li role="listitem"><a href="./index.html">Home</a></li>
+            <li role="listitem"><a href="./about.html">About Us</a></li>
+
+            <li class="dropdown">
+                <button id="servicesToggle" class="dropdown-toggle" aria-expanded="false" aria-controls="services-menu">
+                    Services
+                    <i class="service-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </button>
+
+                <ul id="services-menu" class="dropdown-content" role="menu" aria-label="Services">
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="0">
+                        <a role="menuitem" href="./solar.html">Solar Energy Solutions</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="60">
+                        <a role="menuitem" href="./cctv.html">CCTV &amp; Security Installations</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="120">
+                        <a role="menuitem" href="networking.html">Networking Configuration &amp; Setup</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="180">
+                        <a role="menuitem" href="./procurement.html">Procurement &amp; Sourcing</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="240">
+                        <a role="menuitem" href="./printer.html">Printer Repair &amp; Maintenance</a>
+                    </li>
+
+                    <li class="dropdown-menu" role="none" data-aos="fade-right" data-aos-delay="300">
+                        <a role="menuitem" href="./mps.html">Managed Print Services (MPS) &amp; Device Leasing</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li role="listitem"><a href="./contact.html">Contact us</a></li>
+            <li role="listitem"><a class="active" href="./projects.html">Projects</a></li>
+            <li role="listitem"><a href="./faqs.html">FAQs</a></li>
+        </ul>
+
+        <div class="side-icons" data-aos="fade-up" data-aos-delay="220">
+            <a href="#" class="cta-btn" data-aos="fade-up" data-aos-delay="260">Request a quote</a>
+            <div class="mode-toggle" onclick="modeToggle()" data-aos="fade-up" data-aos-delay="320">
+                <i class="fa-solid fa-moon moon"></i>
+                <i class="fa-solid fa-sun sun"></i>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()" data-aos="fade-up" data-aos-delay="380">&#9776;</div>
+        </div>
+    </header>
+
+    <main class="projects-page">
+        <!-- HERO -->
+        <section class="projects-hero" aria-labelledby="projectsTitle">
+            <div class="p-container hero-grid">
+                <div class="hero-copy" data-aos="fade-right" data-aos-duration="700">
+                    <p class="hero-kicker">Coast Infrastructure Sys Ltd.</p>
+                    <h1 id="projectsTitle">
+                        Projects & <span class="highlight">Recent Work</span>
+                    </h1>
+                    <p class="hero-sub">
+                        A snapshot of how we support organisations with reliable power, secure infrastructure,
+                        networking, procurement and managed device services.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a class="p-btn p-btn-primary" href="./quotation.html" data-aos="fade-up"
+                            data-aos-delay="120">Request a Quote</a>
+                        <a class="p-btn p-btn-outline" href="./contact.html" data-aos="fade-up"
+                            data-aos-delay="200">Talk to Our Team</a>
+                    </div>
+
+                    <ul class="hero-badges" role="list" data-aos="fade-up" data-aos-delay="280">
+                        <li>Power & Backup</li>
+                        <li>Security & CCTV</li>
+                        <li>Networking</li>
+                        <li>Procurement</li>
+                        <li>MPS & Device Leasing</li>
+                    </ul>
+                </div>
+
+                <div class="hero-card" data-aos="fade-left" data-aos-duration="700">
+                    <div class="hero-mini">
+                        <div class="mini-block">
+                            <p class="mini-title">Response Time</p>
+                            <p class="mini-value">Within 24hrs</p>
+                        </div>
+                        <div class="mini-block">
+                            <p class="mini-title">Coverage</p>
+                            <p class="mini-value">Nigeria-wide</p>
+                        </div>
+                        <div class="mini-block">
+                            <p class="mini-title">Focus</p>
+                            <p class="mini-value">Uptime & Reliability</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-note">
+                        <h3>What you’ll see here</h3>
+                        <p>
+                            Real client engagements and what we delivered — from procurement and installation
+                            to maintenance and ongoing support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RECENT WORK (matches your PDF layout) -->
+        <section class="recent-work" aria-labelledby="recentWorkTitle">
+            <div class="p-container recent-grid">
+                <div class="recent-left">
+                    <h2 id="recentWorkTitle" data-aos="fade-up">
+                        RECENT <span class="highlight">WORK</span>
+                    </h2>
+                    <p class="section-sub" data-aos="fade-up" data-aos-delay="80">
+                        Key projects and clients we’ve supported with infrastructure, power, security and IT operations.
+                    </p>
+
+                    <div class="work-list">
+                        <!-- 01 -->
+                        <article class="work-item" data-aos="fade-up" data-aos-delay="120">
+                            <div class="work-top">
+                                <span class="work-no">01</span>
+                                <span class="work-pill">Sparklingwave Investment</span>
+                            </div>
+
+                            <p class="work-desc">
+                                Hybrid solar and inverter power, prioritised IT loads, plus hardware provision and IT
+                                facility maintenance.
+                            </p>
+
+                            <ul class="work-bullets" role="list">
+                                <li>Site survey and load assessment for operations hub</li>
+                                <li>Hybrid solar/inverter design + deployment</li>
+                                <li>Critical load prioritisation (servers, workstations, internet, security)</li>
+                                <li>Ongoing monitoring and maintenance</li>
+                            </ul>
+
+                            <p class="work-outcome"><strong>Outcome:</strong> More stable power and better-managed IT
+                                facilities.</p>
+                        </article>
+
+                        <!-- 02 -->
+                        <article class="work-item" data-aos="fade-up" data-aos-delay="160">
+                            <div class="work-top">
+                                <span class="work-no">02</span>
+                                <span class="work-pill">SharpCredit Limited</span>
+                            </div>
+
+                            <p class="work-desc">
+                                Provision, procurement and maintenance of core IT infrastructure supporting salary-based
+                                lending operations.
+                            </p>
+
+                            <ul class="work-bullets" role="list">
+                                <li>Core IT equipment provision and lifecycle support</li>
+                                <li>Networking support for stable office operations</li>
+                                <li>Repairs, maintenance and operational continuity support</li>
+                            </ul>
+
+                            <p class="work-outcome"><strong>Outcome:</strong> Operations remain responsive and reliable.
+                            </p>
+                        </article>
+
+                        <!-- 03 -->
+                        <article class="work-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="work-top">
+                                <span class="work-no">03</span>
+                                <span class="work-pill">Beryls Management Ltd</span>
+                            </div>
+
+                            <p class="work-desc">
+                                Power, security and <strong>payroll IT infrastructure</strong> support for secure,
+                                always-on payment processing.
+                            </p>
+
+                            <ul class="work-bullets" role="list">
+                                <li>Core IT + networking hardware sourcing/provision</li>
+                                <li>Backup power protection for key office equipment</li>
+                                <li>Maintenance and advisory for infrastructure upgrades</li>
+                            </ul>
+
+                            <p class="work-outcome"><strong>Outcome:</strong> A more secure and stable environment for
+                                payroll operations.</p>
+                        </article>
+
+                        <!-- 04 -->
+                        <article class="work-item" data-aos="fade-up" data-aos-delay="240">
+                            <div class="work-top">
+                                <span class="work-no">04</span>
+                                <span class="work-pill">Conceptual Integrated Consulting Limited (CICL)</span>
+                            </div>
+
+                            <p class="work-desc">
+                                Infrastructure procurement support for consulting and training operations.
+                            </p>
+
+                            <ul class="work-bullets" role="list">
+                                <li>Workstations, laptops and presentation equipment sourcing</li>
+                                <li>Networking devices + structured cabling support</li>
+                                <li>Backup power solutions for key areas</li>
+                            </ul>
+
+                            <p class="work-outcome"><strong>Outcome:</strong> Dependable operations for consulting and
+                                training sessions.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Visual side (circle image + accent circles like your PDF) -->
+                <aside class="recent-right" aria-label="Project visuals" data-aos="fade-left">
+                    <div class="visual-wrap">
+                        <!-- Replace src with your best “team/server room” image -->
+                        <img class="visual-img" src="./images/cctvkeep1.jpg" alt="Coast Infrastructure project work"
+                            loading="lazy" />
+                        <span class="visual-ring" aria-hidden="true"></span>
+                        <span class="visual-dot visual-dot-1" aria-hidden="true"></span>
+                        <span class="visual-dot visual-dot-2" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="recent-note" data-aos="fade-up" data-aos-delay="120">
+                        <h3>What clients usually request</h3>
+                        <ul role="list">
+                            <li>Stable power for IT environments</li>
+                            <li>Secure networks and surveillance</li>
+                            <li>Reliable device support & maintenance</li>
+                            <li>Procurement with vetted vendors</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="portfolio-showcase" aria-labelledby="portfolioTitle">
+            <div class="portfolio-wrap">
+                <div class="portfolio-head" data-aos="fade-up">
+                    <p class="portfolio-kicker">OUR PORTFOLIO</p>
+                    <h2 id="portfolioTitle">Recent Work Gallery</h2>
+                    <p class="portfolio-sub">
+                        A quick look at installations, deployments, and infrastructure work we’ve delivered.
+                    </p>
+                </div>
+
+                <!-- Gallery grid (matches your wireframe) -->
+                <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="120">
+                    <!-- A (Tall) -->
+                    <a class="port-card port-a" href="./projects.html" aria-label="View project: Solar & Backup Power">
+                        <img src="./images/portfolio/solar-1.jpg" alt="Hybrid solar and inverter installation"
+                            loading="lazy" />
+                        <span class="port-overlay">
+                            <span class="port-meta">
+                                <span class="port-tag">Solar</span>
+                                <span class="port-title">Hybrid Power Setup</span>
+                                <span class="port-cta">View Project <i class="fa-solid fa-arrow-right"></i></span>
+                            </span>
+                        </span>
+                    </a>
+
+                    <!-- B (Small top) -->
+                    <a class="port-card port-b" href="./projects.html" aria-label="View project: CCTV installation">
+                        <img src="./images/portfolio/cctv-1.jpg" alt="CCTV camera installation and setup"
+                            loading="lazy" />
+                        <span class="port-overlay">
+                            <span class="port-meta">
+                                <span class="port-tag">CCTV</span>
+                                <span class="port-title">Security Coverage Setup</span>
+                                <span class="port-cta">View Project <i class="fa-solid fa-arrow-right"></i></span>
+                            </span>
+                        </span>
+                    </a>
+
+                    <!-- E (Tall bottom in column 2) -->
+                    <a class="port-card port-e" href="./projects.html"
+                        aria-label="View project: Office network deployment">
+                        <img src="./images/portfolio/network-1.jpg"
+                            alt="Structured cabling and office network deployment" loading="lazy" />
+                        <span class="port-overlay">
+                            <span class="port-meta">
+                                <span class="port-tag">Networking</span>
+                                <span class="port-title">Office Network Deployment</span>
+                                <span class="port-cta">View Project <i class="fa-solid fa-arrow-right"></i></span>
+                            </span>
+                        </span>
+                    </a>
+
+                    <!-- C (Tall) -->
+                    <a class="port-card port-c" href="./projects.html" aria-label="View project: Printer fleet support">
+                        <img src="./images/portfolio/printer-1.jpg" alt="Office printers and managed print support"
+                            loading="lazy" />
+                        <span class="port-overlay">
+                            <span class="port-meta">
+                                <span class="port-tag">Printers / MPS</span>
+                                <span class="port-title">Device Support & Uptime</span>
+                                <span class="port-cta">View Project <i class="fa-solid fa-arrow-right"></i></span>
+                            </span>
+                        </span>
+                    </a>
+
+                    <!-- D (Tall top in column 4) -->
+                    <a class="port-card port-d" href="./projects.html"
+                        aria-label="View project: Procurement and sourcing">
+                        <img src="./images/portfolio/procurement-1.jpg" alt="Procurement and equipment sourcing"
+                            loading="lazy" />
+                        <span class="port-overlay">
+                            <span class="port-meta">
+                                <span class="port-tag">Procurement</span>
+                                <span class="port-title">Certified Equipment Supply</span>
+                                <span class="port-cta">View Project <i class="fa-solid fa-arrow-right"></i></span>
+                            </span>
+                        </span>
+                    </a>
+
+                    <!-- F (Small bottom) -->
+                    <a class="port-card port-f" href="./projects.html" aria-label="View project: Maintenance visit">
+                        <img src="./images/portfolio/maintenance-1.jpg" alt="Maintenance and servicing visit"
+                            loading="lazy" />
+                        <span class="port-overlay">
+                            <span class="port-meta">
+                                <span class="port-tag">Maintenance</span>
+                                <span class="port-title">Preventive Servicing</span>
+                                <span class="port-cta">View Project <i class="fa-solid fa-arrow-right"></i></span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="projects-grid" aria-labelledby="projectsGridTitle">
+            <div class="p-container">
+                <div class="section-head" data-aos="fade-up">
+                    <h2 id="projectsGridTitle">Featured Case Snapshots</h2>
+                    <p class="section-sub">
+                        Quick previews you can expand into full case studies later.
+                    </p>
+                </div>
+
+                <div class="card-grid">
+                    <article class="p-card" data-aos="fade-up" data-aos-delay="80">
+                        <div class="p-card-img">
+                            <img src="./images/procurecard1.jpg" alt="Power and backup infrastructure" loading="lazy" />
+                        </div>
+                        <div class="p-card-body">
+                            <h3>Power & Backup Uptime</h3>
+                            <p>Hybrid power design, critical load prioritisation, monitoring and maintenance.</p>
+                            <a class="p-link" href="./quotation.html">Request similar setup <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="p-card" data-aos="fade-up" data-aos-delay="120">
+                        <div class="p-card-img">
+                            <img src="./images/procurecard2.jpg" alt="Security and surveillance" loading="lazy" />
+                        </div>
+                        <div class="p-card-body">
+                            <h3>Security & Surveillance</h3>
+                            <p>CCTV design, installation, device setup, and operational support.</p>
+                            <a class="p-link" href="./cctv.html">Explore CCTV service <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="p-card" data-aos="fade-up" data-aos-delay="160">
+                        <div class="p-card-img">
+                            <img src="./images/procurecard3.jpg" alt="Networking and connectivity" loading="lazy" />
+                        </div>
+                        <div class="p-card-body">
+                            <h3>Networking & Connectivity</h3>
+                            <p>Structured cabling, switches, access points, and stable office connectivity.</p>
+                            <a class="p-link" href="./networking.html">See networking <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="p-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="p-card-img">
+                            <img src="./images/servicecards4.png" alt="Managed print services" loading="lazy" />
+                        </div>
+                        <div class="p-card-body">
+                            <h3>MPS & Device Support</h3>
+                            <p>Managed print, consumables, maintenance and leasing for predictable operations.</p>
+                            <a class="p-link" href="./mps.html">See MPS options <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="how-it-works" aria-labelledby="howTitle">
+            <div class="p-container">
+                <div class="section-head" data-aos="fade-up">
+                    <h2 id="howTitle">How We Deliver Projects</h2>
+                    <p class="section-sub">Clear steps, predictable execution, and ongoing support.</p>
+                </div>
+
+                <div class="steps">
+                    <div class="step" data-aos="fade-up" data-aos-delay="80">
+                        <div class="step-no">1</div>
+                        <h3>Assessment</h3>
+                        <p>We confirm your needs, environment, load/usage, and requirements.</p>
+                    </div>
+
+                    <div class="step" data-aos="fade-up" data-aos-delay="140">
+                        <div class="step-no">2</div>
+                        <h3>Design & Procurement</h3>
+                        <p>We propose the right setup and source vetted, certified components.</p>
+                    </div>
+
+                    <div class="step" data-aos="fade-up" data-aos-delay="200">
+                        <div class="step-no">3</div>
+                        <h3>Install & Support</h3>
+                        <p>Professional deployment, testing, documentation, then maintenance support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="projects-cta" aria-label="Projects call to action">
+            <div class="p-container">
+                <div class="cta-box" data-aos="zoom-in" data-aos-duration="600">
+                    <h2>Want to See a Similar Result in Your Organisation?</h2>
+                    <p>Tell us what you’re building — we’ll recommend the right infrastructure plan.</p>
+                    <div class="cta-actions">
+                        <a class="p-btn p-btn-primary" href="./quotation.html">Request a Quote</a>
+                        <a class="p-btn p-btn-outline" href="./contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FOOTER (UNCHANGED) -->
+    <footer data-aos="fade" data-aos-duration="600">
+        <div class="footer-header">
+            <h3>Newsletter</h3>
+            <div class="subscribe">
+                <form action="/subscribe" method="post">
+                    <h4>Subscribe now</h4>
+                    <label for="email" class="sr-only">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Email" required />
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="about">
+                <h4>Company</h4>
+                <img src="./images/darklogo.png" alt="Coast Infrastructure Systems logo" width="160" height="44"
+                    loading="lazy" decoding="async" />
+                <p>Reliable infrastructure, power, and security solutions</p>
+                <p>Member of the Coast Systems Group.</p>
+                <p>Serving Enterprises, SME's, and Homes across Nigeria.</p>
+            </div>
+
+            <div class="links">
+                <h4>Links</h4>
+                <ul class="link-list">
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact us</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="#FAQs">FAQs</a></li>
+                    <li><a href="./quotation.html">Request a Free Quote</a></li>
+                    <li><a href="./quotation.html?type=mps">Request an MPS Quote</a></li>
+                </ul>
+            </div>
+
+            <div class="working-hours">
+                <h4>Our Services</h4>
+                <ul class="link-list">
+                    <li><a href="./solar.html">Solar Energy Solutions</a></li>
+                    <li><a href="./printer.html">Printers Repair and Maintenance</a></li>
+                    <li><a href="./mps.html">Managed Print Services &amp; Device Leasing</a></li>
+                    <li><a href="./cctv.html">CCTV &amp; Security Installations</a></li>
+                    <li><a href="#">Networking Configuration &amp; Setup</a></li>
+                    <li><a href="./procurement.html">Procurement &amp; Sourcing</a></li>
+                </ul>
+            </div>
+
+            <div class="get-in-touch">
+                <h4>Get in Touch</h4>
+                <ul class="contact">
+                    <li>
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <span>Address: </span> Ibadan, Oyo state, Nigeria
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <span>Email: </span>
+                        <a href="mailto:hi@coastinfrastructure.com.ng">hello@coastinfrastructure.com.ng</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <span>Phone: </span>
+                        <a href="tel:+2349067633729">+234 906 763 3729</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                        <span>WhatsApp: </span>
+                        <a href="https://wa.me/2349067633729">+234 906 763 3729</a>
+                    </li>
+                    <li><span>Mon-Fri:</span> 9:00 AM - 5:00 PM</li>
+                    <li><span>Response Time:</span> Within 24hrs</li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="media-links">
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=61582789742908#"><i class="fa-brands fa-facebook-f"
+                        aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i><span class="sr-only">X
+                        (Twitter)</span></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/coast_infrastructure"><i class="fa-brands fa-instagram"
+                        aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/coast-infrastructure-systems-limited"><i
+                        class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span
+                        class="sr-only">LinkedIn</span></a>
+            </li>
+        </ul>
+
+        <p class="footer-copyright">
+            &COPY; 2025 by Coast System and Technologies all rights reserved
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/script.js" defer></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+
+    <script>
+        const reduceMotion = () =>
+            window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+            window.innerWidth < 768;
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggle = document.getElementById("servicesToggle");
+            const menu = document.getElementById("services-menu");
+
+            function closeMenu() {
+                if (!toggle || !menu) return;
+                toggle.setAttribute("aria-expanded", "false");
+                menu.classList.remove("open");
+            }
+            function openMenu() {
+                if (!toggle || !menu) return;
+                toggle.setAttribute("aria-expanded", "true");
+                menu.classList.add("open");
+            }
+            function toggleMenuA11y() {
+                if (!toggle || !menu) return;
+                const isOpen = toggle.getAttribute("aria-expanded") === "true";
+                isOpen ? closeMenu() : openMenu();
+            }
+
+            if (toggle) {
+                toggle.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    toggleMenuA11y();
+                });
+            }
+
+            document.addEventListener("click", (e) => {
+                if (menu && toggle && !menu.contains(e.target) && e.target !== toggle) {
+                    closeMenu();
+                }
+            });
+
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Escape") closeMenu();
+            });
+
+            AOS.init({
+                duration: 500,
+                easing: "ease-out-cubic",
+                offset: 80,
+                once: true,
+                anchorPlacement: "top-bottom",
+                disable: reduceMotion,
+            });
+        });
+
+        window.addEventListener("load", () =>
+            setTimeout(() => AOS.refresh(), 300)
+        );
+    </script>
+</body>
+
+</html>
