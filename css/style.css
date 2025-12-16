@@ -988,13 +988,18 @@ input::placeholder {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/printerbg.png) no-repeat center center/cover;
 }
 
+.hero.mps {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/mpsbg.png) no-repeat center center/cover;
+}
+
 .hero.aboutus div,
 .hero.cctv div,
 .hero.solar,
 .hero.procure,
 .hero.contactus div,
 .hero.networking,
-.hero.printer {
+.hero.printer,
+.hero.mps {
   position: relative;
   width: 100%;
   z-index: 10;
