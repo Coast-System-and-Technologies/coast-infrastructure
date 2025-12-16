@@ -973,15 +973,28 @@ input::placeholder {
 }
 
 .hero.solar {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/contactusbg.png) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/solar.png) no-repeat center center/cover;
 }
 
+.hero.networking {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/networking.png) no-repeat center center/cover;
+}
+
+.hero.procure {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/procurementbg.jpg) no-repeat center center/cover;
+}
+
+.hero.printer {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/printerbg.png) no-repeat center center/cover;
+}
 
 .hero.aboutus div,
 .hero.cctv div,
 .hero.solar,
-.hero.procure div,
-.hero.contactus div {
+.hero.procure,
+.hero.contactus div,
+.hero.networking,
+.hero.printer {
   position: relative;
   width: 100%;
   z-index: 10;
@@ -991,6 +1004,7 @@ input::placeholder {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-top: 5rem;
 }
 
 .hero.aboutus h1,
@@ -1568,11 +1582,12 @@ input::placeholder {
   width: 40%;
   margin: auto;
   position: absolute;
-  top: -4rem;
+  top: -5rem;
   right: 30%;
   margin: auto;
   border-radius: 50%;
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 
 .ss-content {
@@ -1780,9 +1795,7 @@ input::placeholder {
 ********************************
 *********************************/
 /* procurement page starts here */
-.hero.procure {
-  background-image: url(/images/procurementbg.jpg);
-}
+
 
 .what-we-procure,
 .procurement-process {
@@ -2116,7 +2129,6 @@ label {
 
 /* =========================
    PROJECTS PAGE (scoped)
-   Uses ONLY your CSS vars
 ========================= */
 
 
@@ -2129,7 +2141,7 @@ label {
 /* HERO */
 .projects-hero {
   padding: 4.5rem 0 2.5rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/contactusbg.png) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/project.png) no-repeat center center/cover;
   margin-block-start: 5rem;
 }
 
@@ -2426,7 +2438,6 @@ p.hero-sub {
 
 /* ================================
    Portfolio Showcase (Wireframe Grid)
-   Uses ONLY your CSS variables
 ================================ */
 
 .portfolio-showcase {
@@ -2546,7 +2557,6 @@ p.hero-sub {
   grid-row: 2;
 }
 
-/* Make top-right (D) slightly “taller looking” like wireframe */
 .port-d {
   grid-row: 1;
 }
@@ -2555,7 +2565,6 @@ p.hero-sub {
   grid-row: 2;
 }
 
-/* Image */
 .port-card img {
   width: 100%;
   height: 100%;
@@ -2569,7 +2578,6 @@ p.hero-sub {
   transform: scale(1.07);
 }
 
-/* Overlay */
 .port-overlay {
   position: absolute;
   inset: 0;
@@ -2618,7 +2626,6 @@ p.hero-sub {
   color: var(--plain-color);
 }
 
-/* Bottom action */
 .portfolio-actions {
   margin-top: 1.6rem;
   display: flex;
@@ -2873,7 +2880,6 @@ p.hero-sub {
 
 /* =========================
    FAQ PAGE (scoped)
-   Uses ONLY your CSS vars
 ========================= */
 
 .faq-page {
@@ -2888,7 +2894,7 @@ p.hero-sub {
   display: grid;
   place-items: center;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/contactusbg.png) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/FAQs.png) no-repeat center center/cover;
   overflow: hidden;
   margin-block-start: 5rem;
 }
