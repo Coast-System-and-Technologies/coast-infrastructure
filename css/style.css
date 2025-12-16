@@ -799,7 +799,7 @@ header img {
   line-height: 1.6;
   color: var(--text-color);
   opacity: 0.7;
-  text-align: left;
+  text-align: center;
   margin: 0;
   transition: color 0.3s ease, opacity 0.3s ease;
 }
