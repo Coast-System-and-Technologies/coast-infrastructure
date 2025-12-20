@@ -202,6 +202,9 @@ header img {
   transition: color 5s ease;
   color: var(--secondary-color);
 }
+.dropdown-button{
+  color: var(--text-color);
+}
 
 .nav-links a.active,
 .nav-links li:hover a {
@@ -4034,7 +4037,8 @@ p.hero-sub {
 
 @media (max-width: 900px) {
   .hero.home {
-    background-image: url(/images/mobile.png);
+    background-image: url(/images/hero-mobile.png);
+    background-position: center;
   }
 
   .hero h1 {
