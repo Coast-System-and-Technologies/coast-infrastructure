@@ -202,7 +202,7 @@ header img {
   transition: color 5s ease;
   color: var(--secondary-color);
 }
-.dropdown-button{
+.dropdown-button {
   color: var(--text-color);
 }
 
@@ -287,9 +287,11 @@ header img {
 }
 
 .hero.home::before {
-  background-image: radial-gradient(rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6));
+  background-image: radial-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  );
   content: "";
   inset: 0;
   position: absolute;
@@ -406,7 +408,9 @@ header img {
   border-radius: 50%;
   background: var(--accent-color2);
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
 .dot.active {
@@ -667,7 +671,9 @@ header img {
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .partner-logo:hover {
@@ -683,7 +689,9 @@ header img {
   object-fit: contain;
   filter: grayscale(100%);
   opacity: 0.7;
-  transition: filter 0.3s ease, opacity 0.3s ease;
+  transition:
+    filter 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .partner-logo:hover img {
@@ -793,7 +801,6 @@ header img {
   transition: color 0.3s ease;
 }
 
-
 .testimonial-name {
   font-size: 1.1rem;
   font-weight: 700;
@@ -811,7 +818,9 @@ header img {
   color: var(--text-color);
   opacity: 0.7;
   margin: 0 0 1rem;
-  transition: color 0.3s ease, opacity 0.3s ease;
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .testimonial-card:hover .testimonial-title-text {
@@ -826,7 +835,6 @@ header img {
   transition: color 0.3s ease;
 }
 
-
 .testimonial-text {
   font-size: 0.9rem;
   line-height: 1.6;
@@ -834,7 +842,9 @@ header img {
   opacity: 0.7;
   text-align: center;
   margin: 0;
-  transition: color 0.3s ease, opacity 0.3s ease;
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .testimonial-card:hover .testimonial-text {
@@ -899,7 +909,10 @@ header img {
   font-weight: 600;
   text-decoration: none;
   border: 2px solid transparent;
-  transition: transform 180ms ease, background-color 0.3s ease, color 0.3s ease;
+  transition:
+    transform 180ms ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .get-started-btn:active {
@@ -1088,33 +1101,46 @@ input::placeholder {
   margin: 0;
 }
 
-
 .hero.aboutus {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/about\ hero.png) no-repeat center center/cover;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/about\ hero.png) no-repeat center center/cover;
 }
 
 .hero.contactus {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/contactusbg.png) no-repeat center center/cover;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/contactusbg.png) no-repeat center center/cover;
 }
 
 .hero.solar {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/solar.png) no-repeat center center/cover;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/solar.png) no-repeat center center/cover;
 }
 
 .hero.networking {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/networking.png) no-repeat center center/cover;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/networking.png) no-repeat center center/cover;
 }
 
 .hero.procure {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/procurementbg.jpg) no-repeat center center/cover;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/procurementbg.jpg) no-repeat center center/cover;
 }
 
 .hero.printer {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/printerbg.png) no-repeat center center/cover;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/printerbg.png) no-repeat center center/cover;
 }
 
 .hero.mps {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/mpsbg.png) no-repeat center center/cover;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/mpsbg.png) no-repeat center center/cover;
 }
 
 .hero.aboutus div,
@@ -1253,9 +1279,11 @@ input::placeholder {
 
 .what-we-do::before {
   position: absolute;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5));
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
   inset: 0;
   content: "";
 }
@@ -1429,7 +1457,6 @@ input::placeholder {
 
 .ceo-image-container img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -1451,15 +1478,11 @@ input::placeholder {
   margin-bottom: 1.5rem;
 }
 
-
-
-
 .ceo-info .social-links a:hover {
   background-color: var(--accent-color2);
   color: var(--primary-color);
   transform: translateY(-3px);
 }
-
 
 .team-member-title {
   display: flex;
@@ -1472,7 +1495,7 @@ input::placeholder {
 .team-member-title * {
   flex-grow: 1;
   flex-shrink: 0;
-  padding: .5rem 0rem;
+  padding: 0.5rem 0rem;
   box-sizing: border-box;
 }
 
@@ -1502,7 +1525,9 @@ input::placeholder {
   overflow: hidden;
   text-align: center;
   padding-bottom: 20px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s;
 }
 
 .team-section .team-member-card:hover {
@@ -1564,7 +1589,9 @@ input::placeholder {
   justify-content: center;
   border: 1px solid var(--accent-color2);
   border-radius: 50%;
-  transition: color 0.3s, border-color 0.3s;
+  transition:
+    color 0.3s,
+    border-color 0.3s;
 }
 
 .team-section .social-links a:hover {
@@ -1576,7 +1603,6 @@ input::placeholder {
 .ceo-info .social-links {
   justify-content: flex-start;
 }
-
 
 /* bigger vision section starts here */
 .bigger-vision,
@@ -1928,7 +1954,6 @@ input::placeholder {
 *********************************/
 /* procurement page starts here */
 
-
 .what-we-procure,
 .procurement-process {
   padding: 3rem;
@@ -2093,10 +2118,12 @@ margin: left;
 }
 
 .hero.contactus::before {
-  background-image: linear-gradient(120deg,
-      rgba(0, 11, 41, 0.9),
-      rgba(0, 29, 41, 0.8),
-      rgba(0, 26, 41, 0.7));
+  background-image: linear-gradient(
+    120deg,
+    rgba(0, 11, 41, 0.9),
+    rgba(0, 29, 41, 0.8),
+    rgba(0, 26, 41, 0.7)
+  );
 }
 
 .contact-container {
@@ -2254,16 +2281,9 @@ label {
 
 /* contact us page ends here*/
 
-
-
-
-
-
 /* =========================
    PROJECTS PAGE (scoped)
 ========================= */
-
-
 
 .projects-page .p-container {
   width: min(1100px, 92%);
@@ -2273,7 +2293,9 @@ label {
 /* HERO */
 .projects-hero {
   padding: 4.5rem 0 2.5rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/project.png) no-repeat center center/cover;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/project.png) no-repeat center center/cover;
   margin-block-start: 5rem;
 }
 
@@ -2839,7 +2861,6 @@ p.hero-sub {
   }
 }
 
-
 /* PROJECT GRID */
 .projects-grid {
   padding: 3.2rem 0;
@@ -2978,7 +2999,6 @@ p.hero-sub {
 
 /* RESPONSIVE */
 @media (max-width: 980px) {
-
   .projects-hero .hero-grid,
   .recent-work .recent-grid {
     grid-template-columns: 1fr;
@@ -3003,13 +3023,6 @@ p.hero-sub {
   }
 }
 
-
-
-
-
-
-
-
 /* =========================
    FAQ PAGE (scoped)
 ========================= */
@@ -3026,7 +3039,9 @@ p.hero-sub {
   display: grid;
   place-items: center;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/FAQs.png) no-repeat center center/cover;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/FAQs.png) no-repeat center center/cover;
   overflow: hidden;
   margin-block-start: 5rem;
 }
@@ -3044,9 +3059,7 @@ p.hero-sub {
 .faq-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg,
-      var(--primary-color),
-      transparent);
+  background: linear-gradient(180deg, var(--primary-color), transparent);
   opacity: 0.6;
 }
 
@@ -3257,7 +3270,10 @@ p.hero-sub {
   text-decoration: none;
   font-weight: 600;
   border: 2px solid transparent;
-  transition: transform 180ms ease, background-color 0.3s ease, color 0.3s ease;
+  transition:
+    transform 180ms ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .faq-btn:active {
@@ -3387,12 +3403,6 @@ p.hero-sub {
     padding: 0 0.85rem 0.85rem;
   }
 }
-
-
-
-
-
-
 
 /***** mobile view ****/
 @media (max-width: 1250px) {
@@ -3814,12 +3824,12 @@ p.hero-sub {
     padding: 1rem;
   }
 
-
-
   .hero.home::before {
-    background-image: radial-gradient(rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6));
+    background-image: radial-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    );
     content: "";
     inset: 0;
     position: absolute;
@@ -3877,7 +3887,7 @@ p.hero-sub {
 
   .vision-content p {
     text-align: center;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .services-text p,
@@ -3965,7 +3975,6 @@ p.hero-sub {
     font-size: 1rem;
   }
 
-
   .team-section .team-member-card {
     width: 100%;
     max-width: 350px;
@@ -3986,7 +3995,6 @@ p.hero-sub {
 }
 
 @media (max-width: 639px) {
-
   .sample-container,
   .ss-container,
   .process-container,
@@ -4000,7 +4008,7 @@ p.hero-sub {
 
   .ceo-title,
   .team-member-title p {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .process-cards {
@@ -4063,7 +4071,6 @@ p.hero-sub {
     justify-content: center;
   }
 
-
   .ceo-card {
     flex-direction: column;
     text-align: center;
@@ -4090,5 +4097,4 @@ p.hero-sub {
   .team-member-title {
     flex-basis: 100%;
   }
-
 }
