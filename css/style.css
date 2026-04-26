@@ -1466,6 +1466,7 @@ input::placeholder {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  grid-column: 1 / -1;
 }
 
 .team-member-title * {
@@ -1484,10 +1485,10 @@ input::placeholder {
 }
 
 .team-section .team-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
   gap: 30px;
-  flex-wrap: wrap;
+  justify-items: center;
   width: min(80%, 1200px);
   margin: 0 auto;
 }
@@ -1496,7 +1497,8 @@ input::placeholder {
   background-color: var(--bg-color);
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  width: 300px;
+  width: 100%;
+  max-width: 360px;
   overflow: hidden;
   text-align: center;
   padding-bottom: 20px;
@@ -4081,6 +4083,7 @@ p.hero-sub {
   }
 
   .team-section .team-container {
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
